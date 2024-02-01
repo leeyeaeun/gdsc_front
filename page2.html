@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration_page2</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      /* 헤더에 배경 이미지를 적용하는 CSS 코드 */
+      .header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 56px;
+        background-image: url("img/main_top_background.png");
+        flex-direction: row;
+        position: relative;
+        display: flex;
+      }
+      .main_top_logo {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        width: 260px;
+        height: 34px;
+        user-select: none;
+        z-index: 0;
+      }
+      .main_top_input {
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+        left: 320px; /* 인풋 박스의 왼쪽 위치 조절 */
+        top: 16px; /* 인풋 박스의 상단 위치 조절 */
+        width: 197px;
+        height: 21px;
+        cursor: default;
+        font: 9pt NanumGothic;
+        border-radius: 0px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(166, 166, 169) rgb(213, 213, 213) rgb(213, 213, 213)
+          rgb(166, 166, 169);
+        color: rgb(34, 34, 34);
+        text-align: left;
+        padding: 0px 1px;
+        z-index: 0; /* 인풋 박스를 이미지 위에 표시하기 위한 z-index 설정 */
+      }
+      .timer-container {
+        position: relative;
+        left: 400px;
+        top: 18px;
+        width: 58px;
+        height: 23px;
+        user-select: none;
+        white-space: pre;
+        font: 9pt NanumGothic;
+        color: rgb(240, 255, 255);
+        text-align: left;
+      }
+
+      .align {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      .display-table {
+        display: table;
+        width: 75%;
+      }
+
+      .display-tb-header {
+        display: table-header-group;
+      }
+
+      .display-tb-body {
+        display: table-row-group;
+      }
+
+      .display-tb-row {
+        display: table-row;
+      }
+
+      .display-tb-cell {
+        display: table-cell;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      .text-blue {
+        color: blue;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+      .button:hover {
+        cursor: pointer; /* 마우스가 버튼 위에 있을 때 포인터 모양으로 변경 */
+      }
+      th,
+      td {
+        border: 1px solid rgb(218, 218, 218); /* 회색 경계 */
+        text-align: left;
+        border-left: none;
+        border-right: 2px solid rgb(214, 214, 214);
+
+        height: 10px;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="main_top_logo"
+        id="main_top_logo"
+        alt="ImageViewer00"
+        src="img/main_top_logo3.png"
+        style="margin-left: 29px"
+      />
+
+      <div id="main_top_input">
+        <input
+          id="main_top_input"
+          readonly=""
+          tabindex="-1"
+          class="main_top_input"
+        />
+        <img
+          src="img/login_out_bu01.png"
+          alt="logout_button"
+          style="
+            user-select: none;
+            position: absolute;
+            overflow: hidden;
+            left: 520px;
+            top: 16px;
+            width: 70px;
+            height: 23px;
+          "
+        />
+      </div>
+      <div class="timer-container">02:56:00</div>
+      <div>
+        <img
+          src="img/btnReset2.png"
+          alt="reset_btn"
+          style="position: relative; left: 400px; top: 16px"
+        />
+      </div>
+      <form
+        method="get"
+        action="page1.html"
+        style="
+          position: absolute;
+          left: 680px;
+          top: 18px;
+          color: rgb(240, 255, 255);
+          font-size: 15px;
+          font: 9pt NanumGothic;
+        "
+      >
+        <label style="padding-right: 10px; font: 9pt NanumGothic"
+          ><input type="radio" name="lang" value="eng" />ENG</label
+        >
+        <label style="padding-right: 10px; font: 9pt NanumGothic"
+          ><input type="radio" name="lang" value="kor" />KOR</label
+        >
+      </form>
+    </header>
+    <div class="align" style="top: 10px; left: 10px">
+      <img
+        src="img/icon_tit.png"
+        alt="icon"
+        style="top: 10px; height: 11px; margin-right: 5px; margin-top: 3px"
+      />
+      <p
+        style="
+          vertical-align: middle;
+          left: 13px;
+          font-size: 10pt;
+          margin: 0;
+          font-weight: bold;
+          font: 9pt NanumGothic;
+        "
+      >
+        수업>수강신청처리(학생)【UlsTlsnStudtAplyE】
+      </p>
+    </div>
+    <br />
+    <p
+      class="text-red"
+      style="
+        font-size: 9pt;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-left: 15px;
+      "
+    >
+      ※ If less than '9 credits(graduate student)' or '11 credits(undergraduate
+      student)' have been earned during this semester, scholarship will not be
+      given for the next semester (But this rule is not effective for the last
+      semester before graduation)
+    </p>
+    <div
+      class="display-table"
+      style="margin-left: 5px; margin-top: 5px; position: absolute"
+    >
+      <div class="display-tb-header">
+        <div class="display-tb-row">
+          <div class="display-tb-cell" style="width: 280px">
+            <button
+              style="
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                font-weight: bold;
+                font-size: 9pt;
+                left: 10px;
+                top: 5px;
+                width: 68px;
+                height: 18px;
+                border-radius: 0px;
+                border: 1px solid rgb(156, 156, 156);
+                background-color: transparent;
+                background-image: -webkit-gradient(
+                  linear,
+                  0% 0%,
+                  0% 100%,
+                  from(rgb(254, 254, 254)),
+                  to(rgb(236, 236, 229))
+                );
+                background-repeat: no-repeat;
+                cursor: pointer;
+                margin-left: 10px;
+              "
+            >
+              Home
+            </button>
+            <div class="display-tb-body">
+              <div class="display-tb-row">
+                <div class="display-tb-cell">
+                  <table
+                    style="
+                      position: absolute;
+                      margin-top: 5px;
+                      left: 10px;
+                      top: 25px;
+                      width: 280px;
+                      height: 626px;
+                      border-radius: 0px;
+                      border-top: 2px solid rgb(231, 48, 48);
+                      border-bottom: 1px solid rgb(240, 240, 240);
+                      background-color: transparent;
+                      cursor: default;
+                      font-family: Georgia, 'Times New Roman', Times, serif;
+                      font-size: 9pt;
+                      text-align: left;
+                    "
+                  >
+                    <tr>
+                      <th
+                        style="
+                          padding-left: 7px;
+                          border-top: 3px solid rgb(231, 48, 48);
+                        "
+                      >
+                        GIST College
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>School/Department</td>
+                    </tr>
+                    <tr>
+                      <td>Division/Concentration</td>
+                    </tr>
+                    <tr>
+                      <td>GIST College (Common)</td>
+                    </tr>
+                    <tr>
+                      <td>Mathematics Minor</td>
+                    </tr>
+                    <tr>
+                      <td>Energy Minor</td>
+                    </tr>
+                    <tr>
+                      <td>Biomedical Science and Engineering</td>
+                    </tr>
+                    <tr>
+                      <td>Culture Technology Mionor</td>
+                    </tr>
+                    <tr>
+                      <td>Intelligent Robotics Minor</td>
+                    </tr>
+                    <tr>
+                      <td>AI Convergence Minor</td>
+                    </tr>
+                    <tr>
+                      <td>Electrical Engineering/Computer Science</td>
+                    </tr>
+                    <tr>
+                      <td>Material Scinece/Engineering</td>
+                    </tr>
+                    <tr>
+                      <td>Mechanical ENgineering</td>
+                    </tr>
+                    <tr>
+                      <td>Earth Scineces/Environmental Engineering</td>
+                    </tr>
+                    <tr>
+                      <td>Life Scineces</td>
+                    </tr>
+                    <tr>
+                      <td>Physics/Photon Science</td>
+                    </tr>
+                    <tr>
+                      <td>Chemistry</td>
+                    </tr>
+                    <tr>
+                      <td>Graduate Minor in Management of</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="font-size: 9pt; position: static; padding: 10px">
+            <div class="display-tb-cell">
+              <label for="courseSearch">Course No/Title</label>
+              <input type="text" name="" id="courseSearch" />
+              <button>@Search</button>
+            </div>
+          </div>
+          <div class="display-tb-cell" style="font-size: 9pt">C</div>
+          <div class="display-tb-cell">
+            <pre>Information on course [총   n 건]<button>@Refresh</button></pre>
+            수강신청표 헤헤
+            <br />담은 강의 목록..?
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
+</html>
