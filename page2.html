@@ -9,9 +9,11 @@
         box-sizing: border-box;
         margin: 0;
         font-family: Georgia, "Times New Roman", Times, serif;
+
       }
       html {
         scroll-behavior: smooth;
+
       }
       html,
       body {
@@ -122,9 +124,10 @@
         text-align: left;
         border-left: none;
         border-right: 2px solid rgb(214, 214, 214);
-
+        white-space: nowrap;
         height: 10px;
         padding-left: 5px;
+        position:static
       }
     </style>
   </head>
@@ -213,6 +216,8 @@
         font-size: 9pt;
         font-family: Georgia, 'Times New Roman', Times, serif;
         margin-left: 15px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       "
     >
       ※ If less than '9 credits(graduate student)' or '11 credits(undergraduate
@@ -226,7 +231,7 @@
     >
       <div class="display-tb-header">
         <div class="display-tb-row">
-          <div class="display-tb-cell" style="width: 280px">
+          <div class="display-tb-cell" style="width: 280px; position:absolute">
             <button
               style="
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -234,9 +239,9 @@
                 font-weight: bold;
                 font-size: 9pt;
                 left: 10px;
-                top: 5px;
+                top: 10px;
                 width: 68px;
-                height: 18px;
+                height: 20px;
                 border-radius: 0px;
                 border: 1px solid rgb(156, 156, 156);
                 background-color: transparent;
@@ -262,11 +267,11 @@
                       position: absolute;
                       margin-top: 5px;
                       left: 10px;
-                      top: 25px;
+                      top: 30px;
                       width: 280px;
                       height: 626px;
                       border-radius: 0px;
-                      border-top: 2px solid rgb(231, 48, 48);
+                      border-top: 1px solid rgb(231, 48, 48);
                       border-bottom: 1px solid rgb(240, 240, 240);
                       background-color: transparent;
                       cursor: default;
@@ -279,7 +284,7 @@
                       <th
                         style="
                           padding-left: 7px;
-                          border-top: 3px solid rgb(231, 48, 48);
+                          border-top: 2px solid rgb(231, 48, 48);
                         "
                       >
                         GIST College
@@ -334,26 +339,101 @@
                       <td>Chemistry</td>
                     </tr>
                     <tr>
-                      <td>Graduate Minor in Management of</td>
+                      <td>Graduate Minor in Management of Innovation</td>
                     </tr>
                   </table>
                 </div>
               </div>
             </div>
           </div>
-          <div style="font-size: 9pt; position: static; padding: 10px">
+          <div class="display-tb-row">
             <div class="display-tb-cell">
-              <label for="courseSearch">Course No/Title</label>
-              <input type="text" name="" id="courseSearch" />
-              <button>@Search</button>
+              <div style="font-size: 9pt; position: absolute; padding: 10px ;left: 270px;">
+                <div  style="flex: row;white-space: nowrap; ">
+                  <label for="courseSearch" style="margin: 10px; white-space: nowrap;"
+                    >Course No/Title</label
+                  >
+                  <input type="text" name="" id="courseSearch" />
+                  <div
+                    id="search"
+                    style="
+                      user-select: none;
+                      position: absolute;
+                      overflow: hidden;
+                      top: 0px;
+                      width: 82px;
+                      left: 275px;
+                      height: 21px;
+                      border-radius: 0px;
+                      margin: 10px;
+                      border: 1px solid rgb(125, 130, 139);
+                      background-color: rgb(240, 248, 255);
+                      background-image: url('./img/btnSearch2.png');
+                      background-repeat: no-repeat;
+                      background-position: 10% 50%;
+                      cursor: pointer;
+                      direction: inherit;
+                    "
+                  >
+                    <div>
+                      <p
+                        style="
+                          position: absolute;
+                          width: 72px;
+                          height: 18px;
+                          top: 2px;
+                          left: 2px;
+                          font: bold 9pt Georgia;
+                          color: rgb(33, 33, 33);
+                          text-align: center;
+                          vertical-align: middle;
+                          padding: 0px;
+                          margin-left: 6px;
+                        "
+                      >
+                        Search
+                      </p>
+                      <div>
+                        <button
+                          style="
+                            width: 82px;
+                            height: 18px;
+                            background: transparent;
+                            border: transparent;
+                          "
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="left: 390px; color:red; position:absolute; white-space:nowrap; top:15px">
+                    ※ Course Type:  M(Mandatory),  E(Elective)  R(Reseach)</div> 
+                  </div>
+                  <div  style="flex-direction: row; user-select: none; position: absolute; overflow: hidden; left: 25px;
+                   top: 35px; width: 171px; height: 20px; border-radius: 0px; 
+                   background-color: transparent; 
+                   background-image: url(./img/stc_bu02.png); background-repeat: no-repeat; 
+                   background-position: 0% 50%; cursor: default; direction: inherit; 
+                   border: none;" tabindex="-1">
+                   <div style="user-select: none; position: absolute; overflow: hidden; 
+                    left: 17px; top: 0px; width: 154px; height: 20px;">
+                   <div style="position: absolute; overflow: hidden; left: 0px; top: 0px; width: 154px; 
+                   height: 20px; user-select: none;">
+                   <div style="display: table-cell; white-space: pre; 
+                   width: 154px; height: 20px; font: bold 9pt Georgia; color: rgb(34, 34, 34); 
+                   text-align: left; vertical-align: middle; text-overflow: 
+                   ellipsis;">Information on course</div>
+                    </div>
+                    </div>
+
+                  </div>
+                  <div style="display: flex; flex-direction:row; "></div>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="display-tb-cell" style="font-size: 9pt">C</div>
-          <div class="display-tb-cell">
-            <pre>Information on course [총   n 건]<button>@Refresh</button></pre>
-            수강신청표 헤헤
-            <br />담은 강의 목록..?
-          </div>
+
+          
         </div>
       </div>
     </div>
