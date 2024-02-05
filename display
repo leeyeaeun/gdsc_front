@@ -1,32 +1,80 @@
-<div class="display-table">
-    전체 디스플레이 표입니다!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .display-table {
+                display: table;
+                width: 75%;
+            }
+
+            .display-tb-header {
+                display: table-header-group;
+            }
+
+            .display-tb-body {
+                display: table-row-group;
+            }
+
+            .display-tb-row {
+                display: table-row;
+            }
+
+            .display-tb-cell {
+                display: table-cell;
+            }
+
+            .text-red {
+                color: red;
+            }
+
+            .text-blue {
+                color: blue;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="./img/banner.png" style="height: 50px; width: auto;" alt="지스트 배너">
+        <p1 style="font-size: 12px">#수업>수강신청처리(학생)[UlsTlsnStudAplyE]</p1>
+        <br>
+        <p2 class="text-red">
+        <p2 style="font-size: 9px"><pre> *If less than '9 credits(graduate student)' or '11 credits(undergraduate student)' have been earned during this semester, scholarship will not be given for the next semester (But this rule is not effective for the last semester before graduation)</pre></p2>
+        </p2>
+        <div class="display-table">
             <div class="display-tb-header">
-                첫 행 레이블 칸이라는 뜻입니다
                 <div class="display-tb-row">
-                    여기가 행바꿈 코드입니다
                     <div class="display-tb-cell">
-                        여기는 표에서 첫번째 부분 A 파트입니다(홈버튼)
+                        A(홈버튼)
                     </div>
                     <div class="display-tb-cell">
-                        여기는 표에서 두번째 부분 B 파트입니다(코스 서치 label 및 버튼)
+                        B(코스 서치 label 및 버튼)
                     </div>
-                    <div class="display-tb-cell">C</div>
-                        여기는 C 파트인데 비워두면 됩니다
+                    <div class="display-tb-cell">
+                        C(비워두기)
+                    </div>
                 </div>
             </div>
             <div class="display-tb-body">
-                메인 바디 칸이라는 뜻입니다
                 <div class="display-tb-row">
-                    행바꿈 코드입니다
                     <div class="display-tb-cell">
-                        A1 파트여서 !소속 선택 표!가 들어가면 됩니다
-                    </div>
-                    <div class="display-tb-cell"><pre>
-                        B1이어서 !Information N건 및 Refresh 버튼/강의목록/빨간 글씨/신청 목록!을 만들면 됩니다
+                        A1(소속 선택 표)
                     </div>
                     <div class="display-tb-cell">
-                        C1이어서 !시간표!가 들어가면 됩니다
+                        B1(Information N건 및 Refresh 버튼/강의목록/빨간 글씨/신청 목록)
+                    </div>
+                    <div class="display-tb-cell">
+                        C1(시간표)
                     </div>
                 </div>
             </div>
         </div>
+        <script></script>
+    </body>
+</html>
