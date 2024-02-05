@@ -1,0 +1,32 @@
+<div class="display-table">
+    전체 디스플레이 표입니다!
+            <div class="display-tb-header">
+                첫 행 레이블 칸이라는 뜻입니다
+                <div class="display-tb-row">
+                    여기가 행바꿈 코드입니다
+                    <div class="display-tb-cell">
+                        여기는 표에서 첫번째 부분 A 파트입니다(홈버튼)
+                    </div>
+                    <div class="display-tb-cell">
+                        여기는 표에서 두번째 부분 B 파트입니다(코스 서치 label 및 버튼)
+                    </div>
+                    <div class="display-tb-cell">C</div>
+                        여기는 C 파트인데 비워두면 됩니다
+                </div>
+            </div>
+            <div class="display-tb-body">
+                메인 바디 칸이라는 뜻입니다
+                <div class="display-tb-row">
+                    행바꿈 코드입니다
+                    <div class="display-tb-cell">
+                        A1 파트여서 !소속 선택 표!가 들어가면 됩니다
+                    </div>
+                    <div class="display-tb-cell"><pre>
+                        B1이어서 !Information N건 및 Refresh 버튼/강의목록/빨간 글씨/신청 목록!을 만들면 됩니다
+                    </div>
+                    <div class="display-tb-cell">
+                        C1이어서 !시간표!가 들어가면 됩니다
+                    </div>
+                </div>
+            </div>
+        </div>
