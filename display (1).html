@@ -126,6 +126,8 @@
         height: 10px;
         padding-left: 5px;
         position: static;
+        overflow:hidden;
+        
       }
       .main-tr{
         height: 10px;
@@ -135,7 +137,12 @@
         display: inline-block;
         
       }
-
+      .sticky-header th {
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1; /* 고정 헤더의 배경색 설정 */
+        z-index: 100; /* 다른 콘텐츠 위에 표시되도록 z-index 설정 */
+      } 
       .custom-button {
         position: absolute;
         text-align: left;
@@ -152,7 +159,26 @@
         padding: 0; /* 내부 간격을 제거합니다. */
         margin: 0; /* 외부 여백을 제거합니다. */
       }
-    </style>
+      .scrollable-cell {
+        overflow:auto;
+    }
+
+    .scrollable-content {
+        white-space: normal;
+        overflow-x :auto;
+        overflow-y: hidden;
+        max-width: 100%;
+        max-height: 25px;
+    }
+    .scroll-container {
+      width: 820px;
+      overflow-x: auto;
+      height: 400px;
+      position: relative;
+      top: 20px;
+    }
+
+  </style>
   </head>
   <body>
     <header class="header">
@@ -366,11 +392,12 @@
             white-space:nowrap">C(비워두기)</div>
           </div>
         </div>
-        <div class="display-tb-body" style="overflow: auto;">
-          <div class="display-tb-row" style="overflow: auto;">
-            <div class="display-tb-cell" style="overflow: auto;">
+        <div class="display-tb-body" style="overflow-x: auto; max-width:280px;">
+          <div class="display-tb-row">
+            <div class="display-tb-cell" >
               <table
                 style="
+                  width:100%;
                   position: absolute;
                   margin-top: 110px;
                   left: 10px;
@@ -393,7 +420,6 @@
                       padding-left: 25px;
                       border-top: 2px solid rgb(231, 48, 48);
                       text-align: left;
-                      
                     "
                   > 
                     <img 
@@ -431,10 +457,11 @@
                     style="
                       padding-left: 58px;
                       text-align: left;
+                      overflow:hidden;
                     "
                   >
-                  <div class="button-container">
-                    <button class="custom-button">Department of Semiconductor Engineering</button>
+                  <div class="button-container" >
+                    <button class="custom-button"  onclick="showCourses('SE')">Department of Semiconductor Engineering</button>
                     <img 
                       width="11px"
                       src="img/list.png" />
@@ -449,7 +476,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button"> Division of Liberal Arts and Sciences</button>
+                    <button class="custom-button" onclick="showCourses('GS')"> Division of Liberal Arts and Sciences</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -463,7 +490,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  GIST College (Common)</button>
+                    <button class="custom-button" onclick="showCourses('UC')">  GIST College (Common)</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -477,7 +504,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Mathematics Minor</button>
+                    <button class="custom-button" onclick="showCourses('MM')">  Mathematics Minor</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -492,7 +519,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button"> Energy Minor</button>
+                    <button class="custom-button"onclick="showCourses('FE')" > Energy Minor</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -506,7 +533,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Biomedical Science and Engineering</button>
+                    <button class="custom-button" onclick="showCourses('MD')">  Biomedical Science and Engineering</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -520,7 +547,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button"> Culture Technology Minor</button>
+                    <button class="custom-button" onclick="showCourses('CT')"> Culture Technology Minor</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -534,7 +561,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Intelligent Robotics Minor</button>
+                    <button class="custom-button" onclick="showCourses('IR')">  Intelligent Robotics Minor</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -548,7 +575,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button"> AI Convergence Minor</button>
+                    <button class="custom-button" onclick="showCourses('AI')"> AI Convergence Minor</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -562,7 +589,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Electrical Engineering/Computer Science </button>
+                    <button class="custom-button" onclick="showCourses('EC')">  Electrical Engineering/Computer Science </button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -576,7 +603,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Material Science/Engineering</button>
+                    <button class="custom-button" onclick="showCourses('MA')">  Material Science/Engineering</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -590,7 +617,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button"> Mechanical Engineering</button>
+                    <button class="custom-button" onclick="showCourses('MC')"> Mechanical Engineering</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -604,7 +631,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">  Earth Science/Environmental Engineering</button>
+                    <button class="custom-button" onclick="showCourses('EV')">  Earth Science/Environmental Engineering</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -618,7 +645,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">Life Science</button>
+                    <button class="custom-button" onclick="showCourses('BS')">Life Science</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -632,7 +659,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">Phsyics/Photon Science</button>
+                    <button class="custom-button" onclick="showCourses('PS')">Phsyics/Photon Science</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -646,7 +673,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">Chemistry</button>
+                    <button class="custom-button" onclick="showCourses('CH')">Chemistry</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -660,7 +687,7 @@
                     "
                   >
                   <div class="button-container">
-                    <button class="custom-button">Graduate Minor in Management of Innovation</button>
+                    <button class="custom-button" >Graduate Minor in Management of Innovation</button>
                     <img 
                       width="11px"
                       src="img/list.png" />&nbsp;
@@ -754,82 +781,193 @@
               </div>
             </div>
         </div>
-            <div style="position:absolute; left:360px;">Total Credits</div>
-            <div style="position:absolute; left:460px; color:blue ;">수강 학점</div>
-            <div style="position:absolute; left:560px;">Total GPA</div>
-            <div style="position:absolute; left:660px; color:blue ;">성적</div>
-            <div id="transcript_btn" style="user-select: none; position: absolute; 
-                overflow: hidden; left: 710px; width: 108px; height: 18px; border-radius: 0px; 
-                border: 1px solid rgb(156, 156, 156); background-color: transparent; 
-                background-image: url(./img/btnPop2.png), 
-                -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(254, 254, 254)), to(rgb(236, 236, 229))); 
-                background-repeat: no-repeat; background-position: 10% 50%; cursor: pointer; 
-                direction: inherit;" tabindex="-1">
-                <div style="user-select: none; position: absolute; overflow: 
-                    hidden; left: 10px; top: 0px; width: 98px; height: 18px;">
-                    <div style="font: bold 9pt Georgia; text-align: center; ">Transcript</div>
-                </div>
+        <div style="position:absolute; left:360px;">Total Credits</div>
+        <div style="position:absolute; left:460px; color:blue ;">수강 학점</div>
+        <div style="position:absolute; left:560px;">Total GPA</div>
+        <div style="position:absolute; left:660px; color:blue ;">성적</div>
+        <div id="transcript_btn" style="user-select: none; position: absolute; 
+            overflow: hidden; left: 710px; width: 108px; height: 18px; border-radius: 0px; 
+            border: 1px solid rgb(156, 156, 156); background-color: transparent; 
+            background-image: url(./img/btnPop2.png), 
+            -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(254, 254, 254)), to(rgb(236, 236, 229))); 
+            background-repeat: no-repeat; background-position: 10% 50%; cursor: pointer; 
+            direction: inherit;" tabindex="-1">
+            <div style="user-select: none; position: absolute; overflow: 
+                hidden; left: 10px; top: 0px; width: 98px; height: 18px;">
+                <div style="font: bold 9pt Georgia; text-align: center; ">Transcript</div>
             </div>
-            <div></div>
-            <div style="display: flex; flex-direction: column; position:absolute;top:20px;"><br>
-                <table style="width: 820px;
+        </div>
+        <br>
+        <div class="scroll-container" style="border-top: 2px solid rgb(231, 48, 48); margin-bottom: -4px;">
+          <div style="display: flex; flex-direction: column; position: absolute; top: -1px;">
+                <table style="
+                table-layout: fixed;
+                width: 100%;
                 border-collapse: collapse;
-                border-top: 2px solid rgb(231, 48, 48);
                 border-right: 1px solid rgb(240, 240, 240);
                 border-left: 1px solid rgb(240, 240, 240);
                 background-color: transparent;
                 cursor: default;
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                text-align: center;
-                overflow-x: auto;
-                max-width: 100%;
+                text-align: left;
+                margin-top: -2px; 
+            
               ">
-                    <thead>
-                        <tr  style="background-color: rgb(241, 241, 241);
-                        font: 12px Georgia; height:25px;">
-                            <th style="width: 29px;">NO</th>
-                            <th style="width: 75px;">Syllabus</th>
-                            <th style="width: 57px;">Video</th>
-                            <th style="width: 172px;">Title</th>
-                            <th style="width: 35px;">Type</th>
-                            <th style="width: 39px;">Type3</th>
-                            <th style="width: 119px;">Timetable</th>
-                            <th  style="width: 99px;">Instructor</th>
-                            <th  style="width: 49px;">Grade</th>
-                            <th  style="width: 28px;">Size</th>
-                            <th  style="width: 46px;">Seats</th>
-                            <th>Credit</th>
-                            <th>Add</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- 표 내용은 여기에 추가 -->
-                        <tr style="height:25px;">
-                            <td>내용 1</td>
-                            <td>내용 2</td>
-                            <td>내용 3</td>
-                            <td>내용 4</td>
-                            <td>내용 5</td>
-                            <td>내용 6</td>
-                            <td>내용 7</td>
-                            <td>내용 8</td>
-                            <td>내용 9</td>
-                            <td>내용 10</td>
-                            <td>내용 11</td>
-                            <td>내용 12</td>
-                            <td>애드버튼</td>
-                        </tr>
-                        <!-- 추가 행을 필요한 만큼 복사하여 적용 -->
-                       
-                    </tbody>
-                </table>
-            </div>
+              <thead style=" position: sticky; top: -1px; height:25px; z-index: 100; background-color: rgb(241, 241, 241); font: 12px Georgia;">
+                <tr>
+                    <th style="width: 29px; white-space: nowrap; overflow: hidden;">NO</th>
+                    <th style="width: 75px; white-space: nowrap; overflow: hidden;">Syllabus</th>
+                    <th style="width: 57px; white-space: nowrap; overflow: hidden;">Video</th>
+                    <th style="width: 172px; overflow-wrap: break-word; overflow-x: auto;">Title</th>
+                    <th style="width: 35px; white-space: nowrap; overflow: hidden;">Type</th>
+                    <th style="width: 39px; white-space: nowrap; overflow: hidden;">Type3</th>
+                    <th style="width: 119px; overflow-wrap: break-word; overflow: hidden;">Timetable</th>
+                    <th style="width: 99px; overflow-wrap: break-word; overflow: hidden;">Instructor</th>
+                    <th style="width: 49px; white-space: nowrap; overflow: hidden;">Grade</th>
+                    <th style="width: 28px; white-space: nowrap; overflow: hidden;">Size</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Seats</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Credit</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Add</th>
+                </tr>
+            </thead>
+            <tbody id="courseTableBody" >
+            </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="padding-top: 10px; padding-left:15px; top: 15px; display: flex; flex-direction: column; align-items: center;">
+          <div style="position: relative; top:420px; left:-820px; height:250px;" >
+            <p  style="color: red;">
+            If you click 7 times consecutively on the same subject, a popup with security code opens 
+            and you have to enter a security code. </p>
+            <div style="padding-top:10px;top:15px; display: flex; align-items: center;">
+              <img src="./img/stc_bu02.png" alt="" style="margin-right: 5px;">
+              <p style="font-weight: bold; margin-right: 15px;">List of Registration</p>
+              <p>[총</p>
+              <p style="color: red;margin-left: 50px;"> n</p>
+              <p >건]</p>
+              <p style="margin-left: 250px;">Courses</p>
+              <p  style="margin-left: 15px; color:blue">N</p>
+              <p style="margin-left: 40px;">Credits</p>
+              <p style="margin-left: 15px;  color:blue">N</p>
+              <button  style="margin-left: 20px; width:65px;">Save</button>
+              <button  style="margin-left: 13px; width:65px;">Print</button>
+          </div>
+          <div style="padding-top: 10px; ">
+            <table style="
+            width: 100%;
+            border-collapse: collapse;
+            border-right: 1px solid rgb(240, 240, 240);
+            border-left: 1px solid rgb(240, 240, 240);
+            border-top:red;
+            background-color: transparent;
+            cursor: default;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+            
+          ">
+              <thead style="background-color: rgb(241, 241, 241); height:25px;">
+                <tr style="border-top: 2px solid rgb(231, 48, 48);">
+                  <th style="width: 29px; white-space: nowrap; overflow: hidden;">NO</th>
+                  <th style="width: 75px; white-space: nowrap; overflow: hidden;">Syllabus</th>
+                  <th style="width: 172px; overflow-wrap: break-word; overflow-x: auto;">Title</th>
+                  <th style="width: 119px; overflow-wrap: break-word; overflow: hidden;">Timetable</th>
+                  <th style="width: 49px; white-space: nowrap; overflow: hidden;">Grade</th>
+                  <th style="width: 28px; white-space: nowrap; overflow: hidden;">Adivisor</th>
+                  <th style="width: 46px; white-space: nowrap; overflow: hidden;">Credit</th>
+                  <th style="width: 46px; white-space: nowrap; overflow: hidden;">Drop</th>
+              </tr>
+              </thead>
+            </table>
+          </div>
+         
+        </div>
+        
+
+            
+            <div style="display: flex; flex-direction: column; position: absolute; top: -1px;">
+              <table >
+            <thead style=" position: sticky; top: -1px; height:25px; z-index: 100; background-color: rgb(241, 241, 241); font: 12px Georgia;">
+           
+          </thead>
+          <tbody id="courseTableBody" >
+          </tbody>
+          </table>
+        </div>
+          </div>
+          
+        </div>
+        
+      </div>    
         </div>
         <div class="display-tb-cell" style="position: absolute; left:1200px; top:200px;
         white-space:nowrap">C1(시간표)</div>
         </div>
     </div>
     </div>
-    <script></script>
+    
+    <script>
+      function showCourses(division) {
+        // 해당 division에 맞는 과목 목록을 가져와서 표시
+          
+          var tableBody = document.getElementById("courseTableBody");
+
+          // 기존의 과목 목록 삭제
+          if (tableBody) {
+              while (tableBody.firstChild) {
+                  tableBody.removeChild(tableBody.firstChild);
+              }
+          } else {
+              console.error('Error: Table body not found.');
+              return;
+          }
+          var jsonFileName = division + '_courses.json';
+        // JSON 파일에서 데이터 불러오기
+        fetch('./course/'+ jsonFileName)
+            .then(response => response.json())
+            .then(courses => {
+                courses.forEach(function(course, index) {
+                    var row = document.createElement("tr");
+
+                    // "NO" 데이터 추가
+                    var noCell = document.createElement("td");
+                    noCell.textContent = index + 1;
+                    row.appendChild(noCell);
+
+                    // 나머지 데이터 추가
+                    var keys = ["course_code", "Video", "course_title", "course_type", "", "course_time", "instructor", "Grade",  "class_size", "class_size", "course_credit"];
+                    keys.forEach(function(key) {
+                      var cell = document.createElement("td");
+                      if (key === "Size") {
+                          cell.textContent = course["class_size"];
+                      } else if (key === "Grade") {
+                          cell.textContent = "Letter";
+                      } else {
+                          cell.classList.add("scrollable-cell"); // 스크롤 가능한 셀 클래스 추가
+                          var content = document.createElement("div");
+                          content.classList.add("scrollable-content"); // 스크롤 가능한 콘텐츠 클래스 추가
+                          content.textContent = key === "" ? "" : course[key];
+                          cell.appendChild(content);
+                      }
+                        row.appendChild(cell);
+                    });
+
+                    // "Add" 버튼 추가
+                    var addButtonCell = document.createElement("td");
+                    var addButton = document.createElement("button");
+                    addButton.textContent = "Add";
+                    addButton.addEventListener("click", function () {
+                      // 버튼이 클릭되었을 때 수행할 동작 추가
+                      var clickedCourseCode = courses[index]["course_code"];
+                      console.log("Add button clicked for course_code", clickedCourseCode);
+                    });
+                    addButtonCell.appendChild(addButton);
+                    row.appendChild(addButtonCell);
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error loading courses:', error));
+      }
+  </script>
   </body>
 </html>
