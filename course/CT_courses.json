@@ -1,0 +1,101 @@
+[
+  {
+    "subject_code": "CT2506",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT2506-01",
+    "course_title": "Myth and Archetypal Symbol",
+    "course_type": "E",
+    "instructor": "Lee, Yong-Ju",
+    "course_credit": "3",
+    "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "CT2544",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT2544-01",
+    "course_title": "Understanding of Cultural Contents",
+    "course_type": "E",
+    "instructor": "Yoon, Pilsang",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "CT2661",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT2661-01",
+    "course_title": "Introduction to Logic",
+    "course_type": "E",
+    "instructor": "Won, Chiwook",
+    "course_credit": "3",
+    "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "CT2832",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT2832-01",
+    "course_title": "Technology and Culture",
+    "course_type": "E",
+    "instructor": "Dae-Cheong Ha",
+    "course_credit": "3",
+    "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "CT4201",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT4201-01",
+    "course_title": "Computer Graphics",
+    "course_type": "E",
+    "instructor": "Moon, Bochang",
+    "course_credit": "3",
+    "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "CT4202",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT4202-01",
+    "course_title": "Visual Communication",
+    "course_type": "E",
+    "instructor": "Eunsung Song",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
+    "class_size": "20"
+  },
+  {
+    "subject_code": "CT4203",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT4203-01",
+    "course_title": "Art & technology",
+    "course_type": "E",
+    "instructor": "Eunsung Song",
+    "course_credit": "3",
+    "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
+    "class_size": "20"
+  },
+  {
+    "subject_code": "CT4302",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT4302-01",
+    "course_title": "Designing Artificial Intelligence for Culture Technology Applications",
+    "course_type": "E",
+    "instructor": "JinHyuk Hong",
+    "course_credit": "3",
+    "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
+    "class_size": "15"
+  },
+  {
+    "subject_code": "CT4305",
+    "course_department": "Culture Technology Minor",
+    "course_code": "CT4305-01",
+    "course_title": "Service-Learning Project",
+    "course_type": "E",
+    "instructor": "Eunsung Song",
+    "course_credit": "3",
+    "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
+    "class_size": "20"
+  }
+]

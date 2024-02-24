@@ -1,0 +1,24 @@
+[
+  {
+    "subject_code": "SE1101",
+    "course_department": "Department of Semiconductor Engineering",
+    "course_code": "SE1101-01",
+    "course_title": "Introduction of Semiconductor Engineering",
+    "course_type": "M",
+    "instructor": "Shin, Hyeon Jin",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
+    "class_size": "40"
+  },
+  {
+    "subject_code": "SE2101",
+    "course_department": "Department of Semiconductor Engineering",
+    "course_code": "SE2101-01",
+    "course_title": "Introduction to Physical Electronics",
+    "course_type": "M",
+    "instructor": "Dong-Seon Lee",
+    "course_credit": "3",
+    "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
+    "class_size": "30"
+  }
+]

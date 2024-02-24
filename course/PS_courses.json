@@ -1,0 +1,178 @@
+[
+  {
+    "subject_code": "PS2101",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS2101-01",
+    "course_title": "Classical Mechanics and Recitation I",
+    "course_type": "M",
+    "instructor": "Chanyong Park",
+    "course_credit": "3",
+    "course_time": "MON 10:30~12:00\nMON 19:00~20:00\nWED 10:30~12:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS2102",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS2102-01",
+    "course_title": "Electromagnetism & Recitation I",
+    "course_type": "M",
+    "instructor": "Suk, Hyyong",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 19:00~20:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS2201",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS2201-01",
+    "course_title": "Introduction to Modern Physics",
+    "course_type": "E",
+    "instructor": "Bongjin Simon Mun",
+    "course_credit": "3",
+    "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS3103",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS3103-01",
+    "course_title": "Quantum Physics & Rec. I",
+    "course_type": "M",
+    "instructor": "Hyun Seok Yang",
+    "course_credit": "3",
+    "course_time": "TUE 10:30~12:00\nTUE 19:00~20:00\nTHU 10:30~12:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS3202",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS3202-01",
+    "course_title": "Electronic Circuit",
+    "course_type": "E",
+    "instructor": "Song, Jong-In",
+    "course_credit": "3",
+    "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS3205",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS3205-01",
+    "course_title": "Introduction to Optics",
+    "course_type": "E",
+    "instructor": "Nam, Chang Hee",
+    "course_credit": "3",
+    "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS3206",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS3206-01",
+    "course_title": "Mathematical Methods of Physics II",
+    "course_type": "E",
+    "instructor": "Chanyong Park",
+    "course_credit": "3",
+    "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS4204",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS4204-01",
+    "course_title": "Experimental Physics II",
+    "course_type": "E",
+    "instructor": "Do-Kyeong Ko[01168]\nJang, Jee Seung",
+    "course_credit": "3",
+    "course_time": "FRI 13:00~18:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS4206",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS4206-01",
+    "course_title": "Nuclear and Particle Physics",
+    "course_type": "E",
+    "instructor": "Hyun Seok Yang",
+    "course_credit": "3",
+    "course_time": "TUE 16:00~17:30\nTHU 16:00~17:30",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS4207",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS4207-01",
+    "course_title": "Solid state Physics",
+    "course_type": "E",
+    "instructor": "Doh, Yong-Joo",
+    "course_credit": "3",
+    "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS4217",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS4217-01",
+    "course_title": "Introduction to quantum optics and atomic physics",
+    "course_type": "E",
+    "instructor": "Sang Yun Lee",
+    "course_credit": "3",
+    "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS4219",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS4219-01",
+    "course_title": "Computational Physics in the AI era II",
+    "course_type": "E",
+    "instructor": "Kim, Dong-Hee",
+    "course_credit": "3",
+    "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS9101",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS9101-01",
+    "course_title": "Undergraduate Thesis Research",
+    "course_type": "R",
+    "instructor": "",
+    "course_credit": "3",
+    "course_time": "",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS9102",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS9102-01",
+    "course_title": "Undergraduate Thesis Research I",
+    "course_type": "R",
+    "instructor": "",
+    "course_credit": "3",
+    "course_time": "",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS9103",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS9103-01",
+    "course_title": "Undergraduate Thesis Research II",
+    "course_type": "R",
+    "instructor": "",
+    "course_credit": "3",
+    "course_time": "",
+    "class_size": "0"
+  },
+  {
+    "subject_code": "PS9301",
+    "course_department": "Department of Physics and Photon Science",
+    "course_code": "PS9301-01",
+    "course_title": "The present and future of physics research",
+    "course_type": "R",
+    "instructor": "Yu, Unjong",
+    "course_credit": "1",
+    "course_time": "THU 17:30~18:30",
+    "class_size": "0"
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "subject_code": "MD4301",
+    "course_department": "Biomedical Science and Engineering Minor",
+    "course_code": "MD4301-01",
+    "course_title": "BIO Signal Processing",
+    "course_type": "E",
+    "instructor": "Lee, Boreom",
+    "course_credit": "3",
+    "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
+    "class_size": "20"
+  },
+  {
+    "subject_code": "MD4303",
+    "course_department": "Biomedical Science and Engineering Minor",
+    "course_code": "MD4303-01",
+    "course_title": "Biomedical Optics",
+    "course_type": "E",
+    "instructor": "Kwon, Hyuk Sang",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
+    "class_size": "20"
+  },
+  {
+    "subject_code": "MD4401",
+    "course_department": "Biomedical Science and Engineering Minor",
+    "course_code": "MD4401-01",
+    "course_title": "Practical Understanding of Molecular Biology I",
+    "course_type": "E",
+    "instructor": "Cho, Jun",
+    "course_credit": "3",
+    "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
+    "class_size": "25"
+  },
+  {
+    "subject_code": "MD4501",
+    "course_department": "Biomedical Science and Engineering Minor",
+    "course_code": "MD4501-01",
+    "course_title": "Neuroscience",
+    "course_type": "E",
+    "instructor": "Hyoung Ihl Kim",
+    "course_credit": "3",
+    "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
+    "class_size": "30"
+  },
+  {
+    "subject_code": "MD4502",
+    "course_department": "Biomedical Science and Engineering Minor",
+    "course_code": "MD4502-01",
+    "course_title": "Human Molecular Genetics",
+    "course_type": "E",
+    "instructor": "Park, Han Soo",
+    "course_credit": "3",
+    "course_time": "TUE 17:30~19:00\nWED 17:30~19:00",
+    "class_size": "20"
+  }
+]
