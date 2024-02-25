@@ -853,7 +853,7 @@
               <button  style="margin-left: 20px; width:65px;">Save</button>
               <button  style="margin-left: 13px; width:65px;">Print</button>
           </div>
-          <div style="padding-top: 10px; ">
+          <div style="padding-top: 10px; max-width:820px; overflow-x:auto; ">
             <table style="
             width: 100%;
             border-collapse: collapse;
@@ -865,19 +865,23 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: left;
             
-          ">
+          " id="selectedCoursesTable">
               <thead style="background-color: rgb(241, 241, 241); height:25px;">
                 <tr style="border-top: 2px solid rgb(231, 48, 48);">
                   <th style="width: 29px; white-space: nowrap; overflow: hidden;">NO</th>
                   <th style="width: 75px; white-space: nowrap; overflow: hidden;">Syllabus</th>
                   <th style="width: 172px; overflow-wrap: break-word; overflow-x: auto;">Title</th>
                   <th style="width: 119px; overflow-wrap: break-word; overflow: hidden;">Timetable</th>
+                  <th style="width: 99px; overflow-wrap: break-word; overflow: hidden;">Instructor</th>
                   <th style="width: 49px; white-space: nowrap; overflow: hidden;">Grade</th>
                   <th style="width: 28px; white-space: nowrap; overflow: hidden;">Adivisor</th>
                   <th style="width: 46px; white-space: nowrap; overflow: hidden;">Credit</th>
                   <th style="width: 46px; white-space: nowrap; overflow: hidden;">Drop</th>
               </tr>
               </thead>
+              <tbody id="selectedCoursesTableBody">
+                <!-- 이 부분은 선택한 과목이 동적으로 추가될 때 여기에 추가됩니다. -->
+              </tbody>
             </table>
           </div>
          
@@ -960,6 +964,7 @@
                       // 버튼이 클릭되었을 때 수행할 동작 추가
                       var clickedCourseCode = courses[index]["course_code"];
                       console.log("Add button clicked for course_code", clickedCourseCode);
+                      addToSelectedCourses(course);
                     });
                     addButtonCell.appendChild(addButton);
                     row.appendChild(addButtonCell);
@@ -968,6 +973,105 @@
             })
             .catch(error => console.error('Error loading courses:', error));
       }
+      var selectedCoursesCount = 0;
+
+      function addToSelectedCourses(course) {
+        // 선택한 과목을 추가하는 함수
+        var selectedCoursesTableBody = document.getElementById("selectedCoursesTableBody");
+            // 시간표가 겹치는지 체크
+        if (checkTimeTableConflict(course)) {
+          alert("시간표가 겹칩니다. 다른 시간표를 선택해주세요.");
+          return;
+        }
+        var row = document.createElement("tr");
+        
+        var noCell = document.createElement("td");
+        noCell.textContent = ++selectedCoursesCount;
+        row.appendChild(noCell);
+
+        var keys = ["course_code", "course_title", "course_time", "instructor", "Grade", "Adivisor", "course_credit","Drop"];
+        keys.forEach(function (key) {
+            var cell = document.createElement("td");
+            if (key === "Grade" || key === "Adivisor") {
+                // Grade와 Advisor는 빈 문자열로 설정
+                cell.textContent = "";
+            } else if (key === "Drop") {
+              // Drop 버튼 추가
+              var dropButton = document.createElement("button");
+              dropButton.textContent = "Drop";
+              dropButton.addEventListener("click", function () {
+                  // 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
+                  // 이 부분은 실제 동작에 맞게 수정이 필요합니다.
+                  console.log("Drop button clicked for course_code", course["course_code"]);
+                  // 예시로 해당 행 삭제
+                  row.remove();
+                  selectedCoursesCount -= 1;
+
+              });
+              cell.appendChild(dropButton);
+          } else {
+                // 나머지 키에 대해 course 객체의 속성값을 사용
+                cell.textContent = course[key.toLowerCase()] || "";
+            }
+            row.appendChild(cell);
+        });
+    
+        selectedCoursesTableBody.appendChild(row);
+    }
+    
+    function checkTimeTableConflict(course) {
+      // 시간표가 겹치는지 체크하는 함수
+      var selectedCoursesTableBody = document.getElementById("selectedCoursesTableBody");
+      var timeTable = course["course_time"];
+  
+      // 선택한 과목들을 순회하며 시간표가 겹치는지 체크
+      for (var i = 0; i < selectedCoursesTableBody.rows.length; i++) {
+          var selectedCourseTime = selectedCoursesTableBody.rows[i].cells[2].textContent; // 2번째 열이 course_time
+  
+          // 시간표가 겹치면 true 반환
+          if (isTimeTableConflict(timeTable, selectedCourseTime)) {
+              return true;
+          }
+      }
+
+      return false;
+    }
+  
+    function isTimeTableConflict(timeTable, selectedCourseTime) {
+      const timeRanges1 = timeTable.split(" ");
+      const timeRanges2 = selectedCourseTime.split(" ");
+    
+      for (const range1 of timeRanges1) {
+        for (const range2 of timeRanges2) {
+          const [day1, time1] = range1.split(" ");
+          const [day2, time2] = range2.split(" ");
+    
+          if (day1 === day2) {
+            if (isTimeOverlap(time1, time2)) {
+              return true;
+            }
+          }
+        }
+      }
+    
+      return false;  // 겹치지 않는 경우
+    }
+    
+    function isTimeOverlap(time1, time2) {
+      const [startHour1, startMinute1, endHour1, endMinute1] = getTimeValues(time1);
+      const [startHour2, startMinute2, endHour2, endMinute2] = getTimeValues(time2);
+    
+      const start1 = startHour1 * 60 + startMinute1;
+      const end1 = endHour1 * 60 + endMinute1;
+      const start2 = startHour2 * 60 + startMinute2;
+      const end2 = endHour2 * 60 + endMinute2;
+    
+      // 겹치는 경우: 끝나는 시간이 시작 시간보다 이전이거나, 시작 시간이 끝나는 시간보다 이후인 경우
+      return !(end1 < start2 || end2 < start1);
+    }
+    
+    
+    
   </script>
   </body>
 </html>
