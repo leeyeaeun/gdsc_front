@@ -8,7 +8,8 @@
     "instructor": "Shin, Hyeon Jin",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "SE2101",
@@ -19,6 +20,7 @@
     "instructor": "Dong-Seon Lee",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   }
 ]

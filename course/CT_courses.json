@@ -8,7 +8,8 @@
     "instructor": "Lee, Yong-Ju",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT2544",
@@ -19,7 +20,8 @@
     "instructor": "Yoon, Pilsang",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT2661",
@@ -30,7 +32,8 @@
     "instructor": "Won, Chiwook",
     "course_credit": "3",
     "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT2832",
@@ -41,7 +44,8 @@
     "instructor": "Dae-Cheong Ha",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT4201",
@@ -52,7 +56,8 @@
     "instructor": "Moon, Bochang",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT4202",
@@ -63,7 +68,8 @@
     "instructor": "Eunsung Song",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT4203",
@@ -74,7 +80,8 @@
     "instructor": "Eunsung Song",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT4302",
@@ -85,7 +92,8 @@
     "instructor": "JinHyuk Hong",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "15"
+    "class_size": "15",
+    "grading": "Letter"
   },
   {
     "subject_code": "CT4305",
@@ -96,6 +104,7 @@
     "instructor": "Eunsung Song",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   }
 ]

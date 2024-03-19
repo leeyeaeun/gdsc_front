@@ -8,7 +8,8 @@
     "instructor": "Chanyong Park",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nMON 19:00~20:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS2102",
@@ -19,7 +20,8 @@
     "instructor": "Suk, Hyyong",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 19:00~20:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS2201",
@@ -30,7 +32,8 @@
     "instructor": "Bongjin Simon Mun",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS3103",
@@ -41,7 +44,8 @@
     "instructor": "Hyun Seok Yang",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTUE 19:00~20:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS3202",
@@ -52,7 +56,8 @@
     "instructor": "Song, Jong-In",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS3205",
@@ -63,7 +68,8 @@
     "instructor": "Nam, Chang Hee",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS3206",
@@ -74,7 +80,8 @@
     "instructor": "Chanyong Park",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS4204",
@@ -85,7 +92,8 @@
     "instructor": "Do-Kyeong Ko[01168]\nJang, Jee Seung",
     "course_credit": "3",
     "course_time": "FRI 13:00~18:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS4206",
@@ -96,7 +104,8 @@
     "instructor": "Hyun Seok Yang",
     "course_credit": "3",
     "course_time": "TUE 16:00~17:30\nTHU 16:00~17:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS4207",
@@ -107,7 +116,8 @@
     "instructor": "Doh, Yong-Joo",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS4217",
@@ -118,7 +128,8 @@
     "instructor": "Sang Yun Lee",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS4219",
@@ -129,7 +140,8 @@
     "instructor": "Kim, Dong-Hee",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "PS9101",
@@ -140,7 +152,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "PS9102",
@@ -151,7 +164,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "PS9103",
@@ -162,7 +176,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "PS9301",
@@ -173,6 +188,7 @@
     "instructor": "Yu, Unjong",
     "course_credit": "1",
     "course_time": "THU 17:30~18:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]

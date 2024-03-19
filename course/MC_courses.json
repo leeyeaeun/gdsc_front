@@ -8,7 +8,8 @@
     "instructor": "Lee, Seunghyun",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC2101",
@@ -19,7 +20,8 @@
     "instructor": "Minkyung Kim",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC2201",
@@ -30,7 +32,8 @@
     "instructor": "Arshad Afzal",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC2203",
@@ -41,7 +44,8 @@
     "instructor": "Arshad Afzal",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3106",
@@ -52,7 +56,8 @@
     "instructor": "Jinsoo Kim[63230]\nOh Hyunseok",
     "course_credit": "3",
     "course_time": "TUE 13:00~18:00",
-    "class_size": "12"
+    "class_size": "12",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3106",
@@ -63,7 +68,8 @@
     "instructor": "Jinsoo Kim[63230]\nOh Hyunseok",
     "course_credit": "3",
     "course_time": "FRI 13:00~18:00",
-    "class_size": "12"
+    "class_size": "12",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3201",
@@ -74,7 +80,8 @@
     "instructor": "Seol, Jae Hun",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3204",
@@ -85,7 +92,8 @@
     "instructor": "Ko, Kwang Hee",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3205",
@@ -96,7 +104,8 @@
     "instructor": "Kyunghwan Choi",
     "course_credit": "3",
     "course_time": "MON 16:00~18:00\nWED 16:00~18:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3206",
@@ -107,7 +116,8 @@
     "instructor": "Hanwool Yeon",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC3215",
@@ -118,7 +128,8 @@
     "instructor": "Pilwon Hur",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4202",
@@ -129,7 +140,8 @@
     "instructor": "Oh Hyunseok",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4205",
@@ -140,7 +152,8 @@
     "instructor": "Lee, Sun Kyu",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4210",
@@ -151,7 +164,8 @@
     "instructor": "Seongim Choi",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4215",
@@ -162,7 +176,8 @@
     "instructor": "Park, Kyi Hwan",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4224",
@@ -173,7 +188,8 @@
     "instructor": "Yang, Sung",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4228",
@@ -184,7 +200,8 @@
     "instructor": "Chung Kyung Ryul",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4235",
@@ -195,7 +212,8 @@
     "instructor": "Ray-Sing Lin",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4236",
@@ -206,7 +224,8 @@
     "instructor": "Kang, Jiyeon",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "14"
+    "class_size": "14",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC4237",
@@ -217,7 +236,8 @@
     "instructor": "Kim, Pyojin",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "MC9102",
@@ -228,7 +248,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "MC9103",
@@ -239,6 +260,7 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]

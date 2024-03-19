@@ -8,7 +8,8 @@
     "instructor": "Lim, Hyunseob",
     "course_credit": "3",
     "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH2102",
@@ -19,7 +20,8 @@
     "instructor": "HyunWoo Kim",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH2103",
@@ -30,7 +32,8 @@
     "instructor": "Seo, Jiwon",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH2301",
@@ -41,7 +44,8 @@
     "instructor": "HyunWoo Kim[64144]\nPang, Yoonsoo",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "CH2401",
@@ -52,7 +56,8 @@
     "instructor": "Kim, Jung Wook[62297]\nJeongEun Park[64143]\nPark,Chin Ju[60957]\nPang, Yoonsoo[61199]\nJunhyeok Seo[62856]\nSeo, Jiwon[60955]\nAhn, Jin Hee[62296]\nLee, Kang Taek[61665]\nLim, Hyunseob[63380]\nChung, Won-jin[61972]\nHan, Min Su[62071]\nHong, Sukwon",
     "course_credit": "1",
     "course_time": "FRI 20:00~23:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "CH3104",
@@ -63,7 +68,8 @@
     "instructor": "HyunWoo Kim",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3106",
@@ -74,7 +80,8 @@
     "instructor": "Park,Chin Ju",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3107",
@@ -85,7 +92,8 @@
     "instructor": "JeongEun Park",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3111",
@@ -96,7 +104,8 @@
     "instructor": "Li, Jiaojie",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3207",
@@ -107,7 +116,8 @@
     "instructor": "Pang, Yoonsoo[61199]\nLim, Hyunseob[63380]\nHAM, HYEJIN",
     "course_credit": "3",
     "course_time": "MON 17:30~18:30\nTUE 13:00~17:00\nWED 17:30~18:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3207",
@@ -118,7 +128,8 @@
     "instructor": "Pang, Yoonsoo[61199]\nLim, Hyunseob[63380]\nHAM, HYEJIN",
     "course_credit": "3",
     "course_time": "MON 17:30~18:30\nWED 17:30~18:30\nFRI 13:00~17:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3208",
@@ -129,7 +140,8 @@
     "instructor": "JeongEun Park",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH3401",
@@ -140,7 +152,8 @@
     "instructor": "Kim, Jung Wook[62297]\nHyunWoo Kim[64144]\nJeongEun Park[64143]\nPark,Chin Ju[60957]\nPang, Yoonsoo[61199]\nJunhyeok Seo[62856]\nSeo, Jiwon[60955]\nAhn, Jin Hee[62296]\nLee, Kang Taek[61665]\nLim, Hyunseob[63380]\nChung, Won-jin[61972]\nHan, Min Su[62071]\nHong, Sukwon",
     "course_credit": "1",
     "course_time": "FRI 20:00~23:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "CH4212",
@@ -151,7 +164,8 @@
     "instructor": "Jun-Ho Choi",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH4216",
@@ -162,7 +176,8 @@
     "instructor": "Chung, Won-jin",
     "course_credit": "3",
     "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "CH9101",
@@ -173,7 +188,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "CH9102",
@@ -184,7 +200,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "CH9103",
@@ -195,6 +212,7 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]

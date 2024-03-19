@@ -8,7 +8,8 @@
     "instructor": "Song, Young Min",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC2201",
@@ -19,7 +20,8 @@
     "instructor": "Park, Chang-Soo",
     "course_credit": "3",
     "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
-    "class_size": "25"
+    "class_size": "25",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC2202",
@@ -30,7 +32,8 @@
     "instructor": "Hojung Nam",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC2202",
@@ -41,7 +44,8 @@
     "instructor": "Uehwan Kim",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC2203",
@@ -52,7 +56,8 @@
     "instructor": "d'Auriol Brian Joseph",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC2203",
@@ -63,7 +68,8 @@
     "instructor": "d'Auriol Brian Joseph",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3102",
@@ -74,7 +80,8 @@
     "instructor": "Kim Byoung Don[61433]\nSuman Pandey",
     "course_credit": "4",
     "course_time": "TUE 09:00~10:00\nTUE 13:00~17:00\nTHU 09:00~10:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3102",
@@ -85,7 +92,8 @@
     "instructor": "Kim Byoung Don[61433]\nSuman Pandey",
     "course_credit": "4",
     "course_time": "TUE 09:00~10:00\nTHU 09:00~10:00\nTHU 13:00~17:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3102",
@@ -96,7 +104,8 @@
     "instructor": "Kim Byoung Don[61433]\nSuman Pandey",
     "course_credit": "4",
     "course_time": "MON 09:00~10:00\nWED 09:00~10:00\nWED 13:00~17:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3102",
@@ -107,7 +116,8 @@
     "instructor": "Kim Byoung Don[61433]\nSuman Pandey",
     "course_credit": "4",
     "course_time": "MON 09:00~10:00\nWED 09:00~10:00\nFRI 13:00~17:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3202",
@@ -118,7 +128,8 @@
     "instructor": "Kim, mansu",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3207",
@@ -129,7 +140,8 @@
     "instructor": "Song, Jong-In",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3214",
@@ -140,7 +152,8 @@
     "instructor": "Kyunghwan Choi",
     "course_credit": "3",
     "course_time": "MON 16:00~18:00\nWED 16:00~18:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3216",
@@ -151,7 +164,8 @@
     "instructor": "Ahn Chang Wook",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3220",
@@ -162,7 +176,8 @@
     "instructor": "Park, Yongsoon",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "10"
+    "class_size": "10",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC3221",
@@ -173,7 +188,8 @@
     "instructor": "Dong-Seon Lee",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4205",
@@ -184,7 +200,8 @@
     "instructor": "Park, Gunhyuk",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4209",
@@ -195,7 +212,8 @@
     "instructor": "Jeon, Moon-Gu",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4210",
@@ -206,7 +224,8 @@
     "instructor": "Hwang, Eui Seok",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "80"
+    "class_size": "80",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4211",
@@ -217,7 +236,8 @@
     "instructor": "Shin, Jong Won",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4212",
@@ -228,7 +248,8 @@
     "instructor": "Jun, Sung Chan",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "60"
+    "class_size": "60",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4213",
@@ -239,7 +260,8 @@
     "instructor": "Jeany Son",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "60"
+    "class_size": "60",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4215",
@@ -250,7 +272,8 @@
     "instructor": "Moon, Bochang",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4219",
@@ -261,7 +284,8 @@
     "instructor": "So, Sunbeom",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4301",
@@ -272,7 +296,8 @@
     "instructor": "Hong, Sung-Min",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4304",
@@ -283,7 +308,8 @@
     "instructor": "Rim, Chun Taek",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "24"
+    "class_size": "24",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4309",
@@ -294,7 +320,8 @@
     "instructor": "Yi, il min",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "10"
+    "class_size": "10",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC4311",
@@ -305,7 +332,8 @@
     "instructor": "Jho, Young-Dahl",
     "course_credit": "3",
     "course_time": "ALL 00:00~00:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "EC9101",
@@ -316,7 +344,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "EC9102",
@@ -327,7 +356,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "EC9103",
@@ -338,6 +368,7 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]

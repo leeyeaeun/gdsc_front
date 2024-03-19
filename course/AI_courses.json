@@ -8,7 +8,8 @@
     "instructor": "Kim, mansu",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4005",
@@ -19,7 +20,8 @@
     "instructor": "Kim, Sundong",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4011",
@@ -30,7 +32,8 @@
     "instructor": "Ahn Chang Wook",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4012",
@@ -41,7 +44,8 @@
     "instructor": "Jun, Sung Chan",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "60"
+    "class_size": "60",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4014",
@@ -52,7 +56,8 @@
     "instructor": "Hwang, Eui Seok",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "80"
+    "class_size": "80",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4020",
@@ -63,7 +68,8 @@
     "instructor": "Jeon, Moon-Gu",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4021",
@@ -74,7 +80,8 @@
     "instructor": "Jeany Son",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "60"
+    "class_size": "60",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4028",
@@ -85,7 +92,8 @@
     "instructor": "Duk-Jo Kong",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "S/U"
   },
   {
     "subject_code": "AI4050",
@@ -96,7 +104,8 @@
     "instructor": "So, Sunbeom",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "50"
+    "class_size": "50",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4311",
@@ -107,7 +116,8 @@
     "instructor": "Kyoobin Lee",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "45"
+    "class_size": "45",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4312",
@@ -118,7 +128,8 @@
     "instructor": "JinHyuk Hong",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "15"
+    "class_size": "15",
+    "grading": "Letter"
   },
   {
     "subject_code": "AI4701",
@@ -129,6 +140,7 @@
     "instructor": "Park, Do Hyun",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   }
 ]

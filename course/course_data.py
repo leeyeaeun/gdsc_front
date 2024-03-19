@@ -1,7 +1,7 @@
 import json
 
 # Load data from the JSON file
-with open("course_data.json", "r", encoding="utf-8") as file:
+with open("course_regi\course\course_data.json", "r", encoding="utf-8") as file:
     courses = json.load(file)
 
 category_courses = {

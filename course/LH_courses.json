@@ -8,7 +8,8 @@
     "instructor": "Cha Mi Ryeong",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2507",
@@ -19,7 +20,8 @@
     "instructor": "Soo-jong Lee",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2512",
@@ -30,7 +32,8 @@
     "instructor": "Cha Mi Ryeong",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2522",
@@ -41,7 +44,8 @@
     "instructor": "Lee, Siyeon",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2526",
@@ -52,7 +56,8 @@
     "instructor": "Lee, Siyeon",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2602",
@@ -63,7 +68,8 @@
     "instructor": "JeanHae Shin",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "25"
+    "class_size": "25",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH2612",
@@ -74,7 +80,8 @@
     "instructor": "Donghyuk Kim",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "30"
+    "class_size": "30",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH3501",
@@ -85,7 +92,8 @@
     "instructor": "Soo-jong Lee",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH3504",
@@ -96,7 +104,8 @@
     "instructor": "Cha Mi Ryeong",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH3602",
@@ -107,7 +116,8 @@
     "instructor": "JeanHae Shin",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "25"
+    "class_size": "25",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH3605",
@@ -118,7 +128,8 @@
     "instructor": "JeanHae Shin",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "25"
+    "class_size": "25",
+    "grading": "Letter"
   },
   {
     "subject_code": "LH3802",
@@ -129,6 +140,7 @@
     "instructor": "Lee, Siyeon",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "20"
+    "class_size": "20",
+    "grading": "Letter"
   }
 ]

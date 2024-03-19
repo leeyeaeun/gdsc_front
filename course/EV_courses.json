@@ -8,7 +8,8 @@
     "instructor": "Lim, Hyunseob",
     "course_credit": "3",
     "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV2211",
@@ -19,7 +20,8 @@
     "instructor": "Yoon, Jin-Ho",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV2213",
@@ -30,7 +32,8 @@
     "instructor": "Seo, Jiwon",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV2214",
@@ -41,7 +44,8 @@
     "instructor": "Park, Youngjune",
     "course_credit": "1",
     "course_time": "TUE 13:00~14:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "EV3101",
@@ -52,7 +56,8 @@
     "instructor": "Changwoo Kim[64047]\nPark, Youngjune[62059]\nJoo Jong Hoon",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV3217",
@@ -63,7 +68,8 @@
     "instructor": "Park, Daeho",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV3223",
@@ -74,7 +80,8 @@
     "instructor": "Park,Chin Ju",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "40"
+    "class_size": "40",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4107",
@@ -85,7 +92,8 @@
     "instructor": "KANG, SUNGBONG[63235]\nShin,In Hwan",
     "course_credit": "3",
     "course_time": "FRI 13:00~17:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4202",
@@ -96,7 +104,8 @@
     "instructor": "Han, Seunghee",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4216",
@@ -107,7 +116,8 @@
     "instructor": "Suthipong Sthiannopkao",
     "course_credit": "3",
     "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
-    "class_size": "23"
+    "class_size": "23",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4226",
@@ -118,7 +128,8 @@
     "instructor": "Suthipong Sthiannopkao",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4227",
@@ -129,7 +140,8 @@
     "instructor": "Park, Youngjune",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4229",
@@ -140,7 +152,8 @@
     "instructor": "Lee, Jaeyoung",
     "course_credit": "3",
     "course_time": "WED 16:00~19:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4231",
@@ -151,7 +164,8 @@
     "instructor": "Kim, In Soo",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4233",
@@ -162,7 +176,8 @@
     "instructor": "Joo Jong Hoon",
     "course_credit": "3",
     "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4234",
@@ -173,7 +188,8 @@
     "instructor": "Huijeong Hwang",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV4239",
@@ -184,7 +200,8 @@
     "instructor": "Kim, hyunglok",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "EV9101",
@@ -195,7 +212,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "EV9102",
@@ -206,7 +224,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "EV9103",
@@ -217,6 +236,7 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]

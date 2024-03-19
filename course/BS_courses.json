@@ -8,7 +8,8 @@
     "instructor": "Seo, Jiwon",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS2102",
@@ -19,7 +20,8 @@
     "instructor": "Kim, Young-Joon[60665]\nWilliams, Darren[60775]\nCho, Chunghee",
     "course_credit": "3",
     "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS2203",
@@ -30,7 +32,8 @@
     "instructor": "Cho, Chunghee[01156]\nJin,Suk Won",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS2206",
@@ -41,7 +44,8 @@
     "instructor": "Eom, Soo Hyun",
     "course_credit": "2",
     "course_time": "THU 10:00~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS3105",
@@ -52,7 +56,8 @@
     "instructor": "Jun, Youngsoo[60799]\nJun, Chang-Duk[60186]\nJinwook Choi",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS3112",
@@ -63,7 +68,8 @@
     "instructor": "Kim, Joon-Young[61444]\nNam, Jeong-Seok[62330]\nJin,Suk Won",
     "course_credit": "3",
     "course_time": "TUE 13:00~18:00",
-    "class_size": "10"
+    "class_size": "10",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS3112",
@@ -74,7 +80,8 @@
     "instructor": "Kim, Joon-Young[61444]\nNam, Jeong-Seok[62330]\nJin,Suk Won",
     "course_credit": "3",
     "course_time": "FRI 13:00~18:00",
-    "class_size": "10"
+    "class_size": "10",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS3201",
@@ -85,7 +92,8 @@
     "instructor": "Park, Daeho",
     "course_credit": "3",
     "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4206",
@@ -96,7 +104,8 @@
     "instructor": "Yong Chul Kim",
     "course_credit": "3",
     "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4213",
@@ -107,7 +116,8 @@
     "instructor": "Song, Woo Keun",
     "course_credit": "3",
     "course_time": "MON 19:00~22:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4218",
@@ -118,7 +128,8 @@
     "instructor": "Shen, Haihong",
     "course_credit": "3",
     "course_time": "MON 15:30~18:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4219",
@@ -129,7 +140,8 @@
     "instructor": "Williams, Darren",
     "course_credit": "3",
     "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4223",
@@ -140,7 +152,8 @@
     "instructor": "yun hyun huh",
     "course_credit": "3",
     "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS4224",
@@ -151,7 +164,8 @@
     "instructor": "Kim, Young-Joon[60665]\nSong, Mi-Ryoung",
     "course_credit": "3",
     "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "Letter"
   },
   {
     "subject_code": "BS9102",
@@ -162,7 +176,8 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   },
   {
     "subject_code": "BS9103",
@@ -173,6 +188,7 @@
     "instructor": "",
     "course_credit": "3",
     "course_time": "",
-    "class_size": "0"
+    "class_size": "0",
+    "grading": "S/U"
   }
 ]
