@@ -194,7 +194,15 @@
       position: relative;
       top: 20px;
     }
+    .timetable_tr{
+      height:23px;
+      border-collapse: collapse;
+      border-right: 1px solid #bdbdbd;
 
+    }
+    .timetable_tr:last-child td {
+      border-bottom: none; /* 마지막 행의 셀의 아래 테두리를 제거합니다. */
+  }
   </style>
   </head>
   <body>
@@ -405,9 +413,13 @@
                 </div>
               </div>
             </div>
-            <div class="display-tb-cell" style="position: absolute; left:1200px; top:160px;
-            white-space:nowrap">C(비워두기)
-            
+            <div class="display-tb-cell" style="position: absolute; left:1150px; 
+            top:140px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight:bold;
+            font-size:10pt;
+            white-space:nowrap">
+            <div > <img src="./img/stc_bu02.png" alt=""> Timetable </div>
+            <div style="position: absolute; left:210px; top:0px;"><button style ="width:65px;">Print</button></div>
+          </div>
             </div>
           </div>
         </div>
@@ -924,26 +936,45 @@
         
       </div>    
         </div>
-        <div class="display-tb-cell" style="position: absolute; left:1200px; top:200px;
-        white-space:nowrap"> b  
-          <table id="Timetable">
-            <tr>
-              <th>Time</th>
-              <th>MON</th>
-              <th>TUE</th>
-              <th>WED</th>
-              <th>THU</th>
-              <th>FRI</th>
-            </tr>
-            <tr>
+        <div class="display-tb-cell" style="position: absolute; left:1150px;
+        border:1px solid rgba(139, 139, 139, 0.652);
+        top:170px;
+        height:600px;
+        width:280px;
+        overflow: auto;
+        border-top:red;
+        white-space:nowrap"> 
+          <table id="Timetable" 
+          style= "border-radius: 0px;
+          cursor: default;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          overflow-x : auto;
+          width:280px;
+          font-size:9pt;
+          " >
+          <tr style="background-color: rgb(241, 241, 241); height:24px;width:40px;">
+          <div style=" border-top: 2px solid rgb(231, 48, 48);
+           border-bottom: 1px solid rgb(240, 240, 240);
+           width:280px;
+           ">
+            <th>Time</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+          </div>
+          </tr>
+          <div >
+            <tr class= "timetable_tr"style="font-size: 9pt; ">
               <td>09:00</td>
-              <td></td>
+              <td style="border-bottom:red;"></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>09:30</td>
               <td></td>
               <td></td>
@@ -951,7 +982,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;">
               <td>10:00</td>
               <td></td>
               <td></td>
@@ -959,7 +990,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr  class="timetable_tr" style="font-size: 9pt;">
               <td>10:30</td>
               <td></td>
               <td></td>
@@ -967,7 +998,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr  class="timetable_tr" style="font-size: 9pt;">
               <td>11:00</td>
               <td></td>
               <td></td>
@@ -975,7 +1006,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>11:30</td>
               <td></td>
               <td></td>
@@ -983,7 +1014,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;"> 
               <td>12:00</td>
               <td></td>
               <td></td>
@@ -991,7 +1022,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr"style="font-size: 9pt;">
               <td>12:30</td>
               <td></td>
               <td></td>
@@ -999,7 +1030,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr"style="font-size: 9pt;">
               <td>13:00</td>
               <td></td>
               <td></td>
@@ -1007,7 +1038,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>13:30</td>
               <td></td>
               <td></td>
@@ -1015,7 +1046,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>14:00</td>
               <td></td>
               <td></td>
@@ -1023,7 +1054,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;">
               <td>14:30</td>
               <td></td>
               <td></td>
@@ -1031,7 +1062,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>15:00</td>
               <td></td>
               <td></td>
@@ -1039,7 +1070,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>15:30</td>
               <td></td>
               <td></td>
@@ -1047,7 +1078,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>16:00</td>
               <td></td>
               <td></td>
@@ -1055,7 +1086,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>16:30</td>
               <td></td>
               <td></td>
@@ -1063,7 +1094,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>17:00</td>
               <td></td>
               <td></td>
@@ -1071,7 +1102,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>17:30</td>
               <td></td>
               <td></td>
@@ -1079,7 +1110,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>18:00</td>
               <td></td>
               <td></td>
@@ -1087,7 +1118,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>18:30</td>
               <td></td>
               <td></td>
@@ -1095,7 +1126,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>19:00</td>
               <td></td>
               <td></td>
@@ -1103,7 +1134,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>19:30</td>
               <td></td>
               <td></td>
@@ -1111,7 +1142,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>20:00</td>
               <td></td>
               <td></td>
@@ -1119,7 +1150,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>20:30</td>
               <td></td>
               <td></td>
@@ -1127,7 +1158,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>21:00</td>
               <td></td>
               <td></td>
@@ -1135,7 +1166,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>21:30</td>
               <td></td>
               <td></td>
@@ -1143,7 +1174,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr   class="timetable_tr"style="font-size: 9pt;">
               <td>22:00</td>
               <td></td>
               <td></td>
@@ -1151,7 +1182,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>22:30</td>
               <td></td>
               <td></td>
@@ -1159,7 +1190,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>07:00</td>
               <td></td>
               <td></td>
@@ -1167,7 +1198,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>07:30</td>
               <td></td>
               <td></td>
@@ -1175,7 +1206,7 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>08:00</td>
               <td></td>
               <td></td>
@@ -1183,14 +1214,14 @@
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>08:30</td><td></td>
               <td></td>
               <td></td>
               <td></td>
               <td></td>
             </tr>
-            <tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
               <td>00:00</td>
               <td></td>
               <td></td>
@@ -1198,6 +1229,8 @@
               <td></td>
               <td></td>
             </tr>
+          </div>
+           
           </table>
         </div>
     </div>
