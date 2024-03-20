@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>registration_page2</title>
+    <title>Document</title>
     <style>
       * {
         box-sizing: border-box;
         margin: 0;
         font-family: Georgia, "Times New Roman", Times, serif;
-
       }
       html {
         scroll-behavior: smooth;
-
       }
       html,
       body {
@@ -121,15 +119,91 @@
       th,
       td {
         border: 1px solid rgb(218, 218, 218); /* 회색 경계 */
-        text-align: left;
+        text-align: center;
         border-left: none;
-        border-right: 2px solid rgb(214, 214, 214);
+        border-right: 1px solid rgb(214, 214, 214);
         white-space: nowrap;
         height: 10px;
         padding-left: 5px;
-        position:static
+        position: static;
+        overflow:hidden;
+        
       }
-    </style>
+
+      .tooltip {
+        position: fixed;
+        padding: 8px 10px;
+        border: 1px solid #171717;
+        border-radius: 2px;
+        text-align: center;
+        font: 12px/1.3 ariel;
+        color: #333;
+        background: #fff;
+      
+      }
+
+    .custom-button:hover .tooltip {
+        display: block;
+    }
+
+      .main-tr{
+        height: 10px;
+      }
+      .button-container {
+        position: relative;
+        display: inline-block;
+        
+      }
+      .sticky-header th {
+        position: sticky;
+        top: 0;
+        background-color: #f1f1f1; /* 고정 헤더의 배경색 설정 */
+        z-index: 100; /* 다른 콘텐츠 위에 표시되도록 z-index 설정 */
+      } 
+      .custom-button {
+        position: absolute;
+        text-align: left;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        height: 25px;
+        width: 204px;
+        background: none;
+        border: none;
+        white-space: nowrap;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 0; /* 내부 간격을 제거합니다. */
+        margin: 0; /* 외부 여백을 제거합니다. */
+      }
+      .scrollable-cell {
+        overflow:auto;
+    }
+
+    .scrollable-content {
+        white-space: normal;
+        overflow-x :auto;
+        overflow-y: hidden;
+        max-width: 100%;
+        max-height: 25px;
+    }
+    .scroll-container {
+      width: 820px;
+      overflow-x: auto;
+      height: 400px;
+      position: relative;
+      top: 20px;
+    }
+    .timetable_tr{
+      height:23px;
+      border-collapse: collapse;
+      border-right: 1px solid #bdbdbd;
+
+    }
+    .timetable_tr:last-child td {
+      border-bottom: none; /* 마지막 행의 셀의 아래 테두리를 제거합니다. */
+  }
+  </style>
   </head>
   <body>
     <header class="header">
@@ -202,7 +276,6 @@
           left: 13px;
           font-size: 10pt;
           margin: 0;
-          font-weight: bold;
           font: 9pt NanumGothic;
         "
       >
@@ -215,7 +288,7 @@
       style="
         font-size: 9pt;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        margin-left: 15px;
+        margin-left: 17px;
         text-overflow: ellipsis;
         white-space: nowrap;
       "
@@ -225,13 +298,11 @@
       given for the next semester (But this rule is not effective for the last
       semester before graduation)
     </p>
-    <div
-      class="display-table"
-      style="margin-left: 5px; margin-top: 5px; position: absolute"
-    >
+
+    <div class="display-table" style="overflow-x: auto;">
       <div class="display-tb-header">
         <div class="display-tb-row">
-          <div class="display-tb-cell" style="width: 280px; position:absolute">
+          <div class="display-tb-cell" style="width: 280px; position: absolute">
             <button
               style="
                 font-family: Georgia, 'Times New Roman', Times, serif;
@@ -254,179 +325,1195 @@
                 );
                 background-repeat: no-repeat;
                 cursor: pointer;
-                margin-left: 10px;
+                margin-left: 15px;
+                margin-top: 10px;
               "
             >
               Home
             </button>
           </div>
           <div class="display-tb-cell">
-            <label for="courseSearch">Course No/Title</label>
-            <input type="text" name="" id="courseSearch" />
             <div
-              id="search"
               style="
-                user-select: none;
+                font-size: 9pt;
                 position: absolute;
-                overflow: hidden;
-                top: 0px;
-                width: 82px;
-                left: 275px;
-                height: 21px;
-                border-radius: 0px;
-                margin: 10px;
-                border: 1px solid rgb(125, 130, 139);
-                background-color: rgb(240, 248, 255);
-                background-image: url('./img/btnSearch2.png');
-                background-repeat: no-repeat;
-                background-position: 10% 50%;
-                cursor: pointer;
-                direction: inherit;
+                padding: 10px;
+                left: 270px;
               "
             >
-            <div>
-              <p
-                style="
-                  position: absolute;
-                  width: 72px;
-                  height: 18px;
-                  top: 2px;
-                  left: 2px;
-                  font: bold 9pt Georgia;
-                  color: rgb(33, 33, 33);
-                  text-align: center;
-                  vertical-align: middle;
-                  padding: 0px;
-                  margin-left: 6px;
-                "
-              >
-                Search
-              </p>
-              <div>
-                <button
+              <div style="flex: row; white-space: nowrap; margin-left: 10px">
+                <label
+                  for="courseSearch"
+                  style="margin: 10px; white-space: nowrap"
+                  >Course No/Title</label
+                >
+                <input type="text" name="" id="courseSearch" />
+                <div
+                  id="search"
                   style="
+                    user-select: none;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 0px;
                     width: 82px;
-                    height: 18px;
-                    background: transparent;
-                    border: transparent;
+                    left: 275px;
+                    height: 21px;
+                    border-radius: 0px;
+                    margin: 10px;
+                    border: 1px solid rgb(125, 130, 139);
+                    background-color: rgb(240, 248, 255);
+                    background-image: url('./img/btnSearch2.png');
+                    background-repeat: no-repeat;
+                    background-position: 10% 50%;
+                    cursor: pointer;
+                    direction: inherit;
+                    margin-left: 20px;
                   "
-                ></button>
-              <div style="left: 390px; color:red; position:absolute; white-space:nowrap; top:15px">
-                  ※ Course Type:  M(Mandatory),  E(Elective)  R(Reseach)</div> 
-              </div>
-              <div  style="flex-direction: row; user-select: none; position: absolute; overflow: hidden; left: 25px;
-                top: 35px; width: 171px; height: 20px; border-radius: 0px; 
-                background-color: transparent; 
-                background-image: url(./img/stc_bu02.png); background-repeat: no-repeat; 
-                background-position: 0% 50%; cursor: default; direction: inherit; 
-                border: none;" tabindex="-1">
-                <div style="user-select: none; position: absolute; overflow: hidden; 
-                left: 17px; top: 0px; width: 154px; height: 20px;">
-                <div style="position: absolute; overflow: hidden; left: 0px; top: 0px; width: 154px; 
-                height: 20px; user-select: none;">
-                <div style="display: table-cell; white-space: pre; 
-                width: 154px; height: 20px; font: bold 9pt Georgia; color: rgb(34, 34, 34); 
-                text-align: left; vertical-align: middle; text-overflow: 
-                ellipsis;">Information on course</div>
+                >
+                  <div>
+                    <p
+                      style="
+                        position: absolute;
+                        width: 72px;
+                        height: 18px;
+                        top: 2px;
+                        left: 2px;
+                        font: bold 9pt Georgia;
+                        color: rgb(33, 33, 33);
+                        text-align: center;
+                        vertical-align: middle;
+                        padding: 0px;
+                        margin-left: 10px;
+                      "
+                    >
+                      Search
+                    </p>
+                    <div>
+                      <button
+                        style="
+                          width: 82px;
+                          height: 18px;
+                          background: transparent;
+                          border: transparent;
+                        "
+                      ></button>
+                    </div>
+                  </div>
                 </div>
+                <div
+                  style="
+                    left: 390px;
+                    color: red;
+                    position: absolute;
+                    white-space: nowrap;
+                    top: 15px;
+                  "
+                >
+                  ※ Course Type: M(Mandatory), E(Elective) R(Reseach)
                 </div>
-              </div>
-              <div style="display: flex; flex-direction:row; "></div>
               </div>
             </div>
+            <div class="display-tb-cell" style="position: absolute; left:1150px; 
+            top:140px; font-family: Georgia, 'Times New Roman', Times, serif; font-weight:bold;
+            font-size:10pt;
+            white-space:nowrap">
+            <div > <img src="./img/stc_bu02.png" alt=""> Timetable </div>
+            <div style="position: absolute; left:210px; top:0px;"><button style ="width:65px;">Print</button></div>
           </div>
-          <div class="display-tb-cell">C 시간표</div>
+            </div>
           </div>
-        <div class="display-tb-row">
-          <div class="display-tb-cell">
-            <table
+        </div>
+        <div class="display-tb-body" style="overflow-x: auto; max-width:280px;">
+          <div class="display-tb-row">
+            <div class="display-tb-cell" >
+              <table
+                style="
+                  width:100%;
+                  position: absolute;
+                  margin-top: 110px;
+                  left: 10px;
+                  top: 30px;
+                  width: 280px;
+                  height: 626px;
+                  border-radius: 0px;
+                  border-top: 1px solid rgb(231, 48, 48);
+                  border-bottom: 1px solid rgb(240, 240, 240);
+                  background-color: transparent;
+                  cursor: default;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  font-size: 9pt;
+                  overflow-x : auto;
+                "
+              >
+                <tr>
+                  <th
+                    style="
+                      padding-left: 25px;
+                      border-top: 2px solid rgb(231, 48, 48);
+                      text-align: left;
+                    "
+                  > 
+                    <img 
+                      width="10px"
+                      src="img/minus.png" />&nbsp;
+                    GIST College
+                  </th>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 43px;
+                      text-align: left;
+                    "
+                  >
+                    <img 
+                      width="9px"
+                      src="img/plus.png" />&nbsp;
+                    School/Department</td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 43px;
+                      text-align: left;
+                    "
+                  >
+                    <img 
+                      width="9px"
+                      src="img/minus1.png" />&nbsp;
+                    Division/Concentration</td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                      overflow:hidden;
+                    "
+                  >
+                  <div class="button-container" >
+                    <button data-tooltip="반도체공학과" class="custom-button"  onclick="showCourses('SE')">Department of Semiconductor Engineering
+                    </button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />
+                    </td>
+                  </div>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="기초교육학부" class="custom-button" onclick="showCourses('GS')"> Division of Liberal Arts and Sciences</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="대학 공통" class="custom-button" onclick="showCourses('UC')">  GIST College (Common)</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="수학 부전공" class="custom-button" onclick="showCourses('MM')">  Mathematics Minor</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+        
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="에너지 부전공"class="custom-button"onclick="showCourses('FE')" > Energy Minor</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="의생명공학" class="custom-button" onclick="showCourses('MD')">  Biomedical Science and Engineering</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="기술문화부전공" class="custom-button" onclick="showCourses('CT')"> Culture Technology Minor</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="로봇지능부전공" class="custom-button" onclick="showCourses('IR')">  Intelligent Robotics Minor</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="AI부전공" class="custom-button" onclick="showCourses('AI')"> AI Convergence Minor</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="전기전자컴퓨터공학부" class="custom-button" onclick="showCourses('EC')">  Electrical Engineering/Computer Science </button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="신소재공학부" class="custom-button" onclick="showCourses('MA')">  Material Science/Engineering</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="기계공학부" class="custom-button" onclick="showCourses('MC')"> Mechanical Engineering</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="지구환경과학부" class="custom-button" onclick="showCourses('EV')">  Earth Science/Environmental Engineering</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="생명공학부" class="custom-button" onclick="showCourses('BS')">Life Science</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="물리광과학과" class="custom-button" onclick="showCourses('PS')">Phsyics/Photon Science</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="화학과" class="custom-button" onclick="showCourses('CH')">Chemistry</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                  <td
+                    style="
+                      padding-left: 58px;
+                      text-align: left;
+                    "
+                  >
+                  <div class="button-container">
+                    <button data-tooltip="융합기술부전공" class="custom-button" >Graduate Minor in Management of Innovation</button>
+                    <img 
+                      width="11px"
+                      src="img/list.png" />&nbsp;
+                    </td>
+                </tr>
+              </table>
+            </div>
+            <div class="display-tb-cell" style="display: flex; position:absolute; left:300px; top:140px;
+            padding:0 0 10 0; white-space:nowrap;
+            font-family:Georgia, 'Times New Roman', Times, serif; font-size:9pt;top:142px;">
+            <div  style="flex-direction: row; user-select: none; position: absolute; overflow: hidden; 
+            width: 171px; height: 20px; border-radius: 0px; 
+            background-color: transparent; 
+            background-image: url(./img/stc_bu02.png); background-repeat: no-repeat; 
+            background-position: 0% 50%; cursor: default; direction: inherit; 
+            border: none;" tabindex="-1">
+                <div style="user-select: none; position: absolute; overflow: hidden; 
+                left: 17px; top: 0px; width: 154px; height: 20px;">
+                    <div style="position: absolute; overflow: hidden; left: 0px; top: 0px; width: 154px; 
+                    height: 20px; user-select: none;">
+                        <div style="display: table-cell; white-space: pre; 
+                        width: 154px; height: 20px; font: bold 9pt Georgia; color: rgb(34, 34, 34); 
+                        text-align: left; vertical-align: middle; text-overflow: 
+                        ellipsis;">Information on course</div>
+                    </div>
+                </div>
+           </div>
+            <div style="display: flex; position:absolute;left:167px;font-size: 9pt;">        
+            <p>[총</p>
+            <p style="color: red;
+             padding-left: 50px;"> 0</p>
+            <p >건]</p></div>
+            <div
+            id="btnReset"
+            style="
+              user-select: none;
+              display: flex;
+              flex-direction: row;
+              position: absolute;
+              overflow: hidden;
+              left: 265px;
+              width: 82px;
+              height: 18px;
+              border-radius: 0px;
+              border: 1px solid rgb(156, 156, 156);
+              background-color: transparent;
+              background-image: url(./img/btnReset2.png),
+                -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(254, 254, 254)), to(rgb(242, 242, 242)));
+              background-repeat: no-repeat;
+              background-position: 10% 50%;
+              cursor: pointer;
+              direction: inherit;
+            "
+            tabindex="-1"
+          >
+            <div
               style="
                 position: absolute;
-                margin-top: 5px;
+                overflow: hidden;
                 left: 10px;
-                top: 30px;
-                width: 280px;
-                height: 626px;
-                border-radius: 0px;
-                border-top: 1px solid rgb(231, 48, 48);
-                border-bottom: 1px solid rgb(240, 240, 240);
+                top: 0px;
+                width: 72px;
+                height: 18px;
+              "
+            >
+              <div
+                id="btnResetTextBoxElement"
+                style="
+                  position: absolute;
+                  overflow: hidden;
+                  left: 0px;
+                  top: 0px;
+                  width: 72px;
+                  height: 18px;
+                  user-select: none;
+                "
+              >
+                <div
+                  style="
+                    display: table-cell;
+                    width: 72px;
+                    height: 18px;
+                    text-align:center;
+                    font: bold 9pt Georgia;
+                    color: rgb(0, 0, 0);
+                    padding: 0px;
+                  "
+                >
+                  Refresh
+                </div>
+              </div>
+            </div>
+        </div>
+        <div style="position:absolute; left:360px;">Total Credits</div>
+        <div style="position:absolute; left:460px; color:blue ;">수강 학점</div>
+        <div style="position:absolute; left:560px;">Total GPA</div>
+        <div style="position:absolute; left:660px; color:blue ;">성적</div>
+        <div id="transcript_btn" style="user-select: none; position: absolute; 
+            overflow: hidden; left: 710px; width: 108px; height: 18px; border-radius: 0px; 
+            border: 1px solid rgb(156, 156, 156); background-color: transparent; 
+            background-image: url(./img/btnPop2.png), 
+            -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(254, 254, 254)), to(rgb(236, 236, 229))); 
+            background-repeat: no-repeat; background-position: 10% 50%; cursor: pointer; 
+            direction: inherit;" tabindex="-1">
+            <div style="user-select: none; position: absolute; overflow: 
+                hidden; left: 10px; top: 0px; width: 98px; height: 18px;">
+                <div style="font: bold 9pt Georgia; text-align: center; ">Transcript</div>
+            </div>
+        </div>
+        <br>
+        <div class="scroll-container" style="border-top: 2px solid rgb(231, 48, 48); margin-bottom: -4px;">
+          <div style="display: flex; flex-direction: column; position: absolute; top: -1px;">
+                <table style="
+                table-layout: fixed;
+                width: 100%;
+                border-collapse: collapse;
+                border-right: 1px solid rgb(240, 240, 240);
+                border-left: 1px solid rgb(240, 240, 240);
                 background-color: transparent;
                 cursor: default;
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 9pt;
                 text-align: left;
-              "
-            >
-              <tr>
-                <th
-                  style="
-                    padding-left: 7px;
-                    border-top: 2px solid rgb(231, 48, 48);
-                  "
-                >
-                  GIST College
-                </th>
-              </tr>
-              <tr>
-                <td>School/Department</td>
-              </tr>
-              <tr>
-                <td>Division/Concentration</td>
-              </tr>
-              <tr>
-                <td>GIST College (Common)</td>
-              </tr>
-              <tr>
-                <td>Mathematics Minor</td>
-              </tr>
-              <tr>
-                <td>Energy Minor</td>
-              </tr>
-              <tr>
-                <td>Biomedical Science and Engineering</td>
-              </tr>
-              <tr>
-                <td>Culture Technology Mionor</td>
-              </tr>
-              <tr>
-                <td>Intelligent Robotics Minor</td>
-              </tr>
-              <tr>
-                <td>AI Convergence Minor</td>
-              </tr>
-              <tr>
-                <td>Electrical Engineering/Computer Science</td>
-              </tr>
-              <tr>
-                <td>Material Scinece/Engineering</td>
-              </tr>
-              <tr>
-                <td>Mechanical ENgineering</td>
-              </tr>
-              <tr>
-                <td>Earth Scineces/Environmental Engineering</td>
-              </tr>
-              <tr>
-                <td>Life Scineces</td>
-              </tr>
-              <tr>
-                <td>Physics/Photon Science</td>
-              </tr>
-              <tr>
-                <td>Chemistry</td>
-              </tr>
-              <tr>
-                <td>Graduate Minor in Management of Innovation</td>
-              </tr>
+                margin-top: -2px; 
+            
+              ">
+              <thead style=" position: sticky; top: -1px; height:25px; z-index: 100; background-color: rgb(241, 241, 241); font: 12px Georgia;">
+                <tr>
+                    <th style="width: 29px; white-space: nowrap; overflow: hidden;">NO</th>
+                    <th style="width: 75px; white-space: nowrap; overflow: hidden;">Syllabus</th>
+                    <th style="width: 57px; white-space: nowrap; overflow: hidden;">Video</th>
+                    <th style="width: 172px; overflow-wrap: break-word; overflow-x: auto;">Title</th>
+                    <th style="width: 35px; white-space: nowrap; overflow: hidden;">Type</th>
+                    <th style="width: 39px; white-space: nowrap; overflow: hidden;">Type3</th>
+                    <th style="width: 119px; overflow-wrap: break-word; overflow: hidden;">Timetable</th>
+                    <th style="width: 99px; overflow-wrap: break-word; overflow: hidden;">Instructor</th>
+                    <th style="width: 49px; white-space: nowrap; overflow: hidden;">Grade</th>
+                    <th style="width: 28px; white-space: nowrap; overflow: hidden;">Size</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Seats</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Credit</th>
+                    <th style="width: 46px; white-space: nowrap; overflow: hidden;">Add</th>
+                </tr>
+            </thead>
+            <tbody id="courseTableBody" >
+            </tbody>
             </table>
           </div>
-          <div class="display-tb-cell">
-            수강신청표(표1)
-            <br>담은 강의 목록(표2)
-          </div>
         </div>
-      </div>
+        <div style="padding-top: 10px; padding-left:15px; top: 15px; display: flex; flex-direction: column; align-items: center;">
+          <div style="position: relative; top:420px; left:-820px; height:250px;" >
+            <p  style="color: red;">
+            If you click 7 times consecutively on the same subject, a popup with security code opens 
+            and you have to enter a security code. </p>
+            <div style="padding-top:10px;top:15px; display: flex; align-items: center;">
+              <img src="./img/stc_bu02.png" alt="" style="margin-right: 5px;">
+              <p style="font-weight: bold; margin-right: 15px;">List of Registration</p>
+              <p>[총</p>
+              <p id = "number1"; style="color: red;margin-left: 50px;"></p>
+              <p>건]</p>
+              <p style="margin-left: 250px;">Courses</p>
+              <p id = "number2"; style="margin-left: 15px; color:blue"></Nav></p>
+              <p style="margin-left: 40px;">Credits</p>
+              <p style="margin-left: 15px;  color:blue">N</p>
+              <button  style="margin-left: 20px; width:65px;">Save</button>
+              <button  style="margin-left: 13px; width:65px;">Print</button>
+          </div>
+          <div style="padding-top: 10px; max-width:820px; overflow-x:auto; ">
+            <table style="
+            width: 100%;
+            border-collapse: collapse;
+            border-right: 1px solid rgb(240, 240, 240);
+            border-left: 1px solid rgb(240, 240, 240);
+            border-top:red;
+            background-color: transparent;
+            cursor: default;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+            
+          " id="selectedCoursesTable">
+              <thead style="background-color: rgb(241, 241, 241); height:25px;">
+                <tr style="border-top: 2px solid rgb(231, 48, 48);">
+                  <th style="width: 29px; white-space: nowrap; overflow: hidden;">NO</th>
+                  <th style="width: 75px; white-space: nowrap; overflow: hidden;">Syllabus</th>
+                  <th style="width: 172px; overflow-wrap: break-word; overflow-x: auto;">Title</th>
+                  <th style="width: 119px; overflow-wrap: break-word; overflow: hidden;">Timetable</th>
+                  <th style="width: 99px; overflow-wrap: break-word; overflow: hidden;">Instructor</th>
+                  <th style="width: 49px; white-space: nowrap; overflow: hidden;">Grade</th>
+                  <th style="width: 28px; white-space: nowrap; overflow: hidden;">Adivisor</th>
+                  <th style="width: 46px; white-space: nowrap; overflow: hidden;">Credit</th>
+                  <th style="width: 46px; white-space: nowrap; overflow: hidden;">Drop</th>
+              </tr>
+              </thead>
+              <tbody id="selectedCoursesTableBody">
+                <!-- 이 부분은 선택한 과목이 동적으로 추가될 때 여기에 추가됩니다. -->
+              </tbody>
+            </table>
+          </div>
+         
+        </div>
+        
+
+            
+            <div style="display: flex; flex-direction: column; position: absolute; top: -1px;">
+              <table >
+            <thead style=" position: sticky; top: -1px; height:25px; z-index: 100; background-color: rgb(241, 241, 241); font: 12px Georgia;">
+           
+          </thead>
+          <tbody id="courseTableBody" >
+          </tbody>
+          </table>
+        </div>
+          </div>
+          
+        </div>
+        
+      </div>    
+        </div>
+        <div class="display-tb-cell" style="position: absolute; left:1150px;
+        border:1px solid rgba(139, 139, 139, 0.652);
+        top:170px;
+        height:600px;
+        width:280px;
+        overflow: auto;
+        border-top:red;
+        white-space:nowrap"> 
+          <table id="Timetable" 
+          style= "border-radius: 0px;
+          cursor: default;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          overflow-x : auto;
+          width:280px;
+          font-size:9pt;
+          " >
+          <tr style="background-color: rgb(241, 241, 241); height:24px;width:40px;">
+          <div style=" border-top: 2px solid rgb(231, 48, 48);
+           border-bottom: 1px solid rgb(240, 240, 240);
+           width:280px;
+           ">
+            <th>Time</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+          </div>
+          </tr>
+          <div >
+            <tr class= "timetable_tr"style="font-size: 9pt; ">
+              <td>09:00</td>
+              <td style="border-bottom:red;"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>09:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;">
+              <td>10:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr  class="timetable_tr" style="font-size: 9pt;">
+              <td>10:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr  class="timetable_tr" style="font-size: 9pt;">
+              <td>11:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>11:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;"> 
+              <td>12:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr"style="font-size: 9pt;">
+              <td>12:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr"style="font-size: 9pt;">
+              <td>13:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>13:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>14:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr  class="timetable_tr"style="font-size: 9pt;">
+              <td>14:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>15:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>15:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>16:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>16:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>17:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>17:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>18:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>18:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>19:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>19:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>20:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>20:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>21:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>21:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr   class="timetable_tr"style="font-size: 9pt;">
+              <td>22:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>22:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>07:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>07:30</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>08:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>08:30</td><td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="timetable_tr" style="font-size: 9pt;">
+              <td>00:00</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </div>
+           
+          </table>
+        </div>
     </div>
-    <script></script>
+    
+    <script>
+      function showCourses(division) {
+        // 해당 division에 맞는 과목 목록을 가져와서 표시
+          
+          var tableBody = document.getElementById("courseTableBody");
+
+          // 기존의 과목 목록 삭제
+          if (tableBody) {
+              while (tableBody.firstChild) {
+                  tableBody.removeChild(tableBody.firstChild);
+              }
+          } else {
+              console.error('Error: Table body not found.');
+              return;
+          }
+          var jsonFileName = division + '_courses.json';
+        // JSON 파일에서 데이터 불러오기
+        fetch('./course/'+ jsonFileName)
+            .then(response => response.json())
+            .then(courses => {
+                courses.forEach(function(course, index) {
+                    var row = document.createElement("tr");
+
+                    // "NO" 데이터 추가
+                    var noCell = document.createElement("td");
+                    noCell.textContent = index + 1;
+                    row.appendChild(noCell);
+
+                    // 나머지 데이터 추가
+                    var keys = ["course_code", "Video", "course_title", "course_type", "", "course_time", "instructor", "grading", "class_size", "class_size", "course_credit"];
+                    keys.forEach(function(key) {
+                      var cell = document.createElement("td");
+                      if (key === "Size") {
+                          cell.textContent = course["class_size"];
+                      } else if (key === "Grade") {
+                          cell.textContent = "Letter";
+                      } else {
+                          cell.classList.add("scrollable-cell"); // 스크롤 가능한 셀 클래스 추가
+                          var content = document.createElement("div");
+                          content.classList.add("scrollable-content"); // 스크롤 가능한 콘텐츠 클래스 추가
+                          content.textContent = key === "" ? "" : course[key];
+                          cell.appendChild(content);
+                      }
+                        row.appendChild(cell);
+                    });
+
+                    // "Add" 버튼 추가
+                    var addButtonCell = document.createElement("td");
+                    var addButton = document.createElement("button");
+                    addButton.textContent = "Add";
+                    addButton.addEventListener("click", function () {
+                      // 버튼이 클릭되었을 때 수행할 동작 추가
+                      var clickedCourseCode = courses[index]["course_code"];
+                      NewcourseTime = courses[index]["course_time"];
+                      console.log("Add button clicked for course_code", clickedCourseCode);
+                      addToSelectedCourses(course);
+
+                      const $table = document.getElementById('selectedCoursesTable');
+                      console.log($table.rows.length);
+          
+                      var nb1 = document.createElement('nb1');
+                      var nb2 = document.createElement('nb2');
+                      var number1 = document.getElementById('number1');
+                      var number2 = document.getElementById('number2');
+
+                      nb1.innerHTML = $table.rows.length - 1;
+                      nb2.innerHTML = $table.rows.length - 1;
+
+                      number1.replaceChildren(nb1);
+                      number2.replaceChildren(nb2);
+                    });
+                    addButtonCell.appendChild(addButton);
+                    row.appendChild(addButtonCell);
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error loading courses:', error));
+      }
+      var selectedCoursesCount = 0;
+      var NewcourseTime = [];
+      var courseTimes = [];
+
+      function addToSelectedCourses(course) {
+        // 선택한 과목을 추가하는 함수
+        console.log(NewcourseTime);
+          if (NewcourseTime) {
+            if (!courseTimes.includes(NewcourseTime)) {
+              courseTimes.push(NewcourseTime);
+              console.log("Add 완료 :", NewcourseTime);
+            } else {
+              alert("There are times of duplicate enrollment courses. Please check timetable.");
+              console.log("과목 시간이 겹칩니다 :", NewcourseTime);
+              return;
+            }
+          }
+        
+        var row = document.createElement("tr");
+        
+        var noCell = document.createElement("td");
+        noCell.textContent = ++selectedCoursesCount;
+        row.appendChild(noCell);
+
+        var keys = ["course_code", "course_title", "course_time", "instructor", "grading", "Adivisor", "course_credit","Drop"];
+        keys.forEach(function (key) {
+            var cell = document.createElement("td");
+            if (key === "Grade" || key === "Adivisor") {
+                // Grade와 Advisor는 빈 문자열로 설정
+                cell.textContent = "";
+            } else if (key === "Drop") {
+              // Drop 버튼 추가
+              var dropButton = document.createElement("button");
+              dropButton.textContent = "Drop";
+              dropButton.addEventListener("click", function () {
+                  // 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
+                  // 이 부분은 실제 동작에 맞게 수정이 필요합니다.
+                  console.log("Drop button clicked for course_code", course["course_code"]);
+                  // 예시로 해당 행 삭제
+                  row.remove();
+                  selectedCoursesCount -= 1;
+                  
+                  const $table = document.getElementById('selectedCoursesTable');
+                  console.log($table.rows.length);
+          
+                  var nb1 = document.createElement('nb1');
+                  var nb2 = document.createElement('nb2');
+                  var number1 = document.getElementById('number1');
+                  var number2 = document.getElementById('number2');
+
+                  nb1.innerHTML = $table.rows.length - 1;
+                  nb2.innerHTML = $table.rows.length - 1;
+
+                  number1.replaceChildren(nb1);
+                  number2.replaceChildren(nb2);
+            
+              });
+              cell.appendChild(dropButton);
+          } else {
+                // 나머지 키에 대해 course 객체의 속성값을 사용
+                cell.textContent = course[key.toLowerCase()] || "";
+            }
+            row.appendChild(cell);
+            
+          
+        });
+    
+        selectedCoursesTableBody.appendChild(row);
+    }
+    
+    function checkTimeTableConflict(course) {
+      // 시간표가 겹치는지 체크하는 함수
+    const newCourseTime = course["course_time"].split(", ");
+    console.log(selectedCoursesTimeList, newCourseTimeList)
+
+     // 선택한 과목들을 순회하며 시간표가 겹치는지 체크
+    for (const selectedCourseTime of selectedCoursesTimeList) {
+      const selectedCourseTimes = selectedCourseTime.split(", ");
+
+      for (const newCourseTime of newCourseTimeList) {
+        for (const selectedCourseTime of selectedCourseTimes) {
+          if (isTimeTableConflict(newCourseTime, selectedCourseTime)){
+            return true;
+          }
+        }
+      }
+    }
+
+    return false;
+   }
+
+   function getTimeValues(time) {
+    if (!time) {
+      return [0, 0, 0, 0];
+    }
+  
+    const [start, end] = time.split("~");
+    const [startHour, startMinute] = start.split(":").map(Number);
+    const [endHour, endMinute] = end.split(":").map(Number);
+  
+    return [startHour, startMinute, endHour, endMinute];
+  }
+   function isTimeOverlap(time1, time2) {
+     if (!time1 || !time2) {
+       return false; // 하나라도 시간이 정의되지 않았다면 겹치지 않음
+     }
+   
+     const ranges1 = time1.split("/n");
+     const ranges2 = time2.split("/n");
+   
+     for (const range1 of ranges1) {
+       for (const range2 of ranges2) {
+         const [day1, timeRange1] = range1.split(" ");
+         const [day2, timeRange2] = range2.split(" ");
+   
+         if (day1 !== day2) {
+           continue; // 날짜가 다르면 다음 반복으로 이동
+         }
+   
+         const [startHour1, startMinute1, endHour1, endMinute1] = getTimeValues(timeRange1);
+         const [startHour2, startMinute2, endHour2, endMinute2] = getTimeValues(timeRange2);
+   
+         const start1 = startHour1 * 60 + startMinute1;
+         const end1 = endHour1 * 60 + endMinute1;
+         const start2 = startHour2 * 60 + startMinute2;
+         const end2 = endHour2 * 60 + endMinute2;
+   
+         // 겹치는 경우: 끝나는 시간이 시작 시간보다 이전이거나, 시작 시간이 끝나는 시간보다 이후인 경우
+         if (!(end1 <= start2 || end2 <= start1)) {
+           return true; // 겹치는 경우 발견
+         }
+       }
+     }
+   
+     return false; // 겹치지 않는 경우
+   }
+   
+   
+   
+   function isTimeTableConflict(timeTable, selectedCourseTime) {
+     const timeRanges1 = timeTable.split(" ");
+     const timeRanges2 = selectedCourseTime.split(" ");
+   
+     for (const range1 of timeRanges1) {
+       for (const range2 of timeRanges2) {
+         const [day1, time1] = range1.split(" ");
+         const [day2, time2] = range2.split(" ");
+   
+         if (day1 === day2) {
+           if (isTimeOverlap(time1, time2)) {
+             return true;
+           }
+         }
+       }
+     }
+   
+     return false;  // 겹치지 않는 경우
+   }
+
+   // 시간표 형태 : "TUE 13:00~14:30\nTHU 13:00~14:30"
+   
+  
+   let tooltipElem;
+
+   document.onmouseover = function(event) {
+     let target = event.target;
+
+     // data-tooltip 속성이 있는 요소
+     let tooltipHtml = target.dataset.tooltip;
+     if (!tooltipHtml) return;
+
+     // 툴팁 요소를 만듭니다.
+
+     tooltipElem = document.createElement('div');
+     tooltipElem.className = 'tooltip';
+     tooltipElem.innerHTML = tooltipHtml;
+     document.body.append(tooltipElem);
+
+     // 툴팁 요소를 data-tooltip 속성이 있는 요소 위, 가운데에 위치시킵니다.
+     let coords = target.getBoundingClientRect();
+
+     let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+     if (left < 0) left = 0; // 툴팁이 창 왼쪽 가장자리를 넘지 않도록 합니다.
+
+     let top = coords.top - tooltipElem.offsetHeight - 5;
+     if (top < 0) { // 툴팁이 창 위로 넘치면 요소 아래에 보여줍니다.
+       top = coords.top + target.offsetHeight + 5;
+     }
+
+     tooltipElem.style.left = left + 'px';
+     tooltipElem.style.top = top + 'px';
+   };
+
+   document.onmouseout = function(e) {
+
+     if (tooltipElem) {
+       tooltipElem.remove();
+       tooltipElem = null;
+     }
+
+   };   
+  </script>
   </body>
 </html>
