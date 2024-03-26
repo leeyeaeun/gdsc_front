@@ -26,9 +26,9 @@
         top: 0px;
         width: 100%;
         height: 56px;
+        background-image: url("img/main_top_background.png");
         flex-direction: row;
         position: relative;
-        background-size: 100%;
         display: flex;
       }
       .main_top_logo {
@@ -202,14 +202,7 @@
     </style>
   </head>
   <body>
-    <header
-      class="header"
-      style="
-        width: 100%;
-        background-image: url(./img/main_top_background.png);
-        background-size: 100%;
-      "
-    >
+    <header class="header">
       <img
         class="main_top_logo"
         id="main_top_logo"
@@ -267,7 +260,6 @@
         >
       </form>
     </header>
-
     <div class="align" style="top: 10px; left: 10px">
       <img
         src="img/icon_tit.png"
@@ -467,17 +459,19 @@
                     text-align: left;
                   "
                 >
-                  <img width="10px" src="img/minus.png" />&nbsp; GIST College
+                  <img width="10px" src="img/minus.png" />
+                  GIST College
                 </th>
               </tr>
               <tr>
                 <td style="padding-left: 43px; text-align: left">
-                  <img width="9px" src="img/plus.png" />&nbsp; School/Department
+                  <img width="9px" src="img/plus.png" />
+                  School/Department
                 </td>
               </tr>
               <tr>
                 <td style="padding-left: 43px; text-align: left">
-                  <img width="9px" src="img/minus1.png" />&nbsp;
+                  <img width="9px" src="img/minus1.png" />
                   Division/Concentration
                 </td>
               </tr>
@@ -609,7 +603,6 @@
                   </div>
                 </td>
               </tr>
-
               <tr>
                 <td style="padding-left: 58px; text-align: left">
                   <div class="button-container">
@@ -1640,7 +1633,6 @@
               addButton.textContent = "Add";
               addButton.addEventListener("click", function () {
                 // 버튼이 클릭되었을 때 수행할 동작 추가
-
                 var clickedCourseCode = courses[index]["course_code"];
                 NewcourseTime = courses[index]["course_time"];
                 console.log(
@@ -1652,20 +1644,16 @@
                 const $table = document.getElementById("selectedCoursesTable");
                 console.log($table.rows.length);
 
-                const nb1 = document.getElementById("nb1");
-                const nb2 = document.getElementById("nb2");
-                nb1.innerHTML = $table.rows.length - 1;
-                nb2.innerHTML = $table.rows.length - 1;
-                /*const nb1 = document.createElement("nb1");
-                const nb2 = document.createElement("nb2");
-                const number1 = document.getElementById("number1");
-                const number2 = document.getElementById("number2");
+                var nb1 = document.createElement("nb1");
+                var nb2 = document.createElement("nb2");
+                var number1 = document.getElementById("number1");
+                var number2 = document.getElementById("number2");
 
                 nb1.innerHTML = $table.rows.length - 1;
                 nb2.innerHTML = $table.rows.length - 1;
 
-                number1.appendChild(nb1);
-                number2.appendChild(nb2);*/
+                number1.replaceChildren(nb1);
+                number2.replaceChildren(nb2);
               });
               addButtonCell.appendChild(addButton);
               row.appendChild(addButtonCell);
@@ -1726,9 +1714,37 @@
                 "Drop button clicked for course_code",
                 course["course_code"]
               );
+              const droppedCourseTimes = course["course_time"].split("\n");
+              console.log(droppedCourseTimes);
+              // 각 시간대에 해당하는 모든 셀의 배경색을 제거
+              droppedCourseTimes.forEach((time) => {
+                const splitTimes = splitTimeValues([time]);
+                splitTimes.forEach((time) => {
+                  const cell = document.getElementById(time);
+                  if (cell) {
+                    cell.style.backgroundColor = ""; // 배경색 제거
+                  }
+                });
+              });
+              colorIndex = 0;
+
               // 예시로 해당 행 삭제
               row.remove();
               selectedCoursesCount -= 1;
+
+              const $table = document.getElementById("selectedCoursesTable");
+              console.log($table.rows.length);
+
+              var nb1 = document.createElement("nb1");
+              var nb2 = document.createElement("nb2");
+              var number1 = document.getElementById("number1");
+              var number2 = document.getElementById("number2");
+
+              nb1.innerHTML = $table.rows.length - 1;
+              nb2.innerHTML = $table.rows.length - 1;
+
+              number1.replaceChildren(nb1);
+              number2.replaceChildren(nb2);
             });
             cell.appendChild(dropButton);
           } else {
