@@ -71,6 +71,39 @@ function showCourses(division) {
           addToSelectedCourses(course);
           showSelectedCoursesOnTimetable();
           const $table = document.getElementById("selectedCoursesTable");
+
+          // 서버에 데이터를 전송하기 위한 JSON 객체 생성
+          var data = {
+            courseCode: clickedCourseCode,
+            // 필요한 경우 다른 데이터도 추가할 수 있습니다.
+          };
+
+          // POST 요청을 보냄
+          fetch("/", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              //or text/plain
+            },
+            body: JSON.stringify(data),
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              // 서버로부터의 응답 처리
+              console.log("Server response:", data);
+              // 필요한 경우 추가 작업 수행
+            })
+            .catch((error) => {
+              console.error(
+                "There was a problem with your fetch operation:",
+                error
+              );
+            });
         });
         addButtonCell.appendChild(addButton);
         row.appendChild(addButtonCell);
