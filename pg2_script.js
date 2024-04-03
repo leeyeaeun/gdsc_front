@@ -79,7 +79,7 @@ function showCourses(division) {
           };
 
           // POST 요청을 보냄
-          fetch("/", {
+          fetch("http://localhost:3000", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -91,7 +91,8 @@ function showCourses(division) {
               if (!response.ok) {
                 throw new Error("Network response was not ok");
               }
-              return response.json();
+              // 서버로부터의 응답을 JSON으로 파싱하기 전에 오류 처리 추가
+              return response.text();
             })
             .then((data) => {
               // 서버로부터의 응답 처리
@@ -99,6 +100,7 @@ function showCourses(division) {
               // 필요한 경우 추가 작업 수행
             })
             .catch((error) => {
+              // 오류 메시지 출력
               console.error(
                 "There was a problem with your fetch operation:",
                 error
