@@ -204,6 +204,7 @@ function addToSelectedCourses(course) {
       });
       updateCoursesNumber();
       console.log("현재 selected List 목록: ", selectedCoursesList);
+      selectedCoursesCount++;
     } else {
       alert(
         "There are times of duplicate enrollment courses. Please check timetable."
@@ -216,7 +217,7 @@ function addToSelectedCourses(course) {
 
   var row = document.createElement("tr");
   var noCell = document.createElement("td");
-  noCell.textContent = ++selectedCoursesCount;
+  noCell.textContent = selectedCoursesCount;
   row.appendChild(noCell);
 
   var keys = [
@@ -287,6 +288,7 @@ function dropCourse(course) {
   if (index !== -1) {
     selectedCoursesList.splice(index, 1); // 해당 인덱스의 과목 제거
   }
+  selectedCoursesCount = 0;
 
   clearSelectedCoursesTable();
 }
