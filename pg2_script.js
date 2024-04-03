@@ -119,6 +119,72 @@ var selectedCoursesCount = 0;
 var NewcourseTime = [];
 var courseTimes = [];
 
+function addAfterDropCourses(course) {
+  var row = document.createElement("tr");
+  var noCell = document.createElement("td");
+  noCell.textContent = ++selectedCoursesCount;
+  row.appendChild(noCell);
+
+  var keys = [
+    "course_code",
+    "course_title",
+    "course_time",
+    "instructor",
+    "grading",
+    "Adivisor",
+    "course_credit",
+    "Drop",
+  ];
+  keys.forEach(function (key) {
+    var cell = document.createElement("td");
+    if (key === "Grade" || key === "Adivisor") {
+      // Grade와 Advisor는 빈 문자열로 설정
+      cell.textContent = "";
+    } else if (key === "Drop") {
+      // Drop 버튼 추가
+      var dropButton = document.createElement("button");
+      dropButton.textContent = "Drop";
+      dropButton.addEventListener("click", function () {
+        // drop 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
+        dropCourse(course);
+        console.log(
+          "Drop button clicked for course_code",
+          course["course_code"]
+        );
+        console.log(selectedCoursesList);
+        const droppedCourseTimes = course["course_time"].split("\n");
+        // 선택된 과목 리스트에 있는 모든 과목을 다시 선택된 과목 테이블에 추가
+        selectedCoursesList.forEach((course) => {
+          addAfterDropCourses(course);
+        });
+
+        // 각 시간대에 해당하는 모든 셀의 배경색을 제거
+        droppedCourseTimes.forEach((time) => {
+          const splitTimes = splitTimeValues([time]);
+          splitTimes.forEach((time) => {
+            const cell = document.getElementById(time);
+            if (cell) {
+              cell.style.backgroundColor = ""; // 배경색 제거
+            }
+          });
+        });
+        colorIndex = 0;
+
+        updateCoursesNumber();
+
+        const $table = document.getElementById("selectedCoursesTable");
+      });
+      cell.appendChild(dropButton);
+    } else {
+      // 나머지 키에 대해 course 객체의 속성값을 사용
+      cell.textContent = course[key.toLowerCase()] || "";
+    }
+    row.appendChild(cell);
+  });
+
+  selectedCoursesTableBody.appendChild(row);
+}
+
 function addToSelectedCourses(course) {
   // 선택한 과목을 추가하는 함수
   if (NewcourseTime) {
@@ -131,6 +197,9 @@ function addToSelectedCourses(course) {
         course_code: course.course_code,
         course_credit: course.course_credit,
         course_time: course.course_time,
+        course_title: course.course_title,
+        instructor: course.instructor,
+        grading: course.grading,
         // 과목 코드와 학점을 배열에 추가
       });
       updateCoursesNumber();
@@ -176,7 +245,12 @@ function addToSelectedCourses(course) {
           "Drop button clicked for course_code",
           course["course_code"]
         );
+        console.log(selectedCoursesList);
         const droppedCourseTimes = course["course_time"].split("\n");
+        // 선택된 과목 리스트에 있는 모든 과목을 다시 선택된 과목 테이블에 추가
+        selectedCoursesList.forEach((course) => {
+          addAfterDropCourses(course);
+        });
 
         // 각 시간대에 해당하는 모든 셀의 배경색을 제거
         droppedCourseTimes.forEach((time) => {
@@ -213,35 +287,20 @@ function dropCourse(course) {
   if (index !== -1) {
     selectedCoursesList.splice(index, 1); // 해당 인덱스의 과목 제거
   }
-  // 해당 과목의 행(row)을 찾아서 삭제
-  const $table = document.getElementById("selectedCoursesTable");
-  const rows = $table.rows;
 
-  // 과목의 행(row)을 찾음
-  let rowIndex = -1;
-  for (let i = 0; i < rows.length; i++) {
-    const cells = rows[i].cells;
-    if (cells[0].textContent === String(selectedCoursesCount)) {
-      rowIndex = i;
-      break;
-    }
-  }
-
-  if (rowIndex !== -1) {
-    // 과목의 행(row)이 존재하는 경우에만 실행
-    // 해당 행(row) 삭제
-    rows[rowIndex].remove();
-
-    // 삭제된 행(row) 이후의 모든 행(row)의 NO 값 조정
-    for (let i = rowIndex; i < rows.length; i++) {
-      const cells = rows[i].cells;
-      cells[0].textContent = String(i + 1);
-    }
-
-    selectedCoursesCount -= 1; // 선택한 과목 수 감소
-  }
+  clearSelectedCoursesTable();
 }
 
+function clearSelectedCoursesTable() {
+  const tableBody = document.getElementById("selectedCoursesTableBody");
+  if (tableBody) {
+    while (tableBody.firstChild) {
+      tableBody.removeChild(tableBody.firstChild);
+    }
+  } else {
+    console.error("Error: Selected courses table body not found.");
+  }
+}
 // 시간표 형태 : "TUE 13:00~14:30\nTHU 13:00~14:30"
 function isTimeConflict(courseTime1, courseTime2) {
   const timeRanges1 = courseTime1.split("\n");
@@ -373,6 +432,10 @@ function highlightTimeSlots(course, color) {
 
       if (cell) {
         cell.style.backgroundColor = color; // 색상을 변경하는 예시 코드
+      }
+      if (cell && cell.parentElement) {
+        cell.parentElement.style.borderBottom = "1px solid transparent";
+        cell.parentElement.style.borderTop = "1px solid transparent"; // 가로줄을 투명하게 만듦
       }
     });
   });
