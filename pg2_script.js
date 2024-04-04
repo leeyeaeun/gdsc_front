@@ -2,7 +2,18 @@ var totalCredits = 0;
 function goToPage1() {
   window.location.href = "page1.html"; // 페이지 2로 이동
 }
+
+function showWaiting() {
+  // 접속 대기 창 표시 코드
+  document.getElementById("waitingModal").style.display = "block";
+}
+
+function hideWaiting() {
+  // 접속 대기 창 숨기기 코드
+  document.getElementById("waitingModal").style.display = "none";
+}
 var selectedCoursesList = [];
+
 function showCourses(division) {
   // 해당 division에 맞는 과목 목록을 가져와서 표시
 
@@ -66,11 +77,18 @@ function showCourses(division) {
         addButton.textContent = "Add";
         addButton.addEventListener("click", function () {
           // 버튼이 클릭되었을 때 수행할 동작 추가
-          var clickedCourseCode = courses[index]["course_code"];
-          NewcourseTime = courses[index]["course_time"];
-          addToSelectedCourses(course);
-          showSelectedCoursesOnTimetable();
-          const $table = document.getElementById("selectedCoursesTable");
+          // 접속 대기 창 표시
+          showWaiting();
+
+          // 5초 후에 addAfterDelay 함수 호출
+          setTimeout(() => {
+            hideWaiting();
+            var clickedCourseCode = courses[index]["course_code"];
+            NewcourseTime = courses[index]["course_time"];
+            addToSelectedCourses(course);
+            showSelectedCoursesOnTimetable();
+            const $table = document.getElementById("selectedCoursesTable");
+          }, 5000);
 
           // 서버에 데이터를 전송하기 위한 JSON 객체 생성
           var data = {
