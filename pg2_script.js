@@ -165,6 +165,11 @@ function addAfterDropCourses(course) {
             const cell = document.getElementById(time);
             if (cell) {
               cell.style.backgroundColor = ""; // 배경색 제거
+
+              // 셀 내부의 모든 div 요소를 선택하여 제거
+              cell.querySelectorAll("div").forEach((div) => {
+                div.remove();
+              });
             }
           });
         });
@@ -259,7 +264,11 @@ function addToSelectedCourses(course) {
           splitTimes.forEach((time) => {
             const cell = document.getElementById(time);
             if (cell) {
-              cell.style.backgroundColor = ""; // 배경색 제거
+              cell.style.backgroundColor = "";
+              // 셀 내부의 모든 div 요소를 선택하여 제거
+              cell.querySelectorAll("div").forEach((div) => {
+                div.remove();
+              }); // 배경색 제거
             }
           });
         });
@@ -423,32 +432,51 @@ function showSelectedCoursesOnTimetable() {
 function highlightTimeSlots(course, color) {
   // 과목의 시간대 가져오기
   const courseTimes = course["course_time"].split("\n");
+  const courseCode = course["course_code"];
 
   // 각 시간대에 대해 반복하면서 시간표 셀의 배경색 변경
   courseTimes.forEach((time) => {
     // 시간대를 시간과 요일로 분리하여 처리
     const splitTimes = splitTimeValues([time]); // splitTimeValues 함수 호출 시 배열로 전달
-    splitTimes.forEach((time) => {
+    splitTimes.forEach((time, index) => {
       // splitTimes의 각 항목은 요일-시간 형식이므로 다시 분할
       const cell = document.getElementById(time);
 
       if (cell) {
+        // 이미 해당 시간대에 과목 코드가 표시되어 있는지 확인
+        const existingCodeElement = cell.querySelector(".course-code");
+        if (!existingCodeElement) {
+          // 과목 코드가 없을 때만 추가
+          // 과목 코드 엘리먼트 생성
+          const codeElement = document.createElement("div");
+          codeElement.classList.add("course-code");
+          codeElement.textContent = index === 0 ? courseCode : ""; // 첫 번째 셀에만 과목 코드 추가
+          codeElement.style.fontSize = "10px";
+
+          // 과목 코드 엘리먼트를 셀에 추가
+          cell.appendChild(codeElement);
+        }
+
         cell.style.backgroundColor = color; // 색상을 변경하는 예시 코드
-      }
-      if (cell && cell.parentElement) {
-        cell.parentElement.style.borderBottom = "1px solid transparent";
-        cell.parentElement.style.borderTop = "1px solid transparent"; // 가로줄을 투명하게 만듦
       }
     });
   });
 }
+
 let colorIndex = 0;
 
 function clearTimetable() {
-  // 시간표에서 모든 과목 제거
-  const cells = document.querySelectorAll("Timetable");
+  const cells = document.querySelectorAll(
+    "td[id^='MON'], td[id^='TUE'], td[id^='WED'], td[id^='THU'], td[id^='FRI']"
+  );
+
   cells.forEach((cell) => {
     cell.style.backgroundColor = ""; // 배경색 초기화
+
+    // 셀 내부의 모든 div 요소를 선택하여 제거
+    cell.querySelectorAll("div").forEach((div) => {
+      div.remove();
+    });
   });
 }
 
