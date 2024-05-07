@@ -120,15 +120,22 @@
           background-color: white;
           border: solid 5px black;
           font-family: sans-serif;
-          padding: 50px;
+          padding: 30px;
           text-align: center;
-          font-size: 80px;
+          font-size: 35px;
           line-height: 1px;
-          letter-spacing: -3px;
+          letter-spacing: -4px;
         "
       >
         <div id="Stopwatch">
-          <div id="timeDisplay" onload="showTime()"></div>
+          <div id="timeDisplay" onload="showTime()">
+            <span id="hour">14</span>
+            <span>시 </span>
+            <span id="minute">59</span>
+            <span>분 </span>
+            <span id="second">50</span>
+            <span>초 </span>
+          </div>
         </div>
       </div>
 
@@ -296,63 +303,60 @@
       }
 
       //타이머
+      window.onload = function () {
+        var second = 50;
+        var minute = 59;
+        var hour = 14;
+        var appendSecond = document.getElementById("second");
+        var appendMinute = document.getElementById("minute");
+        var appendHour = document.getElementById("hour");
+        var Interval;
 
-      //시작
-      function showTime() {
-        var h = 13;
-        var m = 59;
-        var s = 50;
+        clearInterval(Interval);
+        Interval = setInterval(startTimer, 1000);
 
-        h = h < 10 ? "0" + h : h;
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
+        function startTimer() {
+          second++;
 
-        var time = h + "시" + m + "분" + s + "초";
-        document.getElementById("timeDisplay").innerText = time;
-        document.getElementById("timeDisplay").textContent = time;
-        document.getElementById("timeDisplay").style.fontSize = "30px";
+          if (second <= 9) {
+            appendSecond.innerText = "0" + second;
+          }
 
-        setInterval(updateStopwatch, 1000); // 1초마다 updateStopwatch 함수 호출
-      }
+          if (second > 9) {
+            appendSecond.innerText = second;
+          }
 
-      showTime();
+          if (second >= 60) {
+            console.log("minute");
+            minute++;
+            second = 0;
+            appendSecond.innerText = "0" + 0;
+          }
 
-      function updateStopwatch() {
-        console.log("호출됨", h, m, s);
-        var timeElement = document.getElementById("timeDisplay");
-        var currentTime = timeElement.textContent;
-        var splitTime = currentTime
-          .split("시")
-          .join("")
-          .split("분")
-          .join("")
-          .split("초")
-          .join("")
-          .split(":");
-        var h = parseInt(splitTime[0]);
-        var m = parseInt(splitTime[1]);
-        var s = parseInt(splitTime[2]);
+          if (minute <= 9) {
+            appendMinute.innerText = "0" + minute;
+          }
 
-        s++;
-        if (s == 60) {
-          s = 0;
-          m++;
+          if (minute > 9) {
+            appendSecond.innerText = second;
+          }
+
+          if (minute >= 60) {
+            console.log("hour");
+            hour++;
+            minute = 0;
+            appendMinute.innerText = "0" + 0;
+          }
+
+          if (hour <= 9) {
+            appendHour.innerText = "0" + hour;
+          }
+
+          if (hour > 9) {
+            appendHour.innerText = hour;
+          }
         }
-        if (m == 60) {
-          m = 0;
-          h++;
-        }
-
-        h = h % 24; // 시간은 24시간으로 제한
-
-        h = h < 10 ? "0" + h : h;
-        m = m < 10 ? "0" + m : m;
-        s = s < 10 ? "0" + s : s;
-
-        var updatedTime = h + "시" + m + "분" + s + "초";
-        timeElement.innerText = updatedTime;
-        timeElement.textContent = updatedTime;
-      }
+      };
     </script>
   </body>
 </html>
