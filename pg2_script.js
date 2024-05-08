@@ -14,6 +14,77 @@ function hideWaiting() {
 }
 var selectedCoursesList = [];
 
+let department;
+document.getElementById('SE').addEventListener('click', function() {
+  department = "SE";
+  console.log(department);
+});
+document.getElementById('GS').addEventListener('click', function() {
+  department = "GS";
+  console.log(department);
+});
+document.getElementById('UC').addEventListener('click', function() {
+  department = "UC";
+  console.log(department);
+});
+document.getElementById('MM').addEventListener('click', function() {
+  department = "MM";
+  console.log(department);
+});
+document.getElementById('FE').addEventListener('click', function() {
+  department = "FE";
+  console.log(department);
+});
+document.getElementById('MD').addEventListener('click', function() {
+  department = "MD";
+  console.log(department);
+});
+document.getElementById('CT').addEventListener('click', function() {
+  department = "CT";
+  console.log(department);
+});
+document.getElementById('IR').addEventListener('click', function() {
+  department = "IR";
+  console.log(department);
+});
+document.getElementById('AI').addEventListener('click', function() {
+  department = "AI";
+  console.log(department);
+});
+document.getElementById('EC').addEventListener('click', function() {
+  department = "EC";
+  console.log(department);
+});
+document.getElementById('MA').addEventListener('click', function() {
+  department = "MA";
+  console.log(department);
+});
+document.getElementById('MC').addEventListener('click', function() {
+  department = "MC";
+  console.log(department);
+});
+document.getElementById('EV').addEventListener('click', function() {
+  department = "EV";
+  console.log(department);
+});
+document.getElementById('BS').addEventListener('click', function() {
+  department = "BS";
+  console.log(department);
+});
+document.getElementById('PS').addEventListener('click', function() {
+  department = "PS";
+  console.log(department);
+});
+document.getElementById('CH').addEventListener('click', function() {
+  department = "CH";
+  console.log(department);
+});
+
+document.getElementById('btnReset').addEventListener('click', function() {
+  location.href = location.href;
+  document.getElementById(department).click();
+});
+
 function showCourses(division) {
   // 해당 division에 맞는 과목 목록을 가져와서 표시
 
@@ -71,71 +142,9 @@ function showCourses(division) {
           row.appendChild(cell);
         });
 
-        document.getElementById('SE').addEventListener('click', function() {
-          var department = "SE";
-          console.log(department);
-        });
-        document.getElementById('GS').addEventListener('click', function() {
-          var department = "GS";
-          console.log(department);
-        });
-        document.getElementById('UC').addEventListener('click', function() {
-          var department = "UC";
-          console.log(department);
-        });
-        document.getElementById('MM').addEventListener('click', function() {
-          var department = "MM";
-          console.log(department);
-        });
-        document.getElementById('FE').addEventListener('click', function() {
-          var department = "FE";
-          console.log(department);
-        });
-        document.getElementById('MD').addEventListener('click', function() {
-          var department = "MD";
-          console.log(department);
-        });
-        document.getElementById('CT').addEventListener('click', function() {
-          var department = "CT";
-          console.log(department);
-        });
-        document.getElementById('IR').addEventListener('click', function() {
-          var department = "IR";
-          console.log(department);
-        });
-        document.getElementById('AI').addEventListener('click', function() {
-          var department = "AI";
-          console.log(department);
-        });
-        document.getElementById('EC').addEventListener('click', function() {
-          var department = "EC";
-          console.log(department);
-        });
-        document.getElementById('MA').addEventListener('click', function() {
-          var department = "MA";
-          console.log(department);
-        });
-        document.getElementById('MC').addEventListener('click', function() {
-          var department = "MC";
-          console.log(department);
-        });
-        document.getElementById('EV').addEventListener('click', function() {
-          var department = "EV";
-          console.log(department);
-        });
-        document.getElementById('BS').addEventListener('click', function() {
-          var department = "BS";
-          console.log(department);
-        });
-        document.getElementById('PS').addEventListener('click', function() {
-          var department = "PS";
-          console.log(department);
-        });
-        document.getElementById('CH').addEventListener('click', function() {
-          var department = "CH";
-          console.log(department);
-        });
-
+        // 클릭한 전공 department에 저장
+        // department 콘솔에 출력
+        
         // "Add" 버튼 추가
         var addButtonCell = document.createElement("td");
         var addButton = document.createElement("button");
