@@ -80,11 +80,6 @@ document.getElementById('CH').addEventListener('click', function() {
   console.log(department);
 });
 
-document.getElementById('btnReset').addEventListener('click', function() {
-  location.href = location.href;
-  document.getElementById(department).click();
-});
-
 function showCourses(division) {
   // 해당 division에 맞는 과목 목록을 가져와서 표시
 
@@ -206,6 +201,10 @@ function showCourses(division) {
     })
     .catch((error) => console.error("Error loading courses:", error));
 }
+
+document.getElementById('btnReset').addEventListener('click', function() {
+  showCourses(department);
+});
 
 var selectedCoursesCount = 0;
 var NewcourseTime = [];
