@@ -14,6 +14,72 @@ function hideWaiting() {
 }
 var selectedCoursesList = [];
 
+let department;
+document.getElementById("SE").addEventListener("click", function () {
+  department = "SE";
+  console.log(department);
+});
+document.getElementById("GS").addEventListener("click", function () {
+  department = "GS";
+  console.log(department);
+});
+document.getElementById("UC").addEventListener("click", function () {
+  department = "UC";
+  console.log(department);
+});
+document.getElementById("MM").addEventListener("click", function () {
+  department = "MM";
+  console.log(department);
+});
+document.getElementById("FE").addEventListener("click", function () {
+  department = "FE";
+  console.log(department);
+});
+document.getElementById("MD").addEventListener("click", function () {
+  department = "MD";
+  console.log(department);
+});
+document.getElementById("CT").addEventListener("click", function () {
+  department = "CT";
+  console.log(department);
+});
+document.getElementById("IR").addEventListener("click", function () {
+  department = "IR";
+  console.log(department);
+});
+document.getElementById("AI").addEventListener("click", function () {
+  department = "AI";
+  console.log(department);
+});
+document.getElementById("EC").addEventListener("click", function () {
+  department = "EC";
+  console.log(department);
+});
+document.getElementById("MA").addEventListener("click", function () {
+  department = "MA";
+  console.log(department);
+});
+document.getElementById("MC").addEventListener("click", function () {
+  department = "MC";
+  console.log(department);
+});
+document.getElementById("EV").addEventListener("click", function () {
+  department = "EV";
+  console.log(department);
+});
+document.getElementById("BS").addEventListener("click", function () {
+  department = "BS";
+  console.log(department);
+});
+document.getElementById("PS").addEventListener("click", function () {
+  department = "PS";
+  console.log(department);
+});
+document.getElementById("CH").addEventListener("click", function () {
+  department = "CH";
+  console.log(department);
+});
+
 function showCourses(division) {
   // 해당 division에 맞는 과목 목록을 가져와서 표시
 
@@ -71,6 +137,9 @@ function showCourses(division) {
           row.appendChild(cell);
         });
 
+        // 클릭한 전공 department에 저장
+        // department 콘솔에 출력
+
         // "Add" 버튼 추가
         var addButtonCell = document.createElement("td");
         var addButton = document.createElement("button");
@@ -88,7 +157,7 @@ function showCourses(division) {
             addToSelectedCourses(course);
             showSelectedCoursesOnTimetable();
             const $table = document.getElementById("selectedCoursesTable");
-          }, 5000);
+          }, 1000);
 
           // 서버에 데이터를 전송하기 위한 JSON 객체 생성
           var data = {
@@ -132,6 +201,10 @@ function showCourses(division) {
     })
     .catch((error) => console.error("Error loading courses:", error));
 }
+
+document.getElementById("btnReset").addEventListener("click", function () {
+  showCourses(department);
+});
 
 var selectedCoursesCount = 0;
 var NewcourseTime = [];
@@ -316,8 +389,8 @@ function dropCourse(course) {
     selectedCoursesList.splice(index, 1); // 해당 인덱스의 과목 제거
   }
   selectedCoursesCount = 0;
-
   clearSelectedCoursesTable();
+  showSelectedCoursesOnTimetable();
 }
 
 function clearSelectedCoursesTable() {
@@ -442,8 +515,11 @@ document.onmouseout = function (e) {
 function showSelectedCoursesOnTimetable() {
   // 시간표에 추가된 과목들로 시간표 갱신
   clearTimetable(); // 시간표 초기화
-  selectedCoursesList.forEach(function (course) {
-    highlightTimeSlots(course, getNextColor()); // 선택된 각 과목을 시간표에 표시
+  // selectedCourseList를 순회하면서 색상을 할당
+  selectedCoursesList.forEach((course, index) => {
+    const color = getNextColor(index);
+    console.log(`Index ${index}:`, course, `Color: ${color}`);
+    highlightTimeSlots(course, color); // 선택된 각 과목을 시간표에 표시
   });
 }
 
@@ -532,10 +608,9 @@ function rgb(r, g, b) {
   return `rgb(${r}, ${g}, ${b})`;
 }
 // highlightTimeSlots 함수를 호출할 때마다 리스트의 다음 색상을 선택합니다.
-function getNextColor() {
-  const color = colors[colorIndex];
-  colorIndex = (colorIndex + 1) % colors.length; // 다음 색상을 선택하고, 리스트의 끝에 도달하면 다시 처음으로 돌아갑니다.
-  return color;
+
+function getNextColor(colorIndex) {
+  return colors[colorIndex % colors.length];
 }
 
 // 특정한 RGB 값을 사용하여 색상 리스트를 만듭니다.
