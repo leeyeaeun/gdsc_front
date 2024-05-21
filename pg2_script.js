@@ -625,3 +625,38 @@ const colors = [
   rgb(189, 183, 107),
   rgb(255, 99, 71),
 ];
+
+document.getElementById("searchButton").addEventListener("click", function () {
+  performSearch();
+});
+
+document
+  .getElementById("courseSearch")
+  .addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      performSearch();
+    }
+  });
+
+function performSearch() {
+  const searchText = document
+    .getElementById("courseSearch")
+    .value.toLowerCase();
+  const rows = document.querySelectorAll("#courseTableBody tr");
+
+  rows.forEach((row) => {
+    const titleText = row.cells[3].textContent.toLowerCase();
+    const instructorText = row.cells[7].textContent.toLowerCase();
+    const codeText = row.cells[1].textContent.toLowerCase();
+
+    if (
+      titleText.includes(searchText) ||
+      instructorText.includes(searchText) ||
+      codeText.includes(searchText)
+    ) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+}
