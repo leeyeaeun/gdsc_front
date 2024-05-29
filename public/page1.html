@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -116,24 +116,27 @@
           left: 30px;
           right: 180px;
           height: 35px;
-          width: 450px;
+          width: 290px;
           background-color: white;
           border: solid 5px black;
           font-family: sans-serif;
-          padding: 35px;
+          padding: 20px;
+          text-align: center;
+          font-size: 35px;
+          line-height: 1px;
+          letter-spacing: -5px;
         "
       >
-        <p
-          style="
-            text-align: center;
-            font-size: 50px;
-            line-height: 1px;
-            letter-spacing: -6px;
-          "
-        >
-          <span id="hours">00</span>시 <span id="minutess">00</span>분
-          <span id="seconds">00</span>초
-        </p>
+        <div id="Stopwatch">
+          <div id="timeDisplay" onload="showTime()">
+            <span id="hour">14</span>
+            <span>시 </span>
+            <span id="minute">59</span>
+            <span>분 </span>
+            <span id="second">50</span>
+            <span>초 </span>
+          </div>
+        </div>
       </div>
 
       <div id="main_top_input">
@@ -227,7 +230,6 @@
       </p>
       <p style="font-size: 12px">건]</p>
 
-
       <div
         onclick="checkPage2()"
         class="button"
@@ -273,35 +275,21 @@
       ></div>
 
       <script>
-        function checkPage2(){
-          fetch(`/.netlify/functions/index`)
-          .then((response) => response.json())
-          .then((data)=>{
-            console.log(data.time, data.pass)
-            if (data.pass=='not open'){
-              window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
-            }
-            else{
-              console.log('server open')
-              goToPage2()
-            }
-          });
+        function checkPage2() {
+          fetch(`http://localhost:5000/`)
+            .then((response) => response.json())
+            .then((data) => {
+              console.log(data.time, data.pass);
+              if (data.pass == "not open") {
+                window.alert(
+                  "zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)"
+                );
+              } else {
+                console.log("server open");
+                goToPage2();
+              }
+            });
         }
-        //On Local :
-        // function checkPage2(){
-        //   fetch(`http://localhost:5000/`)
-        //   .then((response) => response.json())
-        //   .then((data)=>{
-        //     console.log(data.time, data.pass)
-        //     if (data.pass=='not open'){
-        //       window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
-        //     }
-        //     else{
-        //       console.log('server open')
-        //       goToPage2()
-        //     }
-        //   });
-        // }
       </script>
       <div style="left: 450px; margin-left: 100px">
         Your Registration Information
@@ -318,6 +306,61 @@
       function goToPage2() {
         window.location.href = "page2.html"; // 페이지 2로 이동
       }
+      //타이머
+      window.onload = function () {
+        var second = 50;
+        var minute = 59;
+        var hour = 14;
+        var appendSecond = document.getElementById("second");
+        var appendMinute = document.getElementById("minute");
+        var appendHour = document.getElementById("hour");
+        var Interval;
+
+        clearInterval(Interval);
+        Interval = setInterval(startTimer, 1000);
+
+        function startTimer() {
+          second++;
+
+          if (second <= 9) {
+            appendSecond.innerText = "0" + second;
+          }
+
+          if (second > 9) {
+            appendSecond.innerText = second;
+          }
+
+          if (second >= 60) {
+            console.log("minute");
+            minute++;
+            second = 0;
+            appendSecond.innerText = "0" + 0;
+          }
+
+          if (minute <= 9) {
+            appendMinute.innerText = "0" + minute;
+          }
+
+          if (minute > 9) {
+            appendSecond.innerText = second;
+          }
+
+          if (minute >= 60) {
+            console.log("hour");
+            hour++;
+            minute = 0;
+            appendMinute.innerText = "0" + 0;
+          }
+
+          if (hour <= 9) {
+            appendHour.innerText = "0" + hour;
+          }
+
+          if (hour > 9) {
+            appendHour.innerText = hour;
+          }
+        }
+      };
     </script>
   </body>
 </html>
