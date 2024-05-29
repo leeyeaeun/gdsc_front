@@ -227,7 +227,10 @@
       </p>
       <p style="font-size: 12px">건]</p>
 
+
       <div
+        onclick="checkPage2()"
+        class="button"
         style="
           white-space: pre;
           left: 302px;
@@ -269,21 +272,6 @@
         "
       ></div>
 
-      <button
-        onclick="checkPage2()"
-        
-        class="button"
-        style="
-          position: absolute;
-          white-space: pre;
-          left: 332px;
-          width: 113px;
-          height: 18px;
-          background-color: transparent;
-          border: 1px;
-          z-index: 3;
-        "
-      ></button>
       <script>
         function checkPage2(){
           fetch(`/.netlify/functions/index`)
