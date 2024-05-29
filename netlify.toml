@@ -1,5 +1,8 @@
 # netlify.toml
-
+[build]
+  publish = "public"
+  functions = "functions"
+  
 [[redirects]]
   from = "/*"
   to = "/page2.html"
