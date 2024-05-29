@@ -276,7 +276,7 @@
 
       <script>
         function checkPage2(){
-          fetch(`/.netlify/functions/index.js`)
+          fetch(`/.netlify/functions/index`)
           .then((response) => response.json())
           .then((data)=>{
             console.log(data.time, data.pass)
