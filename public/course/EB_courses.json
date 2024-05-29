@@ -1,0 +1,62 @@
+[
+  {
+    "subject_code": "EB2726",
+    "course_department": "Humanities and Social Science Minor",
+    "course_code": "EB2726-01",
+    "course_title": "Understanding of the Global Economy",
+    "course_type": "E",
+    "instructor": "Kim, Sangho",
+    "course_credit": "3",
+    "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
+    "class_size": "30",
+    "grading": "Letter"
+  },
+  {
+    "subject_code": "EB2730",
+    "course_department": "Humanities and Social Science Minor",
+    "course_code": "EB2730-01",
+    "course_title": "The Economics of Foreign Countries",
+    "course_type": "E",
+    "instructor": "Kim, Sangho",
+    "course_credit": "3",
+    "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
+    "class_size": "30",
+    "grading": "Letter"
+  },
+  {
+    "subject_code": "EB2750",
+    "course_department": "Humanities and Social Science Minor",
+    "course_code": "EB2750-01",
+    "course_title": "Principles of Management",
+    "course_type": "M",
+    "instructor": "Jin, Kyuho",
+    "course_credit": "3",
+    "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
+    "class_size": "30",
+    "grading": "Letter"
+  },
+  {
+    "subject_code": "EB2754",
+    "course_department": "Humanities and Social Science Minor",
+    "course_code": "EB2754-01",
+    "course_title": "Social Network Theory and Analysis",
+    "course_type": "E",
+    "instructor": "Jin, Kyuho",
+    "course_credit": "3",
+    "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
+    "class_size": "30",
+    "grading": "Letter"
+  },
+  {
+    "subject_code": "EB3735",
+    "course_department": "Humanities and Social Science Minor",
+    "course_code": "EB3735-01",
+    "course_title": "Economic Development in Korea",
+    "course_type": "E",
+    "instructor": "Kim, Sangho",
+    "course_credit": "3",
+    "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
+    "class_size": "30",
+    "grading": "Letter"
+  }
+]
