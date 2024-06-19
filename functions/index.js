@@ -61,7 +61,6 @@ exports.handler = async function(event) {
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
-};
 
   function seat_results(time_diff, end_time, course_count) {
     var arr_seats = [];
