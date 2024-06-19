@@ -1,4 +1,5 @@
 const fs = require("fs").promises;
+const path = require("path"); //2024.06.19. 16:43에 추가
 
 exports.handler = async function(event, context) {
   const arr_time = [];
@@ -7,6 +8,34 @@ exports.handler = async function(event, context) {
   let course_count;
 
   try {
+
+        // 파일의 절대 경로를 사용하도록 수정
+    const coursePath = path.join(__dirname, "../public/course/course_data2.json");
+    const indexSizePath = path.join(__dirname, "../public/course/indexNsize.json");
+
+    const courseData = await fs.readFile(coursePath);
+    courseJson = JSON.parse(courseData);
+    course_count = Object.keys(courseJson).length;
+
+    const indexData = await fs.readFile(indexSizePath);
+    indexJson = JSON.parse(indexData);
+
+    // 성공적으로 데이터를 읽어왔을 때
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ courseJson, indexJson, course_count })
+    };
+
+  } catch (err) {
+    // 오류 발생 시
+    console.error("Error reading file:", err);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "Error reading course data" })
+    };
+  }
+  
+    /**2024.06.19. 16:43에 주석처리-절대경로 설정 위함
     const courseData = await fs.readFile("../public/course/course_data2.json");
     courseJson = JSON.parse(courseData);
     course_count = Object.keys(courseJson).length;
@@ -21,6 +50,7 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
+  **/
   
 
 /** 2024.06.19. 박수현이 9번째 줄 try에서 err 발생하는 이유 알아보려고 임시로 적은 코드
