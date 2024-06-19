@@ -1,3 +1,4 @@
+/**
 const fs = require("fs").promises;
 
 exports.handler = async function(event, context) {
@@ -7,20 +8,60 @@ exports.handler = async function(event, context) {
   let course_count;
 
   try {
-    const courseData = await fs.readFile("../public/course/course_data2.json");
+    const courseData = await fs.readFile("course/course_data2.json");
     courseJson = JSON.parse(courseData);
     course_count = Object.keys(courseJson).length;
 
-    const indexData = await fs.readFile("../public/course/indexNsize.json");
+    const indexData = await fs.readFile("course/indexNsize.json");
     indexJson = JSON.parse(indexData);
 
   } catch (err) {
-    console.error("Error reading course data: ", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
+  **/
+
+const fs = require('fs').promises;
+const path = require('path');
+
+// 파일을 읽는 함수
+async function readJsonFile(filePath) {
+  try {
+    const data = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(data);
+  } catch (err) {
+    console.error("Error reading file:", err);
+    throw err;
+  }
+}
+
+exports.handler = async function(event) {
+  try {
+    const courseDataPath = path.join(__dirname, 'course/course_data2.json');
+    const indexDataPath = path.join(__dirname, 'course/indexNsize.json');
+
+    const [courseJson, indexJson] = await Promise.all([
+      readJsonFile(courseDataPath),
+      readJsonFile(indexDataPath)
+    ]);
+
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        courseJson,
+        indexJson
+      })
+    };
+  } catch (err) {
+    console.error("Error reading course data:", err);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: "Error reading course data" })
+    };
+  }
+};
 
   function seat_results(time_diff, end_time, course_count) {
     var arr_seats = [];
