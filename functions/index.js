@@ -7,14 +7,15 @@ exports.handler = async function(event, context) {
   let course_count;
 
   try {
-    const courseData = await fs.readFile("course/course_data2.json");
+    const courseData = await fs.readFile("../public/course/course_data2.json");
     courseJson = JSON.parse(courseData);
     course_count = Object.keys(courseJson).length;
 
-    const indexData = await fs.readFile("course/indexNsize.json");
+    const indexData = await fs.readFile("../public/course/indexNsize.json");
     indexJson = JSON.parse(indexData);
 
   } catch (err) {
+    console.error("Error reading file:", err); //못 읽은 이유 알아내기 위해 삽입
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error reading course data" })
