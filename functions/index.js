@@ -16,9 +16,11 @@ exports.handler = async function(event, context) {
     const courseData = await fs.readFile(coursePath);
     courseJson = JSON.parse(courseData);
     course_count = Object.keys(courseJson).length;
+    console.log("coursePath는 잘 읽힘");
 
     const indexData = await fs.readFile(indexSizePath);
     indexJson = JSON.parse(indexData);
+    console.log("indexSizePath는 잘 읽힘");
 
     // 성공적으로 데이터를 읽어왔을 때
     return {
@@ -28,7 +30,7 @@ exports.handler = async function(event, context) {
 
   } catch (err) {
     // 오류 발생 시
-    console.error("Error reading file:", err);
+    console.error("Error reading file:", err.message);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error reading course data" })
