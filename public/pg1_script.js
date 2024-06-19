@@ -3,7 +3,7 @@
         window.location.href = "page2.html"; // 페이지 2로 이동
       }
       //타이머
-      window.onload = function () {
+      window.onload = showTime () {
         var second = 50;
         var minute = 59;
         var hour = 14;
