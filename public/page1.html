@@ -275,20 +275,20 @@
       ></div>
 
       <script>
-        function checkPage2(){
-          fetch(`/.netlify/functions/index`)
-          .then((response) => response.json())
-          .then((data)=>{
-            console.log(data.time, data.pass)
-            if (data.pass=='not open'){
-              window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
-            }
-            else{
-              console.log('server open')
-              goToPage2()
-            }
-          });
-        }
+        //function checkPage2(){
+          //fetch(`/.netlify/functions/index`)
+          //.then((response) => response.json())
+          //.then((data)=>{
+            //console.log(data.time, data.pass)
+            //if (data.pass=='not open'){
+              //window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
+           // }
+            //else{
+              //console.log('server open')
+              //goToPage2()
+           // }
+         // });
+       // }
          function checkPage2() {
            fetch(`http://localhost:5000/`)
              .then((response) => response.json())
