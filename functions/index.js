@@ -1,4 +1,3 @@
-/**
 const fs = require("fs").promises;
 
 exports.handler = async function(event, context) {
@@ -21,7 +20,9 @@ exports.handler = async function(event, context) {
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
-  **/
+  
+
+/** 2024.06.19. 박수현이 9번째 줄 try에서 err 발생하는 이유 알아보려고 임시로 적은 코드
 
 const fs = require('fs').promises;
 const path = require('path');
@@ -61,6 +62,8 @@ exports.handler = async function(event) {
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
+
+  **/
 
   function seat_results(time_diff, end_time, course_count) {
     var arr_seats = [];
