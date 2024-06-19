@@ -286,6 +286,7 @@
 
       <script>
         function checkPage2(){
+          console.log('checkPage2 function called')
           fetch(`/.netlify/functions/index.js`)
           .then((response) => response.json())
           .then((data)=>{
