@@ -15,6 +15,7 @@ exports.handler = async function(event, context) {
     indexJson = JSON.parse(indexData);
 
   } catch (err) {
+    console.error("Error reading course data: ", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error reading course data" })
