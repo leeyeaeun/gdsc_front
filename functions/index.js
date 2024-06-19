@@ -10,8 +10,8 @@ exports.handler = async function(event, context) {
   try {
 
         // 파일의 절대 경로를 사용하도록 수정
-    const coursePath = path.join(__dirname, "../public/course/course_data2.json");
-    const indexSizePath = path.join(__dirname, "../public/course/indexNsize.json");
+    const coursePath = path.join(__dirname, "netlify/public/course/course_data2.json");
+    const indexSizePath = path.join(__dirname, "netlify/public/course/indexNsize.json");
     console.log("const는 잘 됐다");
 
     const courseData = await fs.readFile(coursePath);
