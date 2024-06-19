@@ -329,28 +329,28 @@
   
     <script>
       // 페이지 2로 이동하는 함수 정의
-      function goToPage2() {
-        window.location.href = "page2.html"; // 페이지 2로 이동
-      }
-      //타이머
-      window.onload = function () {
-        var second = 50;
-        var minute = 59;
-        var hour = 14;
-        var appendSecond = document.getElementById("second");
-        var appendMinute = document.getElementById("minute");
-        var appendHour = document.getElementById("hour");
-        var Interval;
-
-        clearInterval(Interval);
-        Interval = setInterval(startTimer, 1000);
-
-        function startTimer() {
-          second++;
-
-          if (second <= 9) {
-            appendSecond.innerText = "0" + second;
-          }
+//      function goToPage2() {
+//        window.location.href = "page2.html"; // 페이지 2로 이동
+//      }
+//      //타이머
+//      window.onload = function () {
+//        var second = 50;
+//        var minute = 59;
+//        var hour = 14;
+//        var appendSecond = document.getElementById("second");
+//        var appendMinute = document.getElementById("minute");
+//        var appendHour = document.getElementById("hour");
+//        var Interval;
+//
+//        clearInterval(Interval);
+//        Interval = setInterval(startTimer, 1000);
+//
+//        function startTimer() {
+//          second++;
+//
+//          if (second <= 9) {
+//            appendSecond.innerText = "0" + second;
+//          }
 
           if (second > 9) {
             appendSecond.innerText = second;
