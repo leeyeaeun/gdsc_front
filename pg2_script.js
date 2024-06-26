@@ -5,79 +5,160 @@ function goToPage1() {
 
 function showWaiting() {
   // 접속 대기 창 표시 코드
-  document.getElementById("waitingModal").style.display = "block";
+  document.getElementById("popup").style.display = "block";
+  const timer = setTimeout(() => {
+    document.getElementById("waitingModal").style.display = "block";
+  }, 1000)
 }
 
 function hideWaiting() {
   // 접속 대기 창 숨기기 코드
+  document.getElementById("popup").style.display = "none";
+  const timer = setTimeout(() => {
+    document.getElementById("waitingModal").style.display = "none";
+  }, 1000)
+}
+
+function showWaiting1() {
+  // 접속 대기 창 표시 코드
+  document.getElementById("waitingModal").style.display = "block"
+}
+
+function hideWaiting1() {
+  // 접속 대기 창 숨기기 코드
   document.getElementById("waitingModal").style.display = "none";
 }
+
 var selectedCoursesList = [];
 
 let department;
-document.getElementById('SE').addEventListener('click', function() {
+document.getElementById("SE").addEventListener("click", function () {
   department = "SE";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('GS').addEventListener('click', function() {
+document.getElementById("GS").addEventListener("click", function () {
   department = "GS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('UC').addEventListener('click', function() {
+document.getElementById("UC").addEventListener("click", function () {
   department = "UC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('MM').addEventListener('click', function() {
+document.getElementById("MM").addEventListener("click", function () {
   department = "MM";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('FE').addEventListener('click', function() {
+document.getElementById("FE").addEventListener("click", function () {
   department = "FE";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('MD').addEventListener('click', function() {
+document.getElementById("MD").addEventListener("click", function () {
   department = "MD";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('CT').addEventListener('click', function() {
+document.getElementById("CT").addEventListener("click", function () {
   department = "CT";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('IR').addEventListener('click', function() {
+document.getElementById("IR").addEventListener("click", function () {
   department = "IR";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('AI').addEventListener('click', function() {
+document.getElementById("AI").addEventListener("click", function () {
   department = "AI";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('EC').addEventListener('click', function() {
+document.getElementById("EC").addEventListener("click", function () {
   department = "EC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('MA').addEventListener('click', function() {
+document.getElementById("MA").addEventListener("click", function () {
   department = "MA";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('MC').addEventListener('click', function() {
+document.getElementById("MC").addEventListener("click", function () {
   department = "MC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('EV').addEventListener('click', function() {
+document.getElementById("EV").addEventListener("click", function () {
   department = "EV";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('BS').addEventListener('click', function() {
+document.getElementById("BS").addEventListener("click", function () {
   department = "BS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('PS').addEventListener('click', function() {
+document.getElementById("PS").addEventListener("click", function () {
   department = "PS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
-document.getElementById('CH').addEventListener('click', function() {
+document.getElementById("CH").addEventListener("click", function () {
   department = "CH";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 
 function showCourses(division) {
@@ -139,7 +220,7 @@ function showCourses(division) {
 
         // 클릭한 전공 department에 저장
         // department 콘솔에 출력
-        
+
         // "Add" 버튼 추가
         var addButtonCell = document.createElement("td");
         var addButton = document.createElement("button");
@@ -152,12 +233,14 @@ function showCourses(division) {
           // 5초 후에 addAfterDelay 함수 호출
           setTimeout(() => {
             hideWaiting();
-            var clickedCourseCode = courses[index]["course_code"];
-            NewcourseTime = courses[index]["course_time"];
-            addToSelectedCourses(course);
-            showSelectedCoursesOnTimetable();
-            const $table = document.getElementById("selectedCoursesTable");
-          }, 5000);
+            setTimeout(() => {
+              var clickedCourseCode = courses[index]["course_code"];
+              NewcourseTime = courses[index]["course_time"];
+              addToSelectedCourses(course);
+              showSelectedCoursesOnTimetable();
+              const $table = document.getElementById("selectedCoursesTable");
+            }, 1000);
+          }, 1000);
 
           // 서버에 데이터를 전송하기 위한 JSON 객체 생성
           var data = {
@@ -202,7 +285,7 @@ function showCourses(division) {
     .catch((error) => console.error("Error loading courses:", error));
 }
 
-document.getElementById('btnReset').addEventListener('click', function() {
+document.getElementById("btnReset").addEventListener("click", function () {
   showCourses(department);
 });
 
@@ -237,6 +320,8 @@ function addAfterDropCourses(course) {
       dropButton.textContent = "Drop";
       dropButton.addEventListener("click", function () {
         // drop 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
+        showWaiting1();
+        
         dropCourse(course);
         console.log(
           "Drop button clicked for course_code",
@@ -389,8 +474,8 @@ function dropCourse(course) {
     selectedCoursesList.splice(index, 1); // 해당 인덱스의 과목 제거
   }
   selectedCoursesCount = 0;
-
   clearSelectedCoursesTable();
+  showSelectedCoursesOnTimetable();
 }
 
 function clearSelectedCoursesTable() {
@@ -515,8 +600,11 @@ document.onmouseout = function (e) {
 function showSelectedCoursesOnTimetable() {
   // 시간표에 추가된 과목들로 시간표 갱신
   clearTimetable(); // 시간표 초기화
-  selectedCoursesList.forEach(function (course) {
-    highlightTimeSlots(course, getNextColor()); // 선택된 각 과목을 시간표에 표시
+  // selectedCourseList를 순회하면서 색상을 할당
+  selectedCoursesList.forEach((course, index) => {
+    const color = getNextColor(index);
+    console.log(`Index ${index}:`, course, `Color: ${color}`);
+    highlightTimeSlots(course, color); // 선택된 각 과목을 시간표에 표시
   });
 }
 
@@ -605,10 +693,9 @@ function rgb(r, g, b) {
   return `rgb(${r}, ${g}, ${b})`;
 }
 // highlightTimeSlots 함수를 호출할 때마다 리스트의 다음 색상을 선택합니다.
-function getNextColor() {
-  const color = colors[colorIndex];
-  colorIndex = (colorIndex + 1) % colors.length; // 다음 색상을 선택하고, 리스트의 끝에 도달하면 다시 처음으로 돌아갑니다.
-  return color;
+
+function getNextColor(colorIndex) {
+  return colors[colorIndex % colors.length];
 }
 
 // 특정한 RGB 값을 사용하여 색상 리스트를 만듭니다.
@@ -623,3 +710,38 @@ const colors = [
   rgb(189, 183, 107),
   rgb(255, 99, 71),
 ];
+
+document.getElementById("searchButton").addEventListener("click", function () {
+  performSearch();
+});
+
+document
+  .getElementById("courseSearch")
+  .addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      performSearch();
+    }
+  });
+
+function performSearch() {
+  const searchText = document
+    .getElementById("courseSearch")
+    .value.toLowerCase();
+  const rows = document.querySelectorAll("#courseTableBody tr");
+
+  rows.forEach((row) => {
+    const titleText = row.cells[3].textContent.toLowerCase();
+    const instructorText = row.cells[7].textContent.toLowerCase();
+    const codeText = row.cells[1].textContent.toLowerCase();
+
+    if (
+      titleText.includes(searchText) ||
+      instructorText.includes(searchText) ||
+      codeText.includes(searchText)
+    ) {
+      row.style.display = "";
+    } else {
+      row.style.display = "none";
+    }
+  });
+}
