@@ -7,9 +7,3 @@
   from = "/*"
   to = "/page1.html"
   status = 200
-
-#아래는 2024.06.19. 박수현이 page1.html의 정보가 index.js로 전달되게 임시로 쓴 코드 
-[[redirects]]
-  from = "/page1.html"
-  to = "/index.js"
-  status = 200
