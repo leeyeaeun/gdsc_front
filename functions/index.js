@@ -1,5 +1,5 @@
+
 const fs = require("fs").promises;
-const path = require("path"); //2024.06.19. 16:43에 추가
 
 exports.handler = async function(event, context) {
   const arr_time = [];
@@ -8,97 +8,20 @@ exports.handler = async function(event, context) {
   let course_count;
 
   try {
-
-        // 파일의 절대 경로를 사용하도록 수정
-    console.log(__dirname);
-    const coursePath = path.join(__dirname, "netlify/public/course/course_data2.json");
-    const indexSizePath = path.join(__dirname, "netlify/public/course/indexNsize.json");
-    console.log("const는 잘 됐다");
-
-    const courseData = await fs.readFile(coursePath);
-    courseJson = JSON.parse(courseData);
-    course_count = Object.keys(courseJson).length;
-    console.log("coursePath는 잘 읽힘");
-
-    const indexData = await fs.readFile(indexSizePath);
-    indexJson = JSON.parse(indexData);
-    console.log("indexSizePath는 잘 읽힘");
-
-    // 성공적으로 데이터를 읽어왔을 때
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ courseJson, indexJson, course_count })
-    };
-
-  } catch (err) {
-    // 오류 발생 시
-    console.error("Error reading file:", err.message);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Error reading course data" })
-    };
-  }
-  
-    /**2024.06.19. 16:43에 주석처리-절대경로 설정 위함
-    const courseData = await fs.readFile("../public/course/course_data2.json");
+    const courseData = await fs.readFile("course/course_data2.json");
     courseJson = JSON.parse(courseData);
     course_count = Object.keys(courseJson).length;
 
-    const indexData = await fs.readFile("../public/course/indexNsize.json");
+    const indexData = await fs.readFile("course/indexNsize.json");
     indexJson = JSON.parse(indexData);
 
   } catch (err) {
-    console.error("Error reading file:", err); //못 읽은 이유 알아내기 위해 삽입
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: "Error reading course data" })
-    };
-  }
-  **/
-  
-
-/** 2024.06.19. 박수현이 9번째 줄 try에서 err 발생하는 이유 알아보려고 임시로 적은 코드
-
-const fs = require('fs').promises;
-const path = require('path');
-
-// 파일을 읽는 함수
-async function readJsonFile(filePath) {
-  try {
-    const data = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(data);
-  } catch (err) {
-    console.error("Error reading file:", err);
-    throw err;
-  }
-}
-
-exports.handler = async function(event) {
-  try {
-    const courseDataPath = path.join(__dirname, 'course/course_data2.json');
-    const indexDataPath = path.join(__dirname, 'course/indexNsize.json');
-
-    const [courseJson, indexJson] = await Promise.all([
-      readJsonFile(courseDataPath),
-      readJsonFile(indexDataPath)
-    ]);
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({
-        courseJson,
-        indexJson
-      })
-    };
-  } catch (err) {
-    console.error("Error reading course data:", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Error reading course data" })
     };
   }
 
-  **/
 
   function seat_results(time_diff, end_time, course_count) {
     var arr_seats = [];
