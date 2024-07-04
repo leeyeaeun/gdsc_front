@@ -228,6 +228,65 @@
       .modal-content img {
         width: 30%;
       }
+
+      .pop {
+        display: none; /* 초기에는 숨김 */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .popup-content img {
+        width: 100%;
+      }
+
+      .boxO {
+            width: 500px;
+            border: 7px solid rgb(220, 220, 220);
+            margin: 0px auto;
+        }
+
+        .boxI {
+            border: 10px solid white;
+        }
+
+        .title {
+            font-size: 20px;
+            color: royalblue;
+        }
+
+        .outerBox {
+
+        }
+
+        .noticeA {
+            font-size: 10px;
+        }
+
+        .innerBox {
+            width: 480px;
+            background-color: rgb(219, 219, 219);
+        }
+
+        .noticeB {
+            font-size: 10px;
+        }
+
+        .noticeC {
+            font-size: 15px;
+            color: royalblue;
+        }
     </style>
   </head>
   <body>
@@ -2218,6 +2277,31 @@
     <div id="waitingModal" class="modal">
       <div class="modal-content">
         <img src="./img/waiting.gif" alt="Waiting_gif" />
+      </div>
+    </div>
+    <div id="popup" class="pop">
+      <div class="popup-content">
+        <div class="boxO">
+          <div class="boxI">
+            <div class="title">
+              서비스 접속대기 중입니다. <br>
+            </div>
+            <img src="./img/loading.gif" alt="Loading_gif" />
+              <div id="inner" class="innerBox">
+                <div class="noticeA">
+                  고객님 앞에
+                </div>
+                  <div class="noticeB">
+                    명의 대기자가 있습니다. <br>
+                    현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br>
+                    서비스로 자동 접속 됩니다. 
+                  </div>
+                  <div class="noticeC">
+                    재 접속하시면 대기시간이 더 길어집니다. [중지]
+                  </div>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="pg2_script.js"></script>
