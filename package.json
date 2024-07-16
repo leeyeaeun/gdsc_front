@@ -1,6 +1,19 @@
 {
+  "name": "before_netlify",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify deploy --prod"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@netlify/functions": "^2.8.1",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
-  }
+    "express": "^4.17.1",
+    "netlify-cli": "^17.33.0",
+    "netlify-lambda": "^1.6.3",
+    "serverless-http": "^2.3.0"
+  },
+  "description": ""
 }

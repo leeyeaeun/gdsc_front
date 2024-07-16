@@ -249,7 +249,7 @@ function showCourses(division) {
           };
 
           // POST 요청을 보냄
-          fetch("http://localhost:3000", {
+          fetch("/.netlify/functions/index/register", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
