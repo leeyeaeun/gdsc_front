@@ -5,79 +5,160 @@ function goToPage1() {
 
 function showWaiting() {
   // 접속 대기 창 표시 코드
-  document.getElementById("waitingModal").style.display = "block";
+  document.getElementById("popup").style.display = "block";
+  const timer = setTimeout(() => {
+    document.getElementById("waitingModal").style.display = "block";
+  }, 2000)
 }
 
 function hideWaiting() {
   // 접속 대기 창 숨기기 코드
+  document.getElementById("popup").style.display = "none";
+  const timer = setTimeout(() => {
+    document.getElementById("waitingModal").style.display = "none";
+  }, 2000)
+}
+
+function showWaiting1() {
+  // 접속 대기 창 표시 코드
+  document.getElementById("waitingModal").style.display = "block"
+}
+
+function hideWaiting1() {
+  // 접속 대기 창 숨기기 코드
   document.getElementById("waitingModal").style.display = "none";
 }
+
 var selectedCoursesList = [];
 
 let department;
 document.getElementById("SE").addEventListener("click", function () {
   department = "SE";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("GS").addEventListener("click", function () {
   department = "GS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("UC").addEventListener("click", function () {
   department = "UC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("MM").addEventListener("click", function () {
   department = "MM";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("FE").addEventListener("click", function () {
   department = "FE";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("MD").addEventListener("click", function () {
   department = "MD";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("CT").addEventListener("click", function () {
   department = "CT";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("IR").addEventListener("click", function () {
   department = "IR";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("AI").addEventListener("click", function () {
   department = "AI";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("EC").addEventListener("click", function () {
   department = "EC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("MA").addEventListener("click", function () {
   department = "MA";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("MC").addEventListener("click", function () {
   department = "MC";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("EV").addEventListener("click", function () {
   department = "EV";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("BS").addEventListener("click", function () {
   department = "BS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("PS").addEventListener("click", function () {
   department = "PS";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 document.getElementById("CH").addEventListener("click", function () {
   department = "CH";
   console.log(department);
+  showWaiting1();
+  const timer = setTimeout(() => {
+    hideWaiting1();
+  }, 1000)
 });
 
 function showCourses(division) {
@@ -152,11 +233,13 @@ function showCourses(division) {
           // 5초 후에 addAfterDelay 함수 호출
           setTimeout(() => {
             hideWaiting();
-            var clickedCourseCode = courses[index]["course_code"];
-            NewcourseTime = courses[index]["course_time"];
-            addToSelectedCourses(course);
-            showSelectedCoursesOnTimetable();
-            const $table = document.getElementById("selectedCoursesTable");
+            setTimeout(() => {
+              var clickedCourseCode = courses[index]["course_code"];
+              NewcourseTime = courses[index]["course_time"];
+              addToSelectedCourses(course);
+              showSelectedCoursesOnTimetable();
+              const $table = document.getElementById("selectedCoursesTable");
+            }, 1000);
           }, 1000);
 
           // 서버에 데이터를 전송하기 위한 JSON 객체 생성
@@ -237,6 +320,8 @@ function addAfterDropCourses(course) {
       dropButton.textContent = "Drop";
       dropButton.addEventListener("click", function () {
         // drop 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
+        showWaiting1();
+        
         dropCourse(course);
         console.log(
           "Drop button clicked for course_code",
