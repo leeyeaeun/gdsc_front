@@ -247,6 +247,7 @@
           margin-left: 20px;
           z-index: 2;
           margin-top: -12px;
+          position: absolute;
         "
       >
         Registration
@@ -285,36 +286,34 @@
     <div><img src="img/main_img.PNG" alt="" /></div>
 
       <script>
+        var server_start_JSON={
+          server_start: -1
+        }
         function checkPage2(){
-          console.log('checkPage2 function called')
-          fetch(`/.netlify/functions/index.js`)
+          fetch("/.netlify/functions/index", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              //or text/plain
+            },
+            body: JSON.stringify(server_start_JSON),
+          })
           .then((response) => response.json())
           .then((data)=>{
-            console.log(data.time, data.pass)
+            server_start_JSON={
+              server_start: data.server_start
+            }
+            if (data.time==0){
+              return;
+            }
             if (data.pass=='not open'){
               window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
             }
             else{
-              console.log('server open')
               goToPage2()
             }
           });
         }
-   //      function checkPage2() {
-   //        fetch(`http://localhost:5000/`)
-   //          .then((response) => response.json())
-   //          .then((data) => {
-   //            console.log(data.time, data.pass);
-   //            if (data.pass == "not open") {
-   //              window.alert(
-   //                "zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)"
-   //              );
-   //            } else {
-   //              console.log("server open");
-   //              goToPage2();
-   //            }
-   //          });
-   //      }
       </script>
     
   //    <div style="left: 450px; margin-left: 100px">
@@ -335,6 +334,7 @@
         }
         //타이머
         window.onload = function () {
+          checkPage2();
           var second = 50;
           var minute = 59;
           var hour = 14;
@@ -358,6 +358,7 @@
         }
 
          if (second >= 60) {
+           //console.log("minute");
             minute++;
             second = 0;
             appendSecond.innerText = "0" + 0;
@@ -372,6 +373,7 @@
           }
 
           if (minute >= 60) {
+            //console.log("hour");
             hour++;
             minute = 0;
             appendMinute.innerText = "0" + 0;
