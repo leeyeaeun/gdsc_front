@@ -345,7 +345,7 @@ function addAfterDropCourses(course) {
               // 셀 내부의 모든 div 요소를 선택하여 제거
               cell.querySelectorAll("div").forEach((div) => {
                 div.remove();
-              });
+              }); 
             }
           });
         });
@@ -453,6 +453,11 @@ function addToSelectedCourses(course) {
         updateCoursesNumber();
 
         const $table = document.getElementById("selectedCoursesTable");
+        
+        showWaiting1();
+        const timer = setTimeout(() => {
+          hideWaiting1();
+        }, 1000)
       });
       cell.appendChild(dropButton);
     } else {
