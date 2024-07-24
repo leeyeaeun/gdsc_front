@@ -1,6 +1,6 @@
 var totalCredits = 0;
-function goToPage1() {
-  window.location.href = "page1.html"; // 페이지 2로 이동
+function goToPage2() {
+  window.location.href = "page3.html"; // 페이지 2로 이동
 }
 
 function showWaiting() {
@@ -249,7 +249,7 @@ function showCourses(division) {
           };
 
           // POST 요청을 보냄
-          fetch("/.netlify/functions/index/register", {
+          fetch("http://localhost:3000", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
