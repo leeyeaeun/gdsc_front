@@ -622,7 +622,7 @@ function highlightTimeSlots(course, color) {
   courseTimes.forEach((time) => {
     // 시간대를 시간과 요일로 분리하여 처리
     const splitTimes = splitTimeValues([time]); // splitTimeValues 함수 호출 시 배열로 전달
-    splitTimes.forEach((time, index) => {
+    sp\litTimes.forEach((time, index) => {
       // splitTimes의 각 항목은 요일-시간 형식이므로 다시 분할
       const cell = document.getElementById(time);
 
