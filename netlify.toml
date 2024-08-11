@@ -2,8 +2,7 @@
 [build]
   publish = "public"
   functions = "functions"
-  directory = "./functions"
-
+  
 [[redirects]]
   from = "/*"
   to = "/page1.html"
