@@ -9,7 +9,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "AI4005",
@@ -21,7 +22,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "AI4011",
@@ -33,7 +35,9 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
+  
     },
     {
         "subject_code": "AI4012",
@@ -45,7 +49,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "AI4014",
@@ -57,7 +62,9 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "80",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
+  
     },
     {
         "subject_code": "AI4020",
@@ -69,7 +76,9 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
+  
     },
     {
         "subject_code": "AI4021",
@@ -81,7 +90,9 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
+  
     },
     {
         "subject_code": "AI4028",
@@ -93,7 +104,9 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "20"
+  
     },
     {
         "subject_code": "AI4050",
@@ -105,7 +118,9 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
+  
     },
     {
         "subject_code": "AI4311",
@@ -117,7 +132,9 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "45",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
+    
     },
     {
         "subject_code": "AI4312",
@@ -129,7 +146,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "AI4701",
@@ -141,7 +159,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "BS2101",
@@ -153,7 +172,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS2102",
@@ -165,7 +185,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS2203",
@@ -177,7 +198,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS2206",
@@ -189,7 +211,8 @@
         "course_credit": "2",
         "course_time": "THU 10:00~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS3105",
@@ -201,7 +224,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS3112",
@@ -213,7 +237,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~18:00",
         "class_size": "10",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS3112",
@@ -225,7 +250,8 @@
         "course_credit": "3",
         "course_time": "FRI 13:00~18:00",
         "class_size": "10",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS3201",
@@ -237,7 +263,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4206",
@@ -249,7 +276,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4213",
@@ -261,7 +289,8 @@
         "course_credit": "3",
         "course_time": "MON 19:00~22:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4218",
@@ -273,7 +302,8 @@
         "course_credit": "3",
         "course_time": "MON 15:30~18:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4219",
@@ -285,7 +315,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4223",
@@ -297,7 +328,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS4224",
@@ -309,7 +341,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "BS9102",
@@ -321,7 +354,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "BS9103",
@@ -333,7 +367,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH2101",
@@ -345,7 +380,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH2102",
@@ -357,7 +393,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH2103",
@@ -369,7 +406,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH2301",
@@ -381,7 +419,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH2401",
@@ -393,7 +432,8 @@
         "course_credit": "1",
         "course_time": "FRI 20:00~23:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3104",
@@ -405,7 +445,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3106",
@@ -417,7 +458,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3107",
@@ -429,7 +471,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3111",
@@ -441,7 +484,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3207",
@@ -453,7 +497,8 @@
         "course_credit": "3",
         "course_time": "MON 17:30~18:30\nTUE 13:00~17:00\nWED 17:30~18:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3207",
@@ -465,7 +510,8 @@
         "course_credit": "3",
         "course_time": "MON 17:30~18:30\nWED 17:30~18:30\nFRI 13:00~17:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3208",
@@ -477,7 +523,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH3401",
@@ -489,7 +536,8 @@
         "course_credit": "1",
         "course_time": "FRI 20:00~23:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH4212",
@@ -501,7 +549,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH4216",
@@ -513,7 +562,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CH9101",
@@ -525,7 +575,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH9102",
@@ -537,7 +588,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CH9103",
@@ -549,7 +601,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "CT2506",
@@ -561,7 +614,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "CT2544",
@@ -573,7 +627,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "CT2661",
@@ -585,7 +640,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "CT2832",
@@ -597,7 +653,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "CT4201",
@@ -609,7 +666,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "CT4202",
@@ -621,7 +679,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "CT4203",
@@ -633,7 +692,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "CT4302",
@@ -645,7 +705,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "CT4305",
@@ -657,7 +718,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "EB2726",
@@ -669,7 +731,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EB2730",
@@ -681,7 +744,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EB2750",
@@ -693,7 +757,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EB2754",
@@ -705,7 +770,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EB3735",
@@ -717,7 +783,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EC2105",
@@ -729,7 +796,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC2201",
@@ -741,7 +809,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC2202",
@@ -753,7 +822,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC2202",
@@ -765,7 +835,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC2203",
@@ -777,7 +848,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC2203",
@@ -789,7 +861,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3102",
@@ -801,7 +874,8 @@
         "course_credit": "4",
         "course_time": "TUE 09:00~10:00\nTUE 13:00~17:00\nTHU 09:00~10:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3102",
@@ -813,7 +887,8 @@
         "course_credit": "4",
         "course_time": "TUE 09:00~10:00\nTHU 09:00~10:00\nTHU 13:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3102",
@@ -825,7 +900,8 @@
         "course_credit": "4",
         "course_time": "MON 09:00~10:00\nWED 09:00~10:00\nWED 13:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3102",
@@ -837,7 +913,8 @@
         "course_credit": "4",
         "course_time": "MON 09:00~10:00\nWED 09:00~10:00\nFRI 13:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3202",
@@ -849,7 +926,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "EC3207",
@@ -861,7 +939,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC3214",
@@ -873,7 +952,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~18:00\nWED 16:00~18:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC3216",
@@ -885,7 +965,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC3220",
@@ -897,7 +978,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "10",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC3221",
@@ -909,7 +991,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4205",
@@ -921,7 +1004,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4209",
@@ -933,7 +1017,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4210",
@@ -945,7 +1030,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "80",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4211",
@@ -957,7 +1043,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4212",
@@ -969,7 +1056,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4213",
@@ -981,7 +1069,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4215",
@@ -993,7 +1082,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4219",
@@ -1005,7 +1095,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4301",
@@ -1017,7 +1108,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4304",
@@ -1029,7 +1121,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "24",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4309",
@@ -1041,7 +1134,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "10",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC4311",
@@ -1053,7 +1147,8 @@
         "course_credit": "3",
         "course_time": "ALL 00:00~00:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "EC9101",
@@ -1065,7 +1160,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "EC9102",
@@ -1077,7 +1173,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "EC9103",
@@ -1089,7 +1186,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "EV2208",
@@ -1101,7 +1199,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV2211",
@@ -1113,7 +1212,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV2213",
@@ -1125,7 +1225,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV2214",
@@ -1137,7 +1238,8 @@
         "course_credit": "1",
         "course_time": "TUE 13:00~14:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "EV3101",
@@ -1149,7 +1251,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV3217",
@@ -1161,7 +1264,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV3223",
@@ -1173,7 +1277,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4107",
@@ -1185,7 +1290,8 @@
         "course_credit": "3",
         "course_time": "FRI 13:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4202",
@@ -1197,7 +1303,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4216",
@@ -1209,7 +1316,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "23",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4226",
@@ -1221,7 +1329,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4227",
@@ -1233,7 +1342,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4229",
@@ -1245,7 +1355,8 @@
         "course_credit": "3",
         "course_time": "WED 16:00~19:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4231",
@@ -1257,7 +1368,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4233",
@@ -1269,7 +1381,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4234",
@@ -1281,7 +1394,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV4239",
@@ -1293,7 +1407,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "EV9101",
@@ -1305,7 +1420,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "EV9102",
@@ -1317,7 +1433,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "EV9103",
@@ -1329,7 +1446,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "120"
     },
     {
         "subject_code": "FE2301",
@@ -1341,7 +1459,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "FE3301",
@@ -1353,7 +1472,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "10",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "FE4304",
@@ -1365,7 +1485,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "24",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "GS0101",
@@ -1377,7 +1498,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "13",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0101",
@@ -1389,7 +1511,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "13",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0102",
@@ -1401,7 +1524,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0102",
@@ -1413,7 +1537,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0103",
@@ -1425,7 +1550,8 @@
         "course_credit": "0",
         "course_time": "MON 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0103",
@@ -1437,7 +1563,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0104",
@@ -1449,7 +1576,8 @@
         "course_credit": "0",
         "course_time": "TUE 17:30~19:30",
         "class_size": "10",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0104",
@@ -1461,7 +1589,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "10",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0104",
@@ -1473,7 +1602,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "10",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0105",
@@ -1485,7 +1615,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "12",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0105",
@@ -1497,7 +1628,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "12",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0106",
@@ -1509,7 +1641,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0106",
@@ -1521,7 +1654,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0107",
@@ -1533,7 +1667,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0107",
@@ -1545,7 +1680,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0108",
@@ -1557,7 +1693,8 @@
         "course_credit": "0",
         "course_time": "MON 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0109",
@@ -1569,7 +1706,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0110",
@@ -1581,7 +1719,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0112",
@@ -1593,7 +1732,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0112",
@@ -1605,7 +1745,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0113",
@@ -1617,7 +1758,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0114",
@@ -1629,7 +1771,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "20",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0115",
@@ -1641,7 +1784,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0201",
@@ -1653,7 +1797,8 @@
         "course_credit": "0",
         "course_time": "TUE 17:30~19:30",
         "class_size": "18",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0201",
@@ -1665,7 +1810,8 @@
         "course_credit": "0",
         "course_time": "THU 17:30~19:30",
         "class_size": "18",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0201",
@@ -1677,7 +1823,8 @@
         "course_credit": "0",
         "course_time": "THU 19:30~21:30",
         "class_size": "18",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0202",
@@ -1689,7 +1836,8 @@
         "course_credit": "0",
         "course_time": "MON 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0203",
@@ -1701,7 +1849,8 @@
         "course_credit": "0",
         "course_time": "MON 17:30~19:30",
         "class_size": "10",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0204",
@@ -1713,7 +1862,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0205",
@@ -1725,7 +1875,8 @@
         "course_credit": "0",
         "course_time": "TUE 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0206",
@@ -1737,7 +1888,8 @@
         "course_credit": "0",
         "course_time": "MON 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0206",
@@ -1749,7 +1901,8 @@
         "course_credit": "0",
         "course_time": "MON 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0206",
@@ -1761,7 +1914,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0207",
@@ -1773,7 +1927,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0207",
@@ -1785,7 +1940,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0208",
@@ -1797,7 +1953,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0209",
@@ -1809,7 +1966,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0209",
@@ -1821,7 +1979,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0210",
@@ -1833,7 +1992,8 @@
         "course_credit": "0",
         "course_time": "TUE 17:30~19:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0210",
@@ -1845,7 +2005,8 @@
         "course_credit": "0",
         "course_time": "TUE 19:30~21:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0211",
@@ -1857,7 +2018,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0211",
@@ -1869,7 +2031,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0211",
@@ -1881,7 +2044,8 @@
         "course_credit": "0",
         "course_time": "TUE 17:30~19:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0213",
@@ -1893,7 +2057,8 @@
         "course_credit": "0",
         "course_time": "WED 17:30~19:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS0213",
@@ -1905,7 +2070,8 @@
         "course_credit": "0",
         "course_time": "WED 19:30~21:30",
         "class_size": "16",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "40"
     },
     {
         "subject_code": "GS1001",
@@ -1917,7 +2083,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nMON 17:30~18:30\nWED 09:00~10:30",
         "class_size": "37",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1001",
@@ -1929,7 +2096,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30\nWED 17:30~18:30",
         "class_size": "37",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1001",
@@ -1941,7 +2109,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 18:30~19:30",
         "class_size": "37",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1001",
@@ -1953,7 +2122,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30\nTHU 17:30~18:30",
         "class_size": "67",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1001",
@@ -1965,7 +2135,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nTHU 18:30~19:30",
         "class_size": "67",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1101",
@@ -1977,7 +2148,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nMON 19:00~20:00\nWED 10:30~12:00",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1101",
@@ -1989,7 +2161,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTUE 19:00~20:00\nTHU 10:30~12:00",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1101",
@@ -2001,7 +2174,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30\nTHU 19:00~20:00",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS1101",
@@ -2013,7 +2187,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nMON 19:00~20:00\nWED 13:00~14:30",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS1101",
@@ -2025,7 +2200,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30\nWED 19:00~20:00",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS1103",
@@ -2037,7 +2213,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nWED 19:00~20:00\nTHU 10:30~12:00",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS1111",
@@ -2049,7 +2226,8 @@
         "course_credit": "1",
         "course_time": "MON 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS1111",
@@ -2061,7 +2239,8 @@
         "course_credit": "1",
         "course_time": "TUE 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2073,7 +2252,8 @@
         "course_credit": "1",
         "course_time": "TUE 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2085,7 +2265,8 @@
         "course_credit": "1",
         "course_time": "WED 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2097,7 +2278,8 @@
         "course_credit": "1",
         "course_time": "WED 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2109,7 +2291,8 @@
         "course_credit": "1",
         "course_time": "THU 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2121,7 +2304,8 @@
         "course_credit": "1",
         "course_time": "THU 14:00~16:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2133,7 +2317,8 @@
         "course_credit": "1",
         "course_time": "FRI 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2145,7 +2330,8 @@
         "course_credit": "1",
         "course_time": "FRI 13:00~15:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1111",
@@ -2157,7 +2343,9 @@
         "course_credit": "1",
         "course_time": "FRI 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
+        
     },
     {
         "subject_code": "GS1201",
@@ -2169,7 +2357,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nMON 17:30~19:00\nWED 14:30~16:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1201",
@@ -2181,7 +2370,8 @@
         "course_credit": "3",
         "course_time": "MON 17:30~18:30\nTUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1201",
@@ -2193,7 +2383,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTUE 17:30~18:30\nTHU 14:30~16:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1201",
@@ -2205,7 +2396,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nMON 18:00~19:00\nWED 09:00~10:30",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1201",
@@ -2217,7 +2409,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nMON 19:00~20:00\nWED 10:30~12:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2229,7 +2422,8 @@
         "course_credit": "1",
         "course_time": "MON 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2241,7 +2435,8 @@
         "course_credit": "1",
         "course_time": "MON 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2253,7 +2448,8 @@
         "course_credit": "1",
         "course_time": "TUE 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2265,7 +2461,8 @@
         "course_credit": "1",
         "course_time": "TUE 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2277,7 +2474,8 @@
         "course_credit": "1",
         "course_time": "WED 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2289,7 +2487,8 @@
         "course_credit": "1",
         "course_time": "WED 16:00~18:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2301,7 +2500,8 @@
         "course_credit": "1",
         "course_time": "THU 10:30~12:30",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2313,7 +2513,8 @@
         "course_credit": "1",
         "course_time": "FRI 10:00~12:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1211",
@@ -2325,7 +2526,8 @@
         "course_credit": "1",
         "course_time": "FRI 15:00~17:00",
         "class_size": "18",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1301",
@@ -2337,7 +2539,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1301",
@@ -2349,7 +2552,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "33",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1302",
@@ -2361,7 +2565,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1311",
@@ -2373,7 +2578,8 @@
         "course_credit": "1",
         "course_time": "TUE 16:00~18:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1311",
@@ -2385,7 +2591,8 @@
         "course_credit": "1",
         "course_time": "WED 16:00~18:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1311",
@@ -2397,7 +2604,8 @@
         "course_credit": "1",
         "course_time": "THU 10:30~12:30",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1311",
@@ -2409,7 +2617,8 @@
         "course_credit": "1",
         "course_time": "FRI 10:00~12:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS1401",
@@ -2421,7 +2630,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00\nTHU 10:00~11:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1401",
@@ -2433,7 +2643,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00\nTHU 11:00~12:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1401",
@@ -2445,7 +2656,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nFRI 10:00~11:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1401",
@@ -2457,7 +2669,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nFRI 11:00~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1401",
@@ -2469,7 +2682,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nFRI 13:00~14:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "12"
     },
     {
         "subject_code": "GS1401",
@@ -2481,7 +2695,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30\nFRI 14:00~15:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1401",
@@ -2493,7 +2708,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30\nFRI 15:00~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1401",
@@ -2505,7 +2721,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30\nFRI 16:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1490",
@@ -2517,7 +2734,8 @@
         "course_credit": "2",
         "course_time": "TUE 13:00~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS1490",
@@ -2529,7 +2747,8 @@
         "course_credit": "2",
         "course_time": "THU 13:00~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS1492",
@@ -2541,7 +2760,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1496",
@@ -2553,7 +2773,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1497",
@@ -2565,7 +2786,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1498",
@@ -2577,7 +2799,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1499",
@@ -2589,7 +2812,8 @@
         "course_credit": "2",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1512",
@@ -2601,7 +2825,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1512",
@@ -2613,7 +2838,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1512",
@@ -2625,7 +2851,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1513",
@@ -2637,7 +2864,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1533",
@@ -2649,7 +2877,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1535",
@@ -2661,7 +2890,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1541",
@@ -2673,7 +2903,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "GS1605",
@@ -2685,7 +2916,8 @@
         "course_credit": "2",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "GS1607",
@@ -2697,7 +2929,8 @@
         "course_credit": "2",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2709,7 +2942,8 @@
         "course_credit": "2",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2721,7 +2955,8 @@
         "course_credit": "2",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2733,7 +2968,8 @@
         "course_credit": "2",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2745,7 +2981,8 @@
         "course_credit": "2",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2757,7 +2994,8 @@
         "course_credit": "2",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2769,7 +3007,8 @@
         "course_credit": "2",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2781,7 +3020,8 @@
         "course_credit": "2",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS1607",
@@ -2793,7 +3033,8 @@
         "course_credit": "2",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "GS1750",
@@ -2805,7 +3046,8 @@
         "course_credit": "2",
         "course_time": "MON 13:00~15:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "50"
     },
     {
         "subject_code": "GS1901",
@@ -2817,7 +3059,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2829,7 +3072,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2841,7 +3085,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2853,7 +3098,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2865,7 +3111,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2877,7 +3124,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2889,7 +3137,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2901,7 +3150,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2913,7 +3163,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2925,7 +3176,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2937,7 +3189,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2949,7 +3202,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2961,7 +3215,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2973,7 +3228,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2985,7 +3241,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -2997,7 +3254,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3009,7 +3267,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3021,7 +3280,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3033,7 +3293,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "25",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3045,7 +3306,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3057,7 +3319,8 @@
         "course_credit": "1",
         "course_time": "THU 16:00~17:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1901",
@@ -3069,7 +3332,8 @@
         "course_credit": "1",
         "course_time": "",
         "class_size": "1",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "GS1902",
@@ -3081,7 +3345,8 @@
         "course_credit": "0",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "14",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "45"
     },
     {
         "subject_code": "GS1902",
@@ -3093,7 +3358,8 @@
         "course_credit": "0",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "14",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "45"
     },
     {
         "subject_code": "GS1904",
@@ -3105,7 +3371,8 @@
         "course_credit": "2",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "45"
     },
     {
         "subject_code": "GS2001",
@@ -3117,7 +3384,8 @@
         "course_credit": "3",
         "course_time": "MON 18:30~19:30\nTUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "45"
     },
     {
         "subject_code": "GS2002",
@@ -3129,7 +3397,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nTUE 17:30~18:30\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2002",
@@ -3141,7 +3410,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nTUE 18:30~19:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2004",
@@ -3153,7 +3423,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30\nFRI 10:00~11:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2004",
@@ -3165,7 +3436,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nFRI 11:00~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2408",
@@ -3177,7 +3449,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 16:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2408",
@@ -3189,7 +3462,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 17:00~18:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2408",
@@ -3201,7 +3475,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00\nTHU 16:00~17:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2408",
@@ -3213,7 +3488,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00\nTHU 17:00~18:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2420",
@@ -3225,7 +3501,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2421",
@@ -3237,7 +3514,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2422",
@@ -3249,7 +3527,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2503",
@@ -3261,7 +3540,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS2507",
@@ -3273,7 +3553,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2512",
@@ -3285,7 +3566,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "GS2522",
@@ -3297,7 +3579,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2526",
@@ -3309,7 +3592,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "GS2542",
@@ -3321,7 +3605,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2544",
@@ -3333,7 +3618,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2581",
@@ -3345,7 +3631,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "15",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "13"
     },
     {
         "subject_code": "GS2602",
@@ -3357,7 +3644,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "GS2612",
@@ -3369,7 +3657,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS2617",
@@ -3381,7 +3670,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "17"
     },
     {
         "subject_code": "GS2620",
@@ -3393,7 +3683,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2621",
@@ -3405,7 +3696,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2625",
@@ -3417,7 +3709,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2627",
@@ -3429,7 +3722,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2651",
@@ -3441,7 +3735,8 @@
         "course_credit": "2",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "16",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2652",
@@ -3453,7 +3748,8 @@
         "course_credit": "2",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3465,7 +3761,8 @@
         "course_credit": "2",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3477,7 +3774,8 @@
         "course_credit": "2",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3489,7 +3787,8 @@
         "course_credit": "2",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3501,7 +3800,8 @@
         "course_credit": "2",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3513,7 +3813,8 @@
         "course_credit": "2",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2652",
@@ -3525,7 +3826,8 @@
         "course_credit": "2",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "15"
     },
     {
         "subject_code": "GS2654",
@@ -3537,7 +3839,8 @@
         "course_credit": "2",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2655",
@@ -3549,7 +3852,8 @@
         "course_credit": "2",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2661",
@@ -3561,7 +3865,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2702",
@@ -3573,7 +3878,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2726",
@@ -3585,7 +3891,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2730",
@@ -3597,7 +3904,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2742",
@@ -3609,7 +3917,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2750",
@@ -3621,7 +3930,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2754",
@@ -3633,7 +3943,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2787",
@@ -3645,7 +3956,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "GS2794",
@@ -3657,7 +3969,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2797",
@@ -3669,7 +3982,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2809",
@@ -3681,7 +3995,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "70",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2823",
@@ -3693,7 +4008,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2832",
@@ -3705,7 +4021,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2834",
@@ -3717,7 +4034,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2840",
@@ -3729,7 +4047,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS2931",
@@ -3741,7 +4060,8 @@
         "course_credit": "2",
         "course_time": "FRI 09:00~11:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3001",
@@ -3753,7 +4073,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3015",
@@ -3765,7 +4086,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3016",
@@ -3777,7 +4099,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3402",
@@ -3789,7 +4112,8 @@
         "course_credit": "1",
         "course_time": "ALL 00:00~00:00",
         "class_size": "60",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3501",
@@ -3801,7 +4125,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3504",
@@ -3813,7 +4138,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3506",
@@ -3825,7 +4151,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3602",
@@ -3837,7 +4164,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3605",
@@ -3849,7 +4177,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3632",
@@ -3861,7 +4190,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3735",
@@ -3873,7 +4203,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3762",
@@ -3885,7 +4216,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3766",
@@ -3897,7 +4229,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3785",
@@ -3909,7 +4242,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "GS3802",
@@ -3921,7 +4255,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3804",
@@ -3933,7 +4268,8 @@
         "course_credit": "3",
         "course_time": "MON 14:00~16:00\nTUE 14:00~16:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS3831",
@@ -3945,7 +4281,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS4004",
@@ -3957,7 +4294,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS4010",
@@ -3969,7 +4307,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "22"
     },
     {
         "subject_code": "GS4020",
@@ -3981,7 +4320,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS4741",
@@ -3993,7 +4333,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "GS4762",
@@ -4005,7 +4346,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "IR2201",
@@ -4017,7 +4359,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "IR3203",
@@ -4029,7 +4372,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~18:00\nWED 16:00~18:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "IR4201",
@@ -4041,7 +4385,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "45",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "IR4202",
@@ -4053,7 +4398,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "IR4307",
@@ -4065,7 +4411,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "14",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "LH2503",
@@ -4077,7 +4424,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "10"
     },
     {
         "subject_code": "LH2507",
@@ -4089,7 +4437,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "120"
     },
     {
         "subject_code": "LH2512",
@@ -4101,7 +4450,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "45"
     },
     {
         "subject_code": "LH2522",
@@ -4113,7 +4463,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "45"
     },
     {
         "subject_code": "LH2526",
@@ -4125,7 +4476,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "45"
     },
     {
         "subject_code": "LH2602",
@@ -4137,7 +4489,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "18"
     },
     {
         "subject_code": "LH2612",
@@ -4149,7 +4502,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "LH3501",
@@ -4161,7 +4515,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "LH3504",
@@ -4173,7 +4528,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "LH3602",
@@ -4185,7 +4541,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "LH3605",
@@ -4197,7 +4554,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "LH3802",
@@ -4209,7 +4567,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MA2101",
@@ -4221,7 +4580,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA2102",
@@ -4233,7 +4593,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "41",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA2103",
@@ -4245,7 +4606,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "35",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA2202",
@@ -4257,7 +4619,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA3104",
@@ -4269,7 +4632,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA3209",
@@ -4281,7 +4645,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA3211",
@@ -4293,7 +4658,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "15",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA3212",
@@ -4305,7 +4671,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA4203",
@@ -4317,7 +4684,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA4220",
@@ -4329,7 +4697,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA4225",
@@ -4341,7 +4710,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MA9101",
@@ -4353,7 +4723,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "MA9102",
@@ -4365,7 +4736,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "MA9103",
@@ -4377,7 +4749,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "MB2627",
@@ -4389,7 +4762,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MB2661",
@@ -4401,7 +4775,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MB2742",
@@ -4413,7 +4788,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MB3632",
@@ -4425,7 +4801,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MB3766",
@@ -4437,7 +4814,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MB4741",
@@ -4449,7 +4827,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC2100",
@@ -4461,7 +4840,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC2101",
@@ -4473,7 +4853,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC2201",
@@ -4485,7 +4866,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC2203",
@@ -4497,7 +4879,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3106",
@@ -4509,7 +4892,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~18:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3106",
@@ -4521,7 +4905,8 @@
         "course_credit": "3",
         "course_time": "FRI 13:00~18:00",
         "class_size": "12",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3201",
@@ -4533,7 +4918,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3204",
@@ -4545,7 +4931,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3205",
@@ -4557,7 +4944,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~18:00\nWED 16:00~18:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3206",
@@ -4569,7 +4957,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "50",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC3215",
@@ -4581,7 +4970,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4202",
@@ -4593,7 +4983,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4205",
@@ -4605,7 +4996,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4210",
@@ -4617,7 +5009,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4215",
@@ -4629,7 +5022,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4224",
@@ -4641,7 +5035,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4228",
@@ -4653,7 +5048,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4235",
@@ -4665,7 +5061,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4236",
@@ -4677,7 +5074,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "14",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC4237",
@@ -4689,7 +5087,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MC9102",
@@ -4701,7 +5100,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "MC9103",
@@ -4713,7 +5113,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "MD4301",
@@ -4725,7 +5126,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MD4303",
@@ -4737,7 +5139,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MD4401",
@@ -4749,7 +5152,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MD4501",
@@ -4761,7 +5165,8 @@
         "course_credit": "3",
         "course_time": "MON 09:00~10:30\nWED 09:00~10:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MD4502",
@@ -4773,7 +5178,8 @@
         "course_credit": "3",
         "course_time": "TUE 17:30~19:00\nWED 17:30~19:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MM2001",
@@ -4785,7 +5191,8 @@
         "course_credit": "3",
         "course_time": "MON 18:30~19:30\nTUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "MM2002",
@@ -4797,7 +5204,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nTUE 17:30~18:30\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "MM2002",
@@ -4809,7 +5217,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nTUE 18:30~19:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "MM2004",
@@ -4821,7 +5230,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30\nFRI 10:00~11:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM2004",
@@ -4833,7 +5243,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00\nFRI 11:00~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM3001",
@@ -4845,7 +5256,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM3015",
@@ -4857,7 +5269,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM3016",
@@ -4869,7 +5282,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM4004",
@@ -4881,7 +5295,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM4010",
@@ -4893,7 +5308,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "60",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "MM4020",
@@ -4905,7 +5321,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "PP2702",
@@ -4917,7 +5334,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "PP2787",
@@ -4929,7 +5347,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "25"
     },
     {
         "subject_code": "PP3632",
@@ -4941,7 +5360,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "PP3735",
@@ -4953,7 +5373,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "PP3785",
@@ -4965,7 +5386,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "13"
     },
     {
         "subject_code": "PP3831",
@@ -4977,7 +5399,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "PP4762",
@@ -4989,7 +5412,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "20"
     },
     {
         "subject_code": "PS2101",
@@ -5001,7 +5425,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nMON 19:00~20:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS2102",
@@ -5013,7 +5438,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00\nWED 19:00~20:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS2201",
@@ -5025,7 +5451,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS3103",
@@ -5037,7 +5464,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTUE 19:00~20:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS3202",
@@ -5049,7 +5477,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS3205",
@@ -5061,7 +5490,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS3206",
@@ -5073,7 +5503,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS4204",
@@ -5085,7 +5516,8 @@
         "course_credit": "3",
         "course_time": "FRI 13:00~18:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS4206",
@@ -5097,7 +5529,8 @@
         "course_credit": "3",
         "course_time": "TUE 16:00~17:30\nTHU 16:00~17:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS4207",
@@ -5109,7 +5542,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~10:30\nTHU 09:00~10:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "30"
     },
     {
         "subject_code": "PS4217",
@@ -5121,7 +5555,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "PS4219",
@@ -5133,7 +5568,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~14:30\nTHU 13:00~14:30",
         "class_size": "0",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "PS9101",
@@ -5145,7 +5581,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "PS9102",
@@ -5157,7 +5594,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "PS9103",
@@ -5169,7 +5607,8 @@
         "course_credit": "3",
         "course_time": "",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "PS9301",
@@ -5181,7 +5620,8 @@
         "course_credit": "1",
         "course_time": "THU 17:30~18:30",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "35"
     },
     {
         "subject_code": "SE1101",
@@ -5193,7 +5633,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "40",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SE2101",
@@ -5205,7 +5646,8 @@
         "course_credit": "3",
         "course_time": "MON 10:30~12:00\nWED 10:30~12:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS2832",
@@ -5217,7 +5659,8 @@
         "course_credit": "3",
         "course_time": "TUE 14:30~16:00\nTHU 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS2834",
@@ -5229,7 +5672,8 @@
         "course_credit": "3",
         "course_time": "MON 14:30~16:00\nWED 14:30~16:00",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS2840",
@@ -5241,7 +5685,8 @@
         "course_credit": "3",
         "course_time": "TUE 10:30~12:00\nTHU 10:30~12:00",
         "class_size": "25",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS3831",
@@ -5253,7 +5698,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS4741",
@@ -5265,7 +5711,8 @@
         "course_credit": "3",
         "course_time": "MON 16:00~17:30\nWED 16:00~17:30",
         "class_size": "30",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "SS4762",
@@ -5277,7 +5724,8 @@
         "course_credit": "3",
         "course_time": "MON 13:00~14:30\nWED 13:00~14:30",
         "class_size": "20",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "35"
     },
     {
         "subject_code": "UC0038",
@@ -5289,7 +5737,8 @@
         "course_credit": "1",
         "course_time": "TUE 10:30~12:00",
         "class_size": "30",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0039",
@@ -5301,7 +5750,8 @@
         "course_credit": "3",
         "course_time": "WED 14:00~17:00",
         "class_size": "22",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0201",
@@ -5313,7 +5763,8 @@
         "course_credit": "1",
         "course_time": "FRI 10:30~12:00",
         "class_size": "0",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0613",
@@ -5325,7 +5776,8 @@
         "course_credit": "3",
         "course_time": "FRI 15:00~18:00",
         "class_size": "22",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0623",
@@ -5337,7 +5789,8 @@
         "course_credit": "3",
         "course_time": "TUE 13:00~16:00",
         "class_size": "22",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0624",
@@ -5349,7 +5802,8 @@
         "course_credit": "3",
         "course_time": "TUE 09:00~12:00",
         "class_size": "22",
-        "grading": "Letter"
+        "grading": "Letter",
+        "end_time": "300"
     },
     {
         "subject_code": "UC0901",
@@ -5361,7 +5815,8 @@
         "course_credit": "1",
         "course_time": "TUE 16:00~17:30",
         "class_size": "270",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     },
     {
         "subject_code": "UC9331",
@@ -5373,6 +5828,7 @@
         "course_credit": "0",
         "course_time": "THU 16:00~17:30",
         "class_size": "200",
-        "grading": "S/U"
+        "grading": "S/U",
+        "end_time": "300"
     }
-]
+  ]

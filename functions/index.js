@@ -6,6 +6,8 @@ exports.handler = async function(event, context) {
   let courseJson;
   let indexJson;
   let course_count;
+  let end_time;
+  let t = 0;
 
   try {
     const courseData = await fs.readFile("course/course_data2.json");
@@ -23,10 +25,31 @@ exports.handler = async function(event, context) {
   }
 
 
-  function seat_results(time_diff, end_time, course_count) {
+  function a_function(t) {
+    const maxValue = 289;  
+    const peakTime = 20;   
+    const decayRateLeft = 0.03;   
+    const decayRateRight = 0.0001;  
+
+    return maxValue * Math.exp(-decayRateLeft * Math.pow((t - peakTime), 2)) * (t < peakTime ? 1 : 0)
+         + maxValue * Math.exp(-decayRateRight * Math.pow((t - peakTime), 2)) * (t >= peakTime ? 1 : 0);
+  }
+
+  setInterval(() => {
+    t += 10;
+    waiting_people = 3 * Math.floor(a_function(t) + 173);
+  }, 1000);
+
+  
+
+
+
+
+  function seat_results(time_diff, course_count) {
     var arr_seats = [];
     for (let i = 0; i < course_count; i++) {
       let seats_i = courseJson[i]["class_size"];
+      end_time=courseJson[i]["end_time"]
       let seats_left =
         seats_i - Math.floor((time_diff - 10000) / ((end_time * 1000) / seats_i));
       if (seats_left < 0) {
@@ -47,6 +70,14 @@ exports.handler = async function(event, context) {
   const date = { time: Date.now() };
   arr_time.push(date.time);
   const time_diff = arr_time[arr_time.length - 1] - arr_time[0];
+  
+  var waiting_list=[]
+
+  while (waiting_people>=0){
+    waiting_list.push(waiting_people)
+    waiting_people-=50
+  }
+
 
   if (time_diff < 10000) {
     return {
@@ -58,8 +89,8 @@ exports.handler = async function(event, context) {
     };
   }
 
-  const end_time = 12;
-  const seats_left = seat_results(time_diff, end_time, course_count);
+  
+  const seats_left = seat_results(time_diff, course_count);
 
   return {
     statusCode: 200,
@@ -68,6 +99,7 @@ exports.handler = async function(event, context) {
       time: time_diff,
       pass: "open",
       seats_left: seats_left,
+      waiting_number: waiting_list,//다시 보기
     })
   };
 };

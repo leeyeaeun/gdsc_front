@@ -29,6 +29,34 @@ function hideWaiting1() {
   document.getElementById("waitingModal").style.display = "none";
 }
 
+//추가한 부분
+function calculateWaitingList() {
+  const maxValue = 80;
+  const peakTime = 20;
+  const decayRateLeft = 0.03;
+  const decayRateRight = 0.0001;
+  let t = 0; // Initial value of t
+
+  function a_function(t) {
+    return maxValue * Math.exp(-decayRateLeft * Math.pow((t - peakTime), 2)) * (t < peakTime ? 1 : 0)
+      + maxValue * Math.exp(-decayRateRight * Math.pow((t - peakTime), 2)) * (t >= peakTime ? 1 : 0);
+  }
+
+  let waiting_list = [];
+
+  t += 10;
+  let waiting_people = Math.floor(a_function(t) + 173);
+
+  while (waiting_people >= 0) {
+    waiting_list.push(waiting_people);
+    waiting_people -= 50;
+  }
+
+  console.log(waiting_list); // 대기자 수 결과
+}
+
+
+
 var selectedCoursesList = [];
 
 let department;
@@ -228,6 +256,7 @@ function showCourses(division) {
         addButton.addEventListener("click", function () {
           // 버튼이 클릭되었을 때 수행할 동작 추가
           // 접속 대기 창 표시
+          calculateWaitingList();
           showWaiting();
 
           // 5초 후에 addAfterDelay 함수 호출
