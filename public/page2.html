@@ -215,21 +215,21 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-    }
+      }
 
-    .modal-content {
+      .modal-content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 230px; 
-        height: 230px; 
-    }
+        width: 230px;
+        height: 230px;
+      }
 
-    .modal-content img {
+      .modal-content img {
         width: 100%; /* 이미지 크기를 모달 컨텐츠 크기에 맞춤 */
         height: auto; /* 이미지의 비율을 유지하면서 조정 */
-    }
+      }
 
       .pop {
         display: none; /* 초기에는 숨김 */
@@ -254,37 +254,50 @@
       }
 
       .boxO {
-            width: 500px;
-            border: 7px solid rgb(220, 220, 220);
-            margin: 0px auto;
-        }
+        width: 500px;
+        border: 7px solid rgb(220, 220, 220);
+        margin: 0px auto;
+      }
 
-        .boxI {
-            border: 10px solid white;
-        }
+      .boxI {
+        border: 10px solid white;
+      }
 
-        .title {
-            font-size: 20px;
-            color: royalblue;
-        }
+      .title {
+        font-size: 20px;
+        color: royalblue;
+      }
 
-        .noticeA {
-            font-size: 10px;
-        }
+      .noticeA {
+        font-size: 10px;
+      }
 
-        .innerBox {
-            width: 480px;
-            background-color: rgb(219, 219, 219);
-        }
+      .innerBox {
+        width: 480px;
+        background-color: rgb(219, 219, 219);
+      }
 
-        .noticeB {
-            font-size: 10px;
-        }
+      .noticeB {
+        font-size: 10px;
+      }
 
-        .noticeC {
-            font-size: 15px;
-            color: royalblue;
-        }
+      .noticeC {
+        font-size: 15px;
+        color: royalblue;
+      }
+
+      .underModal {
+        position: fixed;
+        bottom: -30px; /* 기본적으로 화면 아래로 숨김 */
+        width: 100%;
+        height: 20px;
+        background-color: #e2d7c5; /* 베이지색 배경 */
+        color: black;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 10px;
+        transition: bottom 2.5s ease, opacity 3s ease; /* 애니메이션 효과 설정 */
+      }
     </style>
   </head>
   <body>
@@ -2281,27 +2294,28 @@
       <div class="popup-content">
         <div class="boxO">
           <div class="boxI">
-            <div class="title">
-              서비스 접속대기 중입니다. <br>
-            </div>
+            <div class="title">서비스 접속대기 중입니다. <br /></div>
             <img src="./img/loading.gif" alt="Loading_gif" />
-              <div id="inner" class="innerBox">
-                <div class="noticeA">
-                  고객님 앞에
-                </div>
-                  <div class="noticeB">
-                    명의 대기자가 있습니다. <br>
-                    현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br>
-                    서비스로 자동 접속 됩니다. 
-                  </div>
-                  <div class="noticeC">
-                    재 접속하시면 대기시간이 더 길어집니다. [중지]
-                  </div>
+            <div id="inner" class="innerBox">
+              <div class="noticeA">고객님 앞에</div>
+              <div class="noticeB">
+                명의 대기자가 있습니다. <br />
+                현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br />
+                서비스로 자동 접속 됩니다.
               </div>
+              <div class="noticeC">
+                재 접속하시면 대기시간이 더 길어집니다. [중지]
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div id="savedModal" class="underModal">
+      <p>Saved</p>
+    </div>
+    <div id="deletedModal" class="underModal">
+      <p>Deleted</p>
     <script src="pg2_script.js"></script>
   </body>
 </html>
