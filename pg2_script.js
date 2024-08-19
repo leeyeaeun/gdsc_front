@@ -1,14 +1,15 @@
 var totalCredits = 0;
-function goToPage1() {
-  window.location.href = "page1.html"; // 페이지 2로 이동
+function goToPage2() {
+  window.location.href = "page3.html"; // 페이지 2로 이동
 }
 
 function showWaiting() {
   // 접속 대기 창 표시 코드
   document.getElementById("popup").style.display = "block";
   const timer = setTimeout(() => {
+    showSaved();
     document.getElementById("waitingModal").style.display = "block";
-  }, 1000)
+  }, 2000);
 }
 
 function hideWaiting() {
@@ -16,17 +17,46 @@ function hideWaiting() {
   document.getElementById("popup").style.display = "none";
   const timer = setTimeout(() => {
     document.getElementById("waitingModal").style.display = "none";
-  }, 1000)
+  }, 2000);
 }
 
 function showWaiting1() {
   // 접속 대기 창 표시 코드
-  document.getElementById("waitingModal").style.display = "block"
+  document.getElementById("waitingModal").style.display = "block";
 }
 
 function hideWaiting1() {
   // 접속 대기 창 숨기기 코드
   document.getElementById("waitingModal").style.display = "none";
+}
+
+function showSaved() {
+  //하단 saved바 표시 코드
+  const modal = document.getElementById("savedModal");
+  modal.style.bottom = "0"; // 모달을 화면 하단에 고정
+  modal.style.opacity = "1"; // 모달의 불투명도를 100%로 설정
+  setTimeout(hideSaved, 3000); // 3초 후에 모달을 숨기기 위한 타이머 설정
+}
+
+function hideSaved() {
+  // 하단 saved바 숨기기 코드
+  const modal = document.getElementById("savedModal");
+  modal.style.bottom = "-100px"; // 모달을 화면 아래로 슬라이드하여 숨기기
+  //modal.style.opacity = "0"; // 모달의 불투명도를 0%로 설정
+}
+
+function showDeleted() {
+  //하단 deleted바 표시 코드
+  const modal = document.getElementById("deletedModal");
+  modal.style.bottom = "0"; // 모달을 화면 하단에 고정
+  modal.style.opacity = "1"; // 모달의 불투명도를 100%로 설정
+  setTimeout(hideDeleted, 3000); // 3초 후에 모달을 숨기기 위한 타이머 설정
+}
+
+function hideDeleted() {
+  // 하단 deleted바 숨기기 코드
+  const modal = document.getElementById("deletedModal");
+  modal.style.bottom = "-100px"; // 모달을 화면 아래로 슬라이드하여 숨기기
 }
 
 var selectedCoursesList = [];
@@ -321,8 +351,11 @@ function addAfterDropCourses(course) {
       dropButton.addEventListener("click", function () {
         // drop 버튼이 클릭되었을 때 수행할 동작 추가 (예를 들어, 해당 행을 삭제하는 등)
         showWaiting1();
-        
+        setTimeout(() => {
+          hideWaiting1();
+        }, 1000);
         dropCourse(course);
+        showDeleted();
         console.log(
           "Drop button clicked for course_code",
           course["course_code"]
@@ -345,7 +378,7 @@ function addAfterDropCourses(course) {
               // 셀 내부의 모든 div 요소를 선택하여 제거
               cell.querySelectorAll("div").forEach((div) => {
                 div.remove();
-              }); 
+              });
             }
           });
         });
@@ -453,11 +486,6 @@ function addToSelectedCourses(course) {
         updateCoursesNumber();
 
         const $table = document.getElementById("selectedCoursesTable");
-        
-        showWaiting1();
-        const timer = setTimeout(() => {
-          hideWaiting1();
-        }, 1000)
       });
       cell.appendChild(dropButton);
     } else {
@@ -479,8 +507,14 @@ function dropCourse(course) {
     selectedCoursesList.splice(index, 1); // 해당 인덱스의 과목 제거
   }
   selectedCoursesCount = 0;
+  showWaiting1();
+  setTimeout(() => {
+    hideWaiting1();
+  }, 1000); // 1초 후 모달 숨김
+  showDeleted();
   clearSelectedCoursesTable();
   showSelectedCoursesOnTimetable();
+
 }
 
 function clearSelectedCoursesTable() {
@@ -622,7 +656,7 @@ function highlightTimeSlots(course, color) {
   courseTimes.forEach((time) => {
     // 시간대를 시간과 요일로 분리하여 처리
     const splitTimes = splitTimeValues([time]); // splitTimeValues 함수 호출 시 배열로 전달
-    sp\litTimes.forEach((time, index) => {
+    splitTimes.forEach((time, index) => {
       // splitTimes의 각 항목은 요일-시간 형식이므로 다시 분할
       const cell = document.getElementById(time);
 
