@@ -215,19 +215,21 @@
         width: 100%;
         height: 100%;
         overflow: auto;
-      }
+    }
 
-      .modal-content {
+    .modal-content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }
+        width: 230px; 
+        height: 230px; 
+    }
 
-      /* 이미지 크기에 따라 조정 가능 */
-      .modal-content img {
-        width: 30%;
-      }
+    .modal-content img {
+        width: 100%; /* 이미지 크기를 모달 컨텐츠 크기에 맞춤 */
+        height: auto; /* 이미지의 비율을 유지하면서 조정 */
+    }
 
       .pop {
         display: none; /* 초기에는 숨김 */
@@ -264,10 +266,6 @@
         .title {
             font-size: 20px;
             color: royalblue;
-        }
-
-        .outerBox {
-
         }
 
         .noticeA {
