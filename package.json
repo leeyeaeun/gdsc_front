@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "braces": "^3.0.3",
     "cors": "^2.8.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "netlify-cli": "^17.33.4"
