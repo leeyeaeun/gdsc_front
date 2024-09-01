@@ -193,7 +193,6 @@ document.getElementById("CH").addEventListener("click", function () {
 
 function showCourses(division) {
   // 해당 division에 맞는 과목 목록을 가져와서 표시
-
   var tableBody = document.getElementById("courseTableBody");
 
   // 기존의 과목 목록 삭제
@@ -207,9 +206,24 @@ function showCourses(division) {
   }
   var jsonFileName = division + "_courses.json";
   // JSON 파일에서 데이터 불러오기
-  fetch("./course/" + jsonFileName)
-    .then((response) => response.json())
+  fetch("/.netlify/functions/index/div", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        //or text/plain
+      },
+      body: JSON.stringify({div_code: division}),
+    })
+    .then(response => {
+      console.log("after fetch local file")
+      console.log(response)
+      if (!response.ok) {
+          throw new Error('Network response was not ok');
+      }
+      return response["data"].json();
+    })
     .then((courses) => {
+      // console.log(courses)
       courses.forEach(function (course, index) {
         var row = document.createElement("tr");
 
