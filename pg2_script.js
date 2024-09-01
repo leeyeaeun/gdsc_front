@@ -220,10 +220,11 @@ function showCourses(division) {
       if (!response.ok) {
           throw new Error('Network response was not ok');
       }
-      return response["data"].json();
+      return response.json();
     })
     .then((courses) => {
-      // console.log(courses)
+      console.log(courses)
+      courses=courses["data"]
       courses.forEach(function (course, index) {
         var row = document.createElement("tr");
 
