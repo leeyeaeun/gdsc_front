@@ -5,6 +5,7 @@ function goToPage2() {
 
 //대기자 수 추가
 function calculateWaitingList() {
+
   const maxValue = 80;
   const peakTime = 20;
   const decayRateLeft = 0.03;
@@ -34,6 +35,7 @@ function calculateWaitingList() {
 
   console.log("waiting_list is ", waiting_list); // 대기자 수 결과
   return waiting_list;
+
 }
 
 // 모달을 표시하고 대기자 수를 업데이트하는 함수
@@ -48,10 +50,10 @@ function showWaitingModal() {
 
   // 1초마다 대기자 수 업데이트
   let index = 0;
-  //console.log("index is ", index);
+  console.log("index is ", index);
   const interval = setInterval(() => {
     // document.getElementById("popup").style.display = "block";
-    if (index < waiting_list.length) {
+    if (index <= waiting_list.length) {
       console.log("first waiting_list is ", waiting_list);
       console.log("index is ", index);
       document.getElementById("waitingNumber").textContent =
@@ -59,6 +61,7 @@ function showWaitingModal() {
       index++;
       //      console.log("index is ", index);
     } else {
+      index = 0;
       clearInterval(interval); // 모든 대기자 수가 업데이트되면 타이머 중지
       //console.log("index addition will finish at ", index);
     }
@@ -67,7 +70,7 @@ function showWaitingModal() {
 
 const WN = calculateWaitingList();
 let length = WN.length;
-let listLength = 1000 * length;
+let listLength = 1000 * length + 1000;
 
 function showWaiting() {
   // 접속 대기 창 표시 코드
@@ -84,7 +87,7 @@ function hideWaiting() {
   document.getElementById("popup").style.display = "none";
   const timer = setTimeout(() => {
     document.getElementById("waitingModal").style.display = "none";
-  }, listLength);
+  }, 1000);
 }
 
 function showWaiting1() {
