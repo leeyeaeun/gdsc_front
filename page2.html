@@ -475,6 +475,7 @@
                 >
                   <div>
                     <p
+                      id="Search"
                       style="
                         position: absolute;
                         width: 72px;
@@ -1209,7 +1210,9 @@
                   <p id="totalCredits" ; style="margin-left: 15px; color: blue">
                     0
                   </p>
-                  <button style="margin-left: 20px; width: 65px">Save</button>
+                  <button id="save" ; style="margin-left: 20px; width: 65px">
+                    Save
+                  </button>
                   <button style="margin-left: 13px; width: 65px">Print</button>
                 </div>
                 <div
@@ -2300,7 +2303,7 @@
             <div id="inner" class="innerBox">
               <span class="noticeA">고객님 앞에</span>
               <span class="noticeB">
-                <span id="waitingNumber">0</span> 
+                <span id="waitingNumber">0</span>
                 명의 대기자가 있습니다. <br />
                 현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br />
                 서비스로 자동 접속 됩니다.
@@ -2318,6 +2321,10 @@
     </div>
     <div id="deletedModal" class="underModal">
       <p>Deleted</p>
+    </div>
+    <div id="detailsModal" class="underModal">
+      <p>There is no query details</p>
+    </div>
     <script src="pg2_script.js"></script>
   </body>
 </html>
