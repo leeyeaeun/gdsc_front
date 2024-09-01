@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration_page1</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      /* 헤더에 배경 이미지를 적용하는 CSS 코드 */
+      .header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 56px;
+        background-image: url("img/main_top_background.png");
+        flex-direction: row;
+        position: relative;
+        display: flex;
+      }
+      .main_top_input {
+        position: relative;
+        overflow: hidden;
+        background-color: white;
+        left: 320px; /* 인풋 박스의 왼쪽 위치 조절 */
+        top: 16px; /* 인풋 박스의 상단 위치 조절 */
+        width: 197px;
+        height: 21px;
+        cursor: default;
+        font: 9pt NanumGothic;
+        border-radius: 0px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(166, 166, 169) rgb(213, 213, 213) rgb(213, 213, 213)
+          rgb(166, 166, 169);
+        color: rgb(34, 34, 34);
+        text-align: left;
+        padding: 0px 1px;
+        z-index: 0; /* 인풋 박스를 이미지 위에 표시하기 위한 z-index 설정 */
+      }
+
+      .main_top_logo {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        width: 260px;
+        height: 34px;
+        user-select: none;
+        z-index: 0;
+      }
+
+      .timer-container {
+        position: relative;
+        left: 400px;
+        top: 18px;
+        width: 58px;
+        height: 23px;
+        user-select: none;
+        white-space: pre;
+        font: 10pt NanumGothic;
+        color: rgb(240, 255, 255);
+        text-align: left;
+      }
+      .align {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+      }
+      .hidden-text {
+        display: block; /* 초기에는 보이도록 설정 */
+      }
+      @media (max-width: 10000px) {
+        .hidden-text {
+          display: none;
+          position: fixed; /* 창의 너비가 600px 이하일 때 숨김 */
+        }
+      }
+      .button:hover {
+        cursor: pointer; /* 마우스가 버튼 위에 있을 때 포인터 모양으로 변경 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 헤더 부분 -->
+    <header class="header">
+      <img
+        class="main_top_logo"
+        id="main_top_logo"
+        alt="ImageViewer00"
+        src="img/main_top_logo3.png"
+        style="margin-left: 29px"
+      />
+
+      <div
+        class="wrapper"
+        style="
+          position: absolute;
+          font-weight: bold;
+          color: rgb(255, 104, 21);
+          align-content: center;
+          margin-top: 180px;
+          margin-right: 300px;
+          margin-left: 1px;
+          left: 30px;
+          right: 180px;
+          height: 35px;
+          width: 290px;
+          background-color: white;
+          border: solid 5px black;
+          font-family: sans-serif;
+          padding: 20px;
+          text-align: center;
+          font-size: 35px;
+          line-height: 1px;
+          letter-spacing: -5px;
+        "
+      >
+        <div id="Stopwatch">
+          <div id="timeDisplay" onload="showTime()">
+            <span id="hour">14</span>
+            <span>시 </span>
+            <span id="minute">59</span>
+            <span>분 </span>
+            <span id="second">50</span>
+            <span>초 </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="main_top_input">
+        <input
+          id="main_top_input"
+          readonly=""
+          tabindex="-1"
+          class="main_top_input"
+        />
+        <img
+          src="img/login_out_bu01.png"
+          alt="logout_button"
+          style="
+            user-select: none;
+            position: absolute;
+            overflow: hidden;
+            left: 520px;
+            top: 16px;
+            width: 70px;
+            height: 23px;
+          "
+        />
+      </div>
+      <div class="timer-container">02:56:00</div>
+      <div>
+        <img
+          src="img/btnReset2.png"
+          alt="reset_btn"
+          style="position: relative; left: 400px; top: 16px"
+        />
+      </div>
+      <form
+        method="get"
+        action="page1.html"
+        style="
+          position: absolute;
+          left: 680px;
+          top: 18px;
+          color: rgb(240, 255, 255);
+          font-size: 15px;
+        "
+      >
+        <label style="padding-right: 10px"
+          ><input type="radio" name="lang" value="eng" />ENG</label
+        >
+        <label><input type="radio" name="lang" value="kor" />KOR</label>
+      </form>
+    </header>
+    <div class="align" style="top: 10px; left: 10px">
+      <img
+        src="img/icon_tit.png"
+        alt="icon"
+        style="top: 10px; height: 11px; margin-right: 5px; margin-top: 3px"
+      />
+      <p style="vertical-align: middle; left: 15px; font-size: 13px; margin: 0">
+        수업>수강신청안내페이지【UlsTlsnAplyInfoQ】
+      </p>
+    </div>
+    <br />
+
+    <div
+      class="hidden-text"
+      style="
+        display: flex;
+        position: relative;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 12px;
+        align-content: space-between;
+        margin-right: 10px;
+        width: 1500px;
+        height: 16px;
+      "
+    >
+      <img
+        src="img/stc_bu02.png"
+        alt="stc_bu02"
+        style="margin-left: 10px; margin-right: 5px; width: auto; height: 15px"
+      />
+      <p style="font-weight: bold">List of Registered Courses</p>
+      <p style="margin-left: 20px">[총</p>
+      <p
+        style="
+          color: red;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 12px;
+          padding-left: 50px;
+        "
+      >
+        0
+      </p>
+      <p style="font-size: 12px">건]</p>
+
+      <div
+        onclick="checkPage2()"
+        class="button"
+        style="
+          white-space: pre;
+          left: 302px;
+          width: 113px;
+          height: 18px;
+          font: bold 9pt Georgia;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          vertical-align: middle;
+          padding: -20px;
+          text-overflow: ellipsis;
+          margin-left: 20px;
+          z-index: 2;
+          margin-top: -12px;
+          position: absolute;
+        "
+      >
+        Registration
+      </div>
+
+      <div
+        style="
+          user-select: none;
+          position: absolute;
+          overflow: hidden;
+          left: 302px;
+          top: 0px;
+          width: 113px;
+          height: 18px;
+          border-radius: 0px;
+          border: 1px solid rgb(156, 156, 156);
+          background-image: url(img/btnRight.png),
+            -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(254, 254, 254)), to(rgb(236, 236, 229)));
+          background-repeat: no-repeat;
+          background-position: 95% 50%;
+          cursor: pointer;
+          direction: inherit;
+          margin-left: 30px;
+          z-index: 1;
+        "
+      ></div>
+            <div style="left: 450px; margin-left: 100px">
+        Your Registration Information
+      </div>
+      <div style="left: 600px; margin-left: 40px">Courses</div>
+      <div style="left: 650px; margin-left: 100px">Credits</div>
+      <div style="left: 750px; margin-left: 150px; color: red">
+        ※ Course Type: M(Mandatory), E(Elective) R(Reseach)
+      </div>
+    </div>
+    <div><img src="img/main_img.PNG" alt="" /></div>
+
+      <script>
+        var server_start_JSON={
+          server_start: -1
+        }
+        function checkPage2(){
+          fetch("/.netlify/functions/index", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              //or text/plain
+            },
+            body: JSON.stringify(server_start_JSON),
+          })
+          .then((response) => {
+            console.log(response)
+            return response.json()
+          })
+          .then((data)=>{
+            server_start_JSON={
+              server_start: data.server_start
+            }
+            if (data.time==0){
+              return;
+            }
+            if (data.pass=='not open'){
+              window.alert('zeus.gist.ac.kr 내용:\n[학생]수강신청기간이 아닙니다.(2024-02-13 ~ 2024-02-16)\n[학생]수강신청기간이 아닙니다.(2024-02-26 ~ 2024-03-07)')
+            }
+            else{
+              goToPage2()
+            }
+          });
+        }
+      </script>
+    
+  <!-- //    <div style="left: 450px; margin-left: 100px">
+  //      Your Registration Information
+  //    </div>
+  //    <div style="left: 600px; margin-left: 40px">Courses</div>
+  //    <div style="left: 650px; margin-left: 100px">Credits</div>
+  //    <div style="left: 750px; margin-left: 150px; color: red">
+  //      ※ Course Type: M(Mandatory), E(Elective) R(Reseach)
+  //    </div>
+  //  </div>
+  //  <div><img src="img/main_img.PNG" alt="" /></div>  -->
+  
+    <script>
+      // 페이지 2로 이동하는 함수 정의
+        function goToPage2() {
+          window.location.href = "page2.html"; // 페이지 2로 이동
+        }
+        //타이머
+        window.onload = function () {
+          checkPage2();
+          var second = 50;
+          var minute = 59;
+          var hour = 14;
+          var appendSecond = document.getElementById("second");
+          var appendMinute = document.getElementById("minute");
+          var appendHour = document.getElementById("hour");
+          var Interval;
+  
+          clearInterval(Interval);
+          Interval = setInterval(startTimer, 1000);
+
+          function startTimer() {
+            second++;
+
+            if (second <= 9) {
+              appendSecond.innerText = "0" + second;
+            }
+  
+          if (second > 9) {
+           appendSecond.innerText = second;
+        }
+
+         if (second >= 60) {
+           //console.log("minute");
+            minute++;
+            second = 0;
+            appendSecond.innerText = "0" + 0;
+          }
+
+          if (minute <= 9) {
+            appendMinute.innerText = "0" + minute;
+          }
+
+          if (minute > 9) {
+            appendSecond.innerText = second;
+          }
+
+          if (minute >= 60) {
+            //console.log("hour");
+            hour++;
+            minute = 0;
+            appendMinute.innerText = "0" + 0;
+          }
+
+          if (hour <= 9) {
+            appendHour.innerText = "0" + hour;
+          }
+
+          if (hour > 9) {
+            appendHour.innerText = hour;
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
