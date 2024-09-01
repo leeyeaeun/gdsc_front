@@ -261,11 +261,12 @@
 
       .boxI {
         border: 10px solid white;
+        background-color: white;
       }
 
       .title {
         font-size: 20px;
-        color: royalblue;
+        color: rgb(41, 76, 142);
       }
 
       .noticeA {
@@ -283,7 +284,7 @@
 
       .noticeC {
         font-size: 15px;
-        color: royalblue;
+        color: rgb(41, 76, 142);
       }
 
       .underModal {
@@ -2297,12 +2298,13 @@
             <div class="title">서비스 접속대기 중입니다. <br /></div>
             <img src="./img/loading.gif" alt="Loading_gif" />
             <div id="inner" class="innerBox">
-              <div class="noticeA">고객님 앞에</div>
-              <div class="noticeB">
+              <span class="noticeA">고객님 앞에</span>
+              <span class="noticeB">
+                <span id="waitingNumber">0</span> 
                 명의 대기자가 있습니다. <br />
                 현재 접속 사용자가 많아 대기 중이며, 잠시만 기다리시면 <br />
                 서비스로 자동 접속 됩니다.
-              </div>
+              </span>
               <div class="noticeC">
                 재 접속하시면 대기시간이 더 길어집니다. [중지]
               </div>
